@@ -1,0 +1,4564 @@
+{
+  "generatedAt": "2026-06-11T19:52:38.535Z",
+  "promptVersion": "db02a7503e85",
+  "tier": "mini",
+  "reps": 5,
+  "positions": {
+    "weekMonday": {
+      "iso": "2026-06-08T09:00:00-04:00",
+      "why": "Monday morning — week just started"
+    },
+    "weekWednesday": {
+      "iso": "2026-06-10T14:00:00-04:00",
+      "why": "midweek, mid-month"
+    },
+    "weekSunday": {
+      "iso": "2026-06-14T13:00:00-04:00",
+      "why": "Sunday — last day of a Mon-start week"
+    },
+    "monthFirst": {
+      "iso": "2026-07-01T10:00:00-04:00",
+      "why": "first day of a month (Wed)"
+    },
+    "monthLast": {
+      "iso": "2026-04-30T15:00:00-04:00",
+      "why": "last day of a month (Thu)"
+    },
+    "quarterEnd": {
+      "iso": "2026-06-30T11:00:00-04:00",
+      "why": "last day of Q2 (Tue)"
+    },
+    "yearStart": {
+      "iso": "2026-01-02T10:00:00-05:00",
+      "why": "second day of the year (Fri)"
+    }
+  },
+  "cells": {
+    "last-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "last-week@monthLast|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "last-week@monthFirst|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "last-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "last-week@weekSunday|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "this-week@weekMonday|anthropic/claude-opus-4-8": {
+      "monWeek=next7": 3
+    },
+    "this-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "monWeek": 3
+    },
+    "last-week@yearStart|anthropic/claude-opus-4-8": {
+      "priorMonWeek": 3
+    },
+    "this-week@monthFirst|anthropic/claude-opus-4-8": {
+      "monWeek": 3
+    },
+    "this-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "monWeek": 3
+    },
+    "this-week@yearStart|anthropic/claude-opus-4-8": {
+      "monWeek": 3
+    },
+    "this-week@monthLast|anthropic/claude-opus-4-8": {
+      "monWeek": 3
+    },
+    "this-week@weekSunday|anthropic/claude-opus-4-8": {
+      "monWeek=weekToDate": 1,
+      "sunWeek=next7": 2
+    },
+    "the-past-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "the-past-week@weekSunday|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "the-past-week@monthFirst|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "the-past-week@weekMonday|anthropic/claude-opus-4-8": {
+      "rolling7ToNow": 3
+    },
+    "the-past-week@monthLast|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "last-month@monthLast|anthropic/claude-opus-4-8": {
+      "priorCalendarMonth": 2,
+      "other": 1
+    },
+    "the-past-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "the-past-month@weekMonday|anthropic/claude-opus-4-8": {
+      "rollingToNow": 2,
+      "rollingInclToday": 1
+    },
+    "the-past-month@weekSunday|anthropic/claude-opus-4-8": {
+      "rollingInclToday": 3
+    },
+    "the-past-month@weekWednesday|anthropic/claude-opus-4-8": {
+      "rollingCalMonthBack": 1,
+      "rollingInclToday": 2
+    },
+    "the-past-month@monthFirst|anthropic/claude-opus-4-8": {
+      "rollingToNow": 1,
+      "rollingInclToday": 2
+    },
+    "the-past-month@monthLast|anthropic/claude-opus-4-8": {
+      "rollingInclToday": 3
+    },
+    "the-past-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "rollingToNow": 2,
+      "rollingInclToday": 1
+    },
+    "the-last-30-days@weekMonday|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 2,
+      "toNow": 1
+    },
+    "the-past-month@yearStart|anthropic/claude-opus-4-8": {
+      "rollingToNow": 1,
+      "rollingInclToday": 2
+    },
+    "the-last-30-days@weekWednesday|anthropic/claude-opus-4-8": {
+      "toNow": 1,
+      "countBack30InclToday": 2
+    },
+    "the-last-30-days@monthFirst|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 3
+    },
+    "the-last-30-days@weekSunday|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 3
+    },
+    "the-last-30-days@quarterEnd|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 3
+    },
+    "the-last-30-days@monthLast|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 3
+    },
+    "the-last-30-days@yearStart|anthropic/claude-opus-4-8": {
+      "countBack30InclToday": 3
+    },
+    "this-quarter@yearStart|anthropic/claude-opus-4-8": {
+      "calendarQuarter": 3
+    },
+    "last-quarter@quarterEnd|anthropic/claude-opus-4-8": {
+      "priorCalendarQuarter": 3
+    },
+    "year-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "inclToday": 1,
+      "other": 2
+    },
+    "last-quarter@weekMonday|anthropic/claude-opus-4-8": {
+      "priorCalendarQuarter": 3
+    },
+    "year-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "other": 2,
+      "toInstant": 1
+    },
+    "year-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "toInstant": 1,
+      "other": 2
+    },
+    "year-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "toInstant": 1,
+      "other": 2
+    },
+    "year-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "year-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "year-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "toInstant": 2,
+      "inclToday": 1
+    },
+    "this-year@weekMonday|anthropic/claude-opus-4-8": {
+      "calendarYear": 3
+    },
+    "this-year@monthFirst|anthropic/claude-opus-4-8": {
+      "calendarYear": 3
+    },
+    "this-year@quarterEnd|anthropic/claude-opus-4-8": {
+      "calendarYear": 3
+    },
+    "last-year@weekMonday|anthropic/claude-opus-4-8": {
+      "priorCalendarYear": 3
+    },
+    "last-year@monthFirst|anthropic/claude-opus-4-8": {
+      "priorCalendarYear": 3
+    },
+    "last-year@weekSunday|anthropic/claude-opus-4-8": {
+      "priorCalendarYear": 3
+    },
+    "this-weekend@weekSunday|anthropic/claude-opus-4-8": {
+      "thisWeekSatSun": 3
+    },
+    "last-weekend@yearStart|anthropic/claude-opus-4-8": {
+      "priorWeekSatSun": 3
+    },
+    "the-end-of-the-month@weekMonday|anthropic/claude-opus-4-8": {
+      "finalWeek": 3
+    },
+    "a-week-ago@weekMonday|anthropic/claude-opus-4-8": {
+      "dayMinus7": 3
+    },
+    "the-end-of-the-month@weekSunday|anthropic/claude-opus-4-8": {
+      "finalWeek": 3
+    },
+    "the-end-of-the-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "lastDay=lastBusinessDay": 3
+    },
+    "a-week-ago@weekWednesday|anthropic/claude-opus-4-8": {
+      "instantMinus7": 1,
+      "dayMinus7": 2
+    },
+    "the-end-of-the-month@yearStart|anthropic/claude-opus-4-8": {
+      "finalWeek": 3
+    },
+    "a-week-ago@monthFirst|anthropic/claude-opus-4-8": {
+      "dayMinus7": 2,
+      "instantMinus7": 1
+    },
+    "a-week-ago@quarterEnd|anthropic/claude-opus-4-8": {
+      "instantMinus7": 1,
+      "dayMinus7": 2
+    },
+    "two-weeks-ago@weekMonday|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "two-weeks-ago@weekSunday|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "two-weeks-ago@weekWednesday|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "two-weeks-ago@monthLast|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "two-weeks-ago@quarterEnd|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "two-weeks-ago@yearStart|anthropic/claude-opus-4-8": {
+      "dayMinus14": 3
+    },
+    "the-last-few-days@weekMonday|anthropic/claude-opus-4-8": {
+      "rolling3InclToday": 3
+    },
+    "the-last-few-days@monthLast|anthropic/claude-opus-4-8": {
+      "rolling3InclToday": 3
+    },
+    "the-last-90-days@weekSunday|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-last-90-days@weekMonday|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-last-90-days@weekWednesday|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-last-90-days@monthFirst|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-last-90-days@yearStart|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-last-90-days@quarterEnd|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-last-90-days@monthLast|anthropic/claude-opus-4-8": {
+      "countBack90InclToday": 3
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-opus-4-8": {
+      "other": 3
+    },
+    "month-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "month-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "month-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "month-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "month-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "inclToday": 1,
+      "toInstant": 2
+    },
+    "month-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "month-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "inclToday": 2,
+      "toInstant": 1
+    },
+    "quarter-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "quarter-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "inclToday": 1,
+      "toInstant": 2
+    },
+    "quarter-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "inclToday": 2,
+      "toInstant": 1
+    },
+    "quarter-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "toInstant": 2,
+      "inclToday": 1
+    },
+    "quarter-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "inclToday": 2,
+      "toInstant": 1
+    },
+    "quarter-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "toInstant": 2,
+      "inclToday": 1
+    },
+    "so-far-this-week@weekMonday|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 3
+    },
+    "quarter-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "toInstant": 3
+    },
+    "so-far-this-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@monthFirst|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@monthLast|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 1,
+      "sunWeekInclToday": 1,
+      "other": 1
+    },
+    "so-far-this-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@weekSunday|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 3
+    },
+    "next-week@monthFirst|anthropic/claude-opus-4-8": {
+      "nextMonWeek": 3
+    },
+    "next-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "nextMonWeek": 3
+    },
+    "so-far-this-week@yearStart|anthropic/claude-opus-4-8": {
+      "monWeekToInstant": 2,
+      "other": 1
+    },
+    "next-week@monthLast|anthropic/claude-opus-4-8": {
+      "nextMonWeek": 3
+    },
+    "next-week@yearStart|anthropic/claude-opus-4-8": {
+      "nextMonWeek": 3
+    },
+    "next-month@weekMonday|anthropic/claude-opus-4-8": {
+      "nextCalendarMonth": 3
+    },
+    "the-trailing-twelve-months@weekMonday|anthropic/claude-opus-4-8": {
+      "toNow": 2,
+      "rolling12Months=rolling365": 1
+    },
+    "the-trailing-twelve-months@weekSunday|anthropic/claude-opus-4-8": {
+      "countBack12MonthsInclToday": 2,
+      "rolling12Months=rolling365": 1
+    },
+    "the-trailing-twelve-months@weekWednesday|anthropic/claude-opus-4-8": {
+      "toNow": 2,
+      "rolling12Months=rolling365": 1
+    },
+    "the-trailing-twelve-months@monthFirst|anthropic/claude-opus-4-8": {
+      "countBack12MonthsInclToday": 1,
+      "toNow": 2
+    },
+    "the-trailing-twelve-months@quarterEnd|anthropic/claude-opus-4-8": {
+      "countBack12MonthsInclToday": 3
+    },
+    "the-trailing-twelve-months@yearStart|anthropic/claude-opus-4-8": {
+      "toNow": 1,
+      "countBack12MonthsInclToday": 1,
+      "rolling12Months=rolling365": 1
+    },
+    "the-trailing-twelve-months@monthLast|anthropic/claude-opus-4-8": {
+      "toNow": 1,
+      "countBack12MonthsInclToday": 2
+    },
+    "the-beginning-of-the-month@weekMonday|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 3
+    },
+    "the-beginning-of-the-month@weekWednesday|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 3
+    },
+    "the-beginning-of-the-month@weekSunday|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 3
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-opus-4-8": {
+      "other": 1,
+      "thisMonthFirstWeek": 2
+    },
+    "the-beginning-of-the-month@yearStart|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 3
+    },
+    "the-beginning-of-the-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 2,
+      "other": 1
+    },
+    "by-the-end-of-the-week@weekMonday|anthropic/claude-opus-4-8": {
+      "instantToSunday": 2,
+      "sundayEodPoint": 1
+    },
+    "by-the-end-of-the-week@monthFirst|anthropic/claude-opus-4-8": {
+      "instantToSunday": 3
+    },
+    "by-the-end-of-the-week@monthLast|anthropic/claude-opus-4-8": {
+      "instantToSunday": 3
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "other": 1,
+      "instantToSunday": 2
+    },
+    "by-the-end-of-the-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "instantToSunday": 3
+    },
+    "by-the-end-of-the-week@yearStart|anthropic/claude-opus-4-8": {
+      "instantToSunday": 3
+    },
+    "early-next-week@monthFirst|anthropic/claude-opus-4-8": {
+      "nextMonTue": 3
+    },
+    "the-past-week@yearStart|anthropic/claude-opus-4-8": {
+      "countBack7InclToday": 3
+    },
+    "early-next-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "nextMonTue": 3
+    },
+    "the-beginning-of-the-month@monthLast|anthropic/claude-opus-4-8": {
+      "thisMonthFirstWeek": 3
+    },
+    "last-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorSunWeek": 2,
+      "priorMonWeek": 3
+    },
+    "last-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorMonWeek=rolling7ExclToday": 5
+    },
+    "last-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorMonWeek": 2,
+      "priorSunWeek=rolling7ExclToday": 3
+    },
+    "last-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "priorMonWeek": 3,
+      "priorSunWeek": 2
+    },
+    "last-week@monthLast|anthropic/claude-haiku-4-5": {
+      "priorSunWeek": 4,
+      "priorMonWeek": 1
+    },
+    "this-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "sunWeek": 4,
+      "monWeek": 1
+    },
+    "last-week@yearStart|anthropic/claude-haiku-4-5": {
+      "priorMonWeek": 3,
+      "priorSunWeek": 1,
+      "other": 1
+    },
+    "this-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "monWeek=next7": 3,
+      "sunWeek": 2
+    },
+    "this-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "monWeek": 1,
+      "sunWeek": 4
+    },
+    "last-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "priorSunWeek": 3,
+      "priorMonWeek": 2
+    },
+    "this-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "sunWeek=next7": 3,
+      "monWeek=weekToDate": 2
+    },
+    "this-week@monthLast|anthropic/claude-haiku-4-5": {
+      "monWeek": 2,
+      "sunWeek": 3
+    },
+    "this-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "sunWeek": 4,
+      "monWeek": 1
+    },
+    "the-past-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "rolling7ExclToday=priorMonWeek": 4,
+      "rolling7InclToday": 1
+    },
+    "this-week@yearStart|anthropic/claude-haiku-4-5": {
+      "monWeek": 2,
+      "sunWeek": 3
+    },
+    "the-past-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "rolling7InclToday": 2,
+      "rolling7ExclToday": 3
+    },
+    "the-past-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "countBack7InclToday": 1,
+      "rolling7ExclToday": 3,
+      "rolling7ToNow": 1
+    },
+    "the-past-week@monthLast|anthropic/claude-haiku-4-5": {
+      "countBack7InclToday": 5
+    },
+    "the-past-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "other": 1,
+      "rolling7ExclToday": 3,
+      "countBack7InclToday": 1
+    },
+    "last-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "the-past-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "countBack7InclToday": 4,
+      "rolling7ExclToday": 1
+    },
+    "the-past-week@yearStart|anthropic/claude-haiku-4-5": {
+      "rolling7ExclToday": 3,
+      "countBack7InclToday": 2
+    },
+    "last-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth=rolling30ExclToday=rollingCalMonthBack": 5
+    },
+    "last-month@monthLast|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "this-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "calendarMonth": 5
+    },
+    "this-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "calendarMonth": 5
+    },
+    "last-month@yearStart|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "this-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "calendarMonth": 5
+    },
+    "this-month@monthLast|anthropic/claude-haiku-4-5": {
+      "calendarMonth=monthToDate": 5
+    },
+    "this-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "calendarMonth": 5
+    },
+    "this-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "calendarMonth=monthToDate": 5
+    },
+    "this-month@yearStart|anthropic/claude-haiku-4-5": {
+      "calendarMonth": 5
+    },
+    "the-past-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 4,
+      "rollingInclToday": 1
+    },
+    "the-past-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "the-past-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "rollingCalMonthBack=rolling30ExclToday=priorCalendarMonth": 5
+    },
+    "the-past-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 3,
+      "rollingInclToday": 2
+    },
+    "the-past-month@monthLast|anthropic/claude-haiku-4-5": {
+      "monthToDate": 4,
+      "rollingInclToday": 1
+    },
+    "the-past-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "rollingCalMonthBack": 1,
+      "monthToDate": 4
+    },
+    "the-past-month@yearStart|anthropic/claude-haiku-4-5": {
+      "priorCalendarMonth": 5
+    },
+    "the-last-30-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "countBack30InclToday": 5
+    },
+    "the-last-30-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "countBack30InclToday": 5
+    },
+    "the-last-30-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "toNow": 2,
+      "exclToday": 2,
+      "countBack30InclToday": 1
+    },
+    "the-last-30-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "countBack30InclToday": 5
+    },
+    "the-last-30-days@monthLast|anthropic/claude-haiku-4-5": {
+      "other": 2,
+      "inclToday": 1,
+      "countBack30InclToday": 2
+    },
+    "last-quarter@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@monthFirst|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter=rolling3Months": 5
+    },
+    "last-quarter@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@quarterEnd|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@yearStart|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "the-last-30-days@yearStart|anthropic/claude-haiku-4-5": {
+      "exclToday": 1,
+      "countBack30InclToday": 4
+    },
+    "the-last-30-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "countBack30InclToday": 3,
+      "inclToday": 2
+    },
+    "last-quarter@monthLast|anthropic/claude-haiku-4-5": {
+      "priorCalendarQuarter": 5
+    },
+    "this-quarter@weekWednesday|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@monthFirst|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@weekMonday|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@monthLast|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@weekSunday|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@quarterEnd|anthropic/claude-haiku-4-5": {
+      "calendarQuarter=quarterToDate": 5
+    },
+    "year-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "inclToday": 4,
+      "toInstant": 1
+    },
+    "year-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "this-quarter@yearStart|anthropic/claude-haiku-4-5": {
+      "calendarQuarter": 5
+    },
+    "year-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "year-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "year-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "year-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "year-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "this-year@weekWednesday|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@weekSunday|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@weekMonday|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@monthLast|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@monthFirst|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@yearStart|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "this-year@quarterEnd|anthropic/claude-haiku-4-5": {
+      "calendarYear": 5
+    },
+    "last-year@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@monthLast|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@monthFirst|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@yearStart|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "last-year@quarterEnd|anthropic/claude-haiku-4-5": {
+      "priorCalendarYear": 5
+    },
+    "this-weekend@weekMonday|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@weekWednesday|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@monthLast|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@monthFirst|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@yearStart|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@quarterEnd|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@weekSunday|anthropic/claude-haiku-4-5": {
+      "thisWeekSatSun": 4,
+      "nextWeekSatSun": 1
+    },
+    "last-weekend@monthLast|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@weekMonday|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@weekWednesday|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@monthFirst|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "the-end-of-the-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 4,
+      "finalWeek": 1
+    },
+    "last-weekend@weekSunday|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@yearStart|anthropic/claude-haiku-4-5": {
+      "other": 2,
+      "priorWeekSatSun": 3
+    },
+    "last-weekend@quarterEnd|anthropic/claude-haiku-4-5": {
+      "priorWeekSatSun": 5
+    },
+    "the-end-of-the-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@monthLast|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 4,
+      "finalWeek": 1
+    },
+    "the-end-of-the-month@yearStart|anthropic/claude-haiku-4-5": {
+      "lastDay": 5
+    },
+    "the-end-of-the-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "a-week-ago@monthLast|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@weekSunday|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@monthFirst|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 4,
+      "dayMinus7": 1
+    },
+    "a-week-ago@weekMonday|anthropic/claude-haiku-4-5": {
+      "dayMinus7": 1,
+      "instantMinus7": 4
+    },
+    "a-week-ago@weekWednesday|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 4,
+      "dayMinus7": 1
+    },
+    "a-week-ago@quarterEnd|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 4,
+      "dayMinus7": 1
+    },
+    "a-week-ago@yearStart|anthropic/claude-haiku-4-5": {
+      "instantMinus7": 5
+    },
+    "two-weeks-ago@weekMonday|anthropic/claude-haiku-4-5": {
+      "instantMinus14": 3,
+      "dayMinus14": 2
+    },
+    "two-weeks-ago@weekSunday|anthropic/claude-haiku-4-5": {
+      "dayMinus14": 2,
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@monthFirst|anthropic/claude-haiku-4-5": {
+      "instantMinus14": 5
+    },
+    "two-weeks-ago@quarterEnd|anthropic/claude-haiku-4-5": {
+      "dayMinus14": 2,
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@monthLast|anthropic/claude-haiku-4-5": {
+      "instantMinus14": 3,
+      "dayMinus14": 2
+    },
+    "two-weeks-ago@weekWednesday|anthropic/claude-haiku-4-5": {
+      "instantMinus14": 4,
+      "dayMinus14": 1
+    },
+    "two-weeks-ago@yearStart|anthropic/claude-haiku-4-5": {
+      "instantMinus14": 4,
+      "dayMinus14": 1
+    },
+    "the-last-few-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 4,
+      "rolling3": 1
+    },
+    "the-last-few-days@monthLast|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 4,
+      "other": 1
+    },
+    "the-last-few-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@yearStart|anthropic/claude-haiku-4-5": {
+      "rolling3InclToday": 5
+    },
+    "the-last-90-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "countBack90InclToday": 5
+    },
+    "the-last-90-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "countBack90InclToday": 3,
+      "exclToday": 1,
+      "toNow": 1
+    },
+    "the-last-90-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "countBack90InclToday": 5
+    },
+    "the-last-90-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "toNow": 1,
+      "countBack90InclToday": 4
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-haiku-4-5": {
+      "toNow": 3,
+      "other": 2
+    },
+    "the-last-90-days@monthLast|anthropic/claude-haiku-4-5": {
+      "inclToday": 2,
+      "countBack90InclToday": 3
+    },
+    "the-last-90-days@yearStart|anthropic/claude-haiku-4-5": {
+      "inclToday": 1,
+      "countBack90InclToday": 1,
+      "exclToday": 2,
+      "toNow": 1
+    },
+    "the-last-90-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "toNow": 1,
+      "countBack90InclToday": 4
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-haiku-4-5": {
+      "toNow": 4,
+      "other": 1
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-haiku-4-5": {
+      "toNow": 4,
+      "other": 1
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-haiku-4-5": {
+      "toNow": 4,
+      "other": 1
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-haiku-4-5": {
+      "toNow": 4,
+      "other": 1
+    },
+    "month-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "month-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-haiku-4-5": {
+      "other": 2,
+      "toNow": 3
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-haiku-4-5": {
+      "other": 3,
+      "toNow": 2
+    },
+    "month-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "month-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "month-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "month-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "quarter-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "inclToday": 4,
+      "toInstant": 1
+    },
+    "month-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "quarter-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "quarter-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "quarter-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "quarter-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "inclToday": 4,
+      "toInstant": 1
+    },
+    "quarter-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "inclToday": 4,
+      "none": 1
+    },
+    "quarter-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "inclToday": 5
+    },
+    "so-far-this-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 2,
+      "monWeekToInstant": 1,
+      "other": 2
+    },
+    "so-far-this-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 4,
+      "monWeekToInstant": 1
+    },
+    "so-far-this-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 4,
+      "monWeekToInstant": 1
+    },
+    "so-far-this-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "monWeekToInstant": 2,
+      "other": 3
+    },
+    "next-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 5
+    },
+    "so-far-this-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 5
+    },
+    "next-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 4,
+      "nextSunWeek": 1
+    },
+    "so-far-this-week@monthLast|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 5
+    },
+    "so-far-this-week@yearStart|anthropic/claude-haiku-4-5": {
+      "sunWeekInclToday": 3,
+      "other": 1,
+      "monWeekToInstant": 1
+    },
+    "next-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "nextMonWeek=rolling7Forward": 5
+    },
+    "next-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 4,
+      "nextSunWeek": 1
+    },
+    "next-week@monthLast|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 4,
+      "nextSunWeek": 1
+    },
+    "next-week@yearStart|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 4,
+      "nextSunWeek": 1
+    },
+    "next-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "nextMonWeek": 5
+    },
+    "next-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@yearStart|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@monthLast|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth=rollingMonthFromTomorrow": 5
+    },
+    "next-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "nextCalendarMonth=rollingMonthFromTomorrow": 5
+    },
+    "the-trailing-twelve-months@weekWednesday|anthropic/claude-haiku-4-5": {
+      "toNow": 1,
+      "rolling12Months=rolling365": 1,
+      "countBack12MonthsInclToday": 3
+    },
+    "the-trailing-twelve-months@monthFirst|anthropic/claude-haiku-4-5": {
+      "countBack12MonthsInclToday": 1,
+      "rolling12Months=last12CompleteMonths=rolling365": 4
+    },
+    "the-trailing-twelve-months@weekMonday|anthropic/claude-haiku-4-5": {
+      "rolling12Months=rolling365": 3,
+      "toNow": 1,
+      "countBack12MonthsInclToday": 1
+    },
+    "the-trailing-twelve-months@weekSunday|anthropic/claude-haiku-4-5": {
+      "countBack12MonthsInclToday": 5
+    },
+    "the-trailing-twelve-months@monthLast|anthropic/claude-haiku-4-5": {
+      "countBack12MonthsInclToday": 5
+    },
+    "the-trailing-twelve-months@quarterEnd|anthropic/claude-haiku-4-5": {
+      "rolling12Months=rolling365": 1,
+      "countBack12MonthsInclToday": 4
+    },
+    "the-beginning-of-the-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstDay": 2,
+      "other": 2,
+      "thisMonthFirstWeek": 1
+    },
+    "the-trailing-twelve-months@yearStart|anthropic/claude-haiku-4-5": {
+      "countBack12MonthsInclToday": 1,
+      "toNow": 1,
+      "rolling12Months=rolling365": 3
+    },
+    "the-beginning-of-the-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstWeek": 1,
+      "thisMonthFirstDay": 4
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstWeek": 2,
+      "thisMonthFirstDay": 2,
+      "other": 1
+    },
+    "the-beginning-of-the-month@monthLast|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstDay": 4,
+      "thisMonthFirstWeek": 1
+    },
+    "the-beginning-of-the-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstWeek": 2,
+      "thisMonthFirstDay": 3
+    },
+    "the-beginning-of-the-month@yearStart|anthropic/claude-haiku-4-5": {
+      "thisMonthFirstWeek": 4,
+      "other": 1
+    },
+    "by-the-end-of-the-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "nowToFriday": 3,
+      "other": 1,
+      "instantToSunday": 1
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "other": 2,
+      "nowToSunday": 1,
+      "nowToFriday": 2
+    },
+    "by-the-end-of-the-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "other": 5
+    },
+    "by-the-end-of-the-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "other": 2,
+      "instantToSunday": 1,
+      "nowToFriday": 2
+    },
+    "by-the-end-of-the-week@monthLast|anthropic/claude-haiku-4-5": {
+      "other": 3,
+      "nowToSunday": 1,
+      "instantToSunday": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "instantToSunday": 1,
+      "other": 2,
+      "nowToFriday": 1,
+      "nowToSunday": 1
+    },
+    "early-next-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "early-next-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "nextMonTue": 1,
+      "nextMonWed": 4
+    },
+    "by-the-end-of-the-week@yearStart|anthropic/claude-haiku-4-5": {
+      "nowToSunday": 2,
+      "instantToSunday": 3
+    },
+    "early-next-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "early-next-week@monthLast|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "early-next-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "early-next-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "early-next-week@yearStart|anthropic/claude-haiku-4-5": {
+      "nextMonWed": 5
+    },
+    "last-week@quarterEnd|openai/gpt-5.5": {
+      "priorMonWeek": 3
+    },
+    "last-week@weekWednesday|openai/gpt-5.5": {
+      "priorMonWeek": 3
+    },
+    "last-week@monthFirst|openai/gpt-5.5": {
+      "priorMonWeek": 3
+    },
+    "last-week@monthLast|openai/gpt-5.5": {
+      "priorMonWeek": 3
+    },
+    "last-week@weekSunday|openai/gpt-5.5": {
+      "priorSunWeek=rolling7ExclToday": 1,
+      "priorMonWeek": 2
+    },
+    "last-week@yearStart|openai/gpt-5.5": {
+      "priorMonWeek": 3
+    },
+    "this-week@weekMonday|openai/gpt-5.5": {
+      "monWeek=next7": 3
+    },
+    "this-week@weekWednesday|openai/gpt-5.5": {
+      "sunWeek": 2,
+      "monWeek": 1
+    },
+    "this-week@weekSunday|openai/gpt-5.5": {
+      "sunWeek=next7": 3
+    },
+    "this-week@monthLast|openai/gpt-5.5": {
+      "monWeek": 3
+    },
+    "this-week@quarterEnd|openai/gpt-5.5": {
+      "monWeek": 3
+    },
+    "this-week@monthFirst|openai/gpt-5.5": {
+      "monWeek": 3
+    },
+    "the-past-week@weekMonday|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "this-week@yearStart|openai/gpt-5.5": {
+      "sunWeek": 2,
+      "monWeek": 1
+    },
+    "the-past-week@weekWednesday|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "the-past-week@weekSunday|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "the-past-week@monthFirst|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "the-past-week@monthLast|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "the-past-week@quarterEnd|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "last-month@monthLast|openai/gpt-5.5": {
+      "priorCalendarMonth": 2,
+      "other": 1
+    },
+    "the-past-week@yearStart|openai/gpt-5.5": {
+      "rolling7ToNow": 3
+    },
+    "the-past-month@weekMonday|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@weekWednesday|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@weekSunday|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@monthLast|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@monthFirst|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@quarterEnd|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-past-month@yearStart|openai/gpt-5.5": {
+      "rollingToNow": 3
+    },
+    "the-last-30-days@weekWednesday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-30-days@weekSunday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-30-days@weekMonday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-30-days@monthLast|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-30-days@monthFirst|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-30-days@quarterEnd|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "last-quarter@weekMonday|openai/gpt-5.5": {
+      "priorCalendarQuarter": 3
+    },
+    "the-last-30-days@yearStart|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "this-quarter@yearStart|openai/gpt-5.5": {
+      "calendarQuarter": 3
+    },
+    "last-quarter@quarterEnd|openai/gpt-5.5": {
+      "priorCalendarQuarter": 3
+    },
+    "year-to-date@weekWednesday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@weekMonday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@weekSunday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@monthFirst|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@yearStart|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@quarterEnd|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "year-to-date@monthLast|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "this-year@weekMonday|openai/gpt-5.5": {
+      "calendarYear": 3
+    },
+    "this-year@monthFirst|openai/gpt-5.5": {
+      "calendarYear": 3
+    },
+    "this-year@quarterEnd|openai/gpt-5.5": {
+      "calendarYear": 3
+    },
+    "last-year@weekMonday|openai/gpt-5.5": {
+      "priorCalendarYear": 3
+    },
+    "last-year@weekSunday|openai/gpt-5.5": {
+      "priorCalendarYear": 3
+    },
+    "last-year@monthFirst|openai/gpt-5.5": {
+      "priorCalendarYear": 3
+    },
+    "last-weekend@yearStart|openai/gpt-5.5": {
+      "priorWeekSatSun": 3
+    },
+    "this-weekend@weekSunday|openai/gpt-5.5": {
+      "thisWeekSatSun": 3
+    },
+    "the-end-of-the-month@weekMonday|openai/gpt-5.5": {
+      "lastDay=lastBusinessDay": 3
+    },
+    "the-end-of-the-month@weekSunday|openai/gpt-5.5": {
+      "lastDay=lastBusinessDay": 3
+    },
+    "the-end-of-the-month@quarterEnd|openai/gpt-5.5": {
+      "lastDay=lastBusinessDay": 3
+    },
+    "a-week-ago@weekMonday|openai/gpt-5.5": {
+      "instantMinus7": 3
+    },
+    "a-week-ago@weekWednesday|openai/gpt-5.5": {
+      "instantMinus7": 3
+    },
+    "a-week-ago@monthFirst|openai/gpt-5.5": {
+      "instantMinus7": 3
+    },
+    "the-end-of-the-month@yearStart|openai/gpt-5.5": {
+      "lastDay": 3
+    },
+    "a-week-ago@quarterEnd|openai/gpt-5.5": {
+      "instantMinus7": 3
+    },
+    "two-weeks-ago@weekMonday|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@weekWednesday|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@weekSunday|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@monthLast|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@quarterEnd|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@yearStart|openai/gpt-5.5": {
+      "instantMinus14": 3
+    },
+    "the-last-few-days@weekMonday|openai/gpt-5.5": {
+      "rolling3InclToday": 3
+    },
+    "the-last-few-days@monthLast|openai/gpt-5.5": {
+      "rolling3InclToday": 3
+    },
+    "the-last-90-days@weekMonday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-90-days@weekWednesday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-90-days@weekSunday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-90-days@monthLast|openai/gpt-5.5": {
+      "toNow": 2,
+      "countBack90InclToday": 1
+    },
+    "the-last-90-days@monthFirst|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-last-90-days@quarterEnd|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@weekMonday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@weekWednesday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@weekSunday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@monthFirst|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@monthLast|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@quarterEnd|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-past-24-hours@yearStart|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "month-to-date@weekWednesday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "month-to-date@weekMonday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "month-to-date@weekSunday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "month-to-date@monthFirst|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.5": {
+      "toNow": 2,
+      "other": 1
+    },
+    "month-to-date@monthLast|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "month-to-date@quarterEnd|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "month-to-date@yearStart|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@weekMonday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@weekWednesday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@weekSunday|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@monthFirst|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@yearStart|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "quarter-to-date@monthLast|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "so-far-this-week@weekMonday|openai/gpt-5.5": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@weekWednesday|openai/gpt-5.5": {
+      "monWeekToInstant": 3
+    },
+    "quarter-to-date@quarterEnd|openai/gpt-5.5": {
+      "toInstant": 3
+    },
+    "so-far-this-week@monthFirst|openai/gpt-5.5": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@quarterEnd|openai/gpt-5.5": {
+      "monWeekToInstant": 3
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.5": {
+      "monWeekToInstant": 1,
+      "other": 2
+    },
+    "so-far-this-week@yearStart|openai/gpt-5.5": {
+      "sunWeekInclToday": 1,
+      "monWeekToInstant": 2
+    },
+    "next-week@weekWednesday|openai/gpt-5.5": {
+      "nextMonWeek": 3
+    },
+    "next-week@monthFirst|openai/gpt-5.5": {
+      "nextMonWeek": 3
+    },
+    "next-week@monthLast|openai/gpt-5.5": {
+      "nextMonWeek": 3
+    },
+    "next-month@weekMonday|openai/gpt-5.5": {
+      "nextCalendarMonth": 3
+    },
+    "next-week@yearStart|openai/gpt-5.5": {
+      "nextMonWeek": 3
+    },
+    "the-trailing-twelve-months@weekMonday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-trailing-twelve-months@weekWednesday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-trailing-twelve-months@weekSunday|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-trailing-twelve-months@monthFirst|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-trailing-twelve-months@monthLast|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "so-far-this-week@monthLast|openai/gpt-5.5": {
+      "sunWeekInclToday": 1,
+      "monWeekToInstant": 2
+    },
+    "the-trailing-twelve-months@yearStart|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-trailing-twelve-months@quarterEnd|openai/gpt-5.5": {
+      "toNow": 3
+    },
+    "the-beginning-of-the-month@weekSunday|openai/gpt-5.5": {
+      "thisMonthFirstDay": 3
+    },
+    "the-beginning-of-the-month@weekWednesday|openai/gpt-5.5": {
+      "thisMonthFirstDay": 3
+    },
+    "the-beginning-of-the-month@monthLast|openai/gpt-5.5": {
+      "thisMonthFirstDay": 3
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.5": {
+      "other": 1,
+      "thisMonthFirstDay": 2
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.5": {
+      "thisMonthFirstDay": 1,
+      "other": 2
+    },
+    "the-beginning-of-the-month@yearStart|openai/gpt-5.5": {
+      "thisMonthFirstDay": 3
+    },
+    "the-beginning-of-the-month@quarterEnd|openai/gpt-5.5": {
+      "thisMonthFirstDay": 3
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.5": {
+      "other": 2,
+      "sundayEodPoint": 1
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.5": {
+      "instantToSunday": 1,
+      "other": 2
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.5": {
+      "sundayEodPoint": 2,
+      "other": 1
+    },
+    "early-next-week@weekWednesday|openai/gpt-5.5": {
+      "nextMonWed": 3
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.5": {
+      "instantToSunday": 1,
+      "other": 2
+    },
+    "early-next-week@monthFirst|openai/gpt-5.5": {
+      "nextMonWed": 2,
+      "nextMonTue": 1
+    },
+    "by-the-end-of-the-week@yearStart|openai/gpt-5.5": {
+      "other": 3
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.5": {
+      "other": 3
+    },
+    "last-week@monthLast|openai/gpt-5.4-mini": {
+      "priorMonWeek": 5
+    },
+    "last-week@monthFirst|openai/gpt-5.4-mini": {
+      "priorMonWeek": 5
+    },
+    "last-week@weekSunday|openai/gpt-5.4-mini": {
+      "priorMonWeek": 3,
+      "priorSunWeek=rolling7ExclToday": 2
+    },
+    "last-week@weekMonday|openai/gpt-5.4-mini": {
+      "priorMonWeek=rolling7ExclToday": 5
+    },
+    "last-week@weekWednesday|openai/gpt-5.4-mini": {
+      "priorMonWeek": 5
+    },
+    "last-week@quarterEnd|openai/gpt-5.4-mini": {
+      "priorMonWeek": 5
+    },
+    "last-week@yearStart|openai/gpt-5.4-mini": {
+      "priorMonWeek": 5
+    },
+    "this-week@weekSunday|openai/gpt-5.4-mini": {
+      "sunWeek=next7": 5
+    },
+    "this-week@weekMonday|openai/gpt-5.4-mini": {
+      "monWeek=next7": 5
+    },
+    "this-week@monthLast|openai/gpt-5.4-mini": {
+      "sunWeek": 2,
+      "monWeek": 3
+    },
+    "this-week@monthFirst|openai/gpt-5.4-mini": {
+      "monWeek": 2,
+      "sunWeek": 3
+    },
+    "this-week@weekWednesday|openai/gpt-5.4-mini": {
+      "monWeek": 5
+    },
+    "this-week@quarterEnd|openai/gpt-5.4-mini": {
+      "sunWeek": 2,
+      "monWeek": 3
+    },
+    "this-week@yearStart|openai/gpt-5.4-mini": {
+      "sunWeek": 3,
+      "monWeek": 2
+    },
+    "the-past-week@weekMonday|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "the-past-week@monthFirst|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "the-past-week@weekWednesday|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "the-past-week@quarterEnd|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "the-past-week@monthLast|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "last-month@weekMonday|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 5
+    },
+    "the-past-week@yearStart|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "last-month@weekWednesday|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@weekSunday|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@monthFirst|openai/gpt-5.4-mini": {
+      "priorCalendarMonth=rolling30ExclToday=rollingCalMonthBack": 5
+    },
+    "last-month@quarterEnd|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@yearStart|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 5
+    },
+    "last-month@monthLast|openai/gpt-5.4-mini": {
+      "priorCalendarMonth": 4,
+      "other": 1
+    },
+    "the-past-week@weekSunday|openai/gpt-5.4-mini": {
+      "rolling7ToNow": 5
+    },
+    "this-month@weekWednesday|openai/gpt-5.4-mini": {
+      "calendarMonth": 5
+    },
+    "this-month@monthFirst|openai/gpt-5.4-mini": {
+      "calendarMonth": 5
+    },
+    "this-month@monthLast|openai/gpt-5.4-mini": {
+      "calendarMonth=monthToDate": 5
+    },
+    "this-month@weekSunday|openai/gpt-5.4-mini": {
+      "calendarMonth": 5
+    },
+    "this-month@weekMonday|openai/gpt-5.4-mini": {
+      "calendarMonth": 5
+    },
+    "this-month@quarterEnd|openai/gpt-5.4-mini": {
+      "calendarMonth=monthToDate": 5
+    },
+    "this-month@yearStart|openai/gpt-5.4-mini": {
+      "calendarMonth": 5
+    },
+    "the-past-month@weekMonday|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-past-month@weekSunday|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-past-month@weekWednesday|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-past-month@monthFirst|openai/gpt-5.4-mini": {
+      "rollingCalMonthBack=rolling30ExclToday=priorCalendarMonth": 1,
+      "rollingToNow": 4
+    },
+    "the-past-month@monthLast|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-past-month@yearStart|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-last-30-days@weekMonday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-30-days@weekSunday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-30-days@monthLast|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-30-days@monthFirst|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-month@quarterEnd|openai/gpt-5.4-mini": {
+      "rollingToNow": 5
+    },
+    "the-last-30-days@quarterEnd|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "last-quarter@weekMonday|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 4,
+      "other": 1
+    },
+    "the-last-30-days@weekWednesday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "last-quarter@weekWednesday|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 5
+    },
+    "the-last-30-days@yearStart|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "last-quarter@monthLast|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@yearStart|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 5
+    },
+    "last-quarter@quarterEnd|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 4,
+      "other": 1
+    },
+    "last-quarter@monthFirst|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter=rolling3Months": 5
+    },
+    "last-quarter@weekSunday|openai/gpt-5.4-mini": {
+      "priorCalendarQuarter": 5
+    },
+    "this-quarter@weekWednesday|openai/gpt-5.4-mini": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@weekMonday|openai/gpt-5.4-mini": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@monthFirst|openai/gpt-5.4-mini": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@monthLast|openai/gpt-5.4-mini": {
+      "calendarQuarter": 5
+    },
+    "this-quarter@yearStart|openai/gpt-5.4-mini": {
+      "other": 2,
+      "calendarQuarter": 3
+    },
+    "this-quarter@quarterEnd|openai/gpt-5.4-mini": {
+      "calendarQuarter=quarterToDate": 5
+    },
+    "this-quarter@weekSunday|openai/gpt-5.4-mini": {
+      "calendarQuarter": 5
+    },
+    "year-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "year-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "year-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "year-to-date@monthLast|openai/gpt-5.4-mini": {
+      "toInstant": 4,
+      "other": 1
+    },
+    "year-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "toInstant": 4,
+      "other": 1
+    },
+    "year-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "toInstant": 4,
+      "other": 1
+    },
+    "this-year@weekMonday|openai/gpt-5.4-mini": {
+      "calendarYear": 3,
+      "other": 2
+    },
+    "year-to-date@yearStart|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "this-year@quarterEnd|openai/gpt-5.4-mini": {
+      "calendarYear": 4,
+      "other": 1
+    },
+    "this-year@monthFirst|openai/gpt-5.4-mini": {
+      "calendarYear": 4,
+      "other": 1
+    },
+    "this-year@weekSunday|openai/gpt-5.4-mini": {
+      "calendarYear": 5
+    },
+    "this-year@monthLast|openai/gpt-5.4-mini": {
+      "calendarYear": 5
+    },
+    "this-year@weekWednesday|openai/gpt-5.4-mini": {
+      "calendarYear": 5
+    },
+    "last-year@weekMonday|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 4,
+      "other": 1
+    },
+    "this-year@yearStart|openai/gpt-5.4-mini": {
+      "calendarYear": 5
+    },
+    "last-year@weekWednesday|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 5
+    },
+    "last-year@quarterEnd|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 5
+    },
+    "last-year@monthFirst|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 2,
+      "other": 3
+    },
+    "last-year@weekSunday|openai/gpt-5.4-mini": {
+      "other": 1,
+      "priorCalendarYear": 4
+    },
+    "last-year@monthLast|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 5
+    },
+    "this-weekend@weekWednesday|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@weekMonday|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "last-year@yearStart|openai/gpt-5.4-mini": {
+      "priorCalendarYear": 5
+    },
+    "this-weekend@monthLast|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@monthFirst|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@weekSunday|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@quarterEnd|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "this-weekend@yearStart|openai/gpt-5.4-mini": {
+      "thisWeekSatSun": 5
+    },
+    "last-weekend@weekWednesday|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@weekMonday|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@monthFirst|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@weekSunday|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@quarterEnd|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@yearStart|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "last-weekend@monthLast|openai/gpt-5.4-mini": {
+      "priorWeekSatSun": 5
+    },
+    "the-end-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "lastDay=lastBusinessDay": 4,
+      "other": 1
+    },
+    "the-end-of-the-month@weekWednesday|openai/gpt-5.4-mini": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@monthFirst|openai/gpt-5.4-mini": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@monthLast|openai/gpt-5.4-mini": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "the-end-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "other": 1,
+      "lastDay=lastBusinessDay": 4
+    },
+    "the-end-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "lastDay": 4,
+      "other": 1
+    },
+    "the-end-of-the-month@quarterEnd|openai/gpt-5.4-mini": {
+      "lastDay=lastBusinessDay": 5
+    },
+    "a-week-ago@weekWednesday|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@weekMonday|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@monthFirst|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@monthLast|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@yearStart|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@quarterEnd|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "a-week-ago@weekSunday|openai/gpt-5.4-mini": {
+      "instantMinus7": 5
+    },
+    "two-weeks-ago@weekMonday|openai/gpt-5.4-mini": {
+      "dayMinus14": 2,
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@weekSunday|openai/gpt-5.4-mini": {
+      "instantMinus14": 3,
+      "dayMinus14": 2
+    },
+    "two-weeks-ago@monthLast|openai/gpt-5.4-mini": {
+      "dayMinus14": 2,
+      "instantMinus14": 3
+    },
+    "two-weeks-ago@weekWednesday|openai/gpt-5.4-mini": {
+      "instantMinus14": 4,
+      "dayMinus14": 1
+    },
+    "two-weeks-ago@monthFirst|openai/gpt-5.4-mini": {
+      "instantMinus14": 5
+    },
+    "two-weeks-ago@yearStart|openai/gpt-5.4-mini": {
+      "dayMinus14": 2,
+      "instantMinus14": 3
+    },
+    "the-last-few-days@weekSunday|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@weekMonday|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@weekWednesday|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@monthFirst|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-few-days@quarterEnd|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-90-days@weekMonday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "two-weeks-ago@quarterEnd|openai/gpt-5.4-mini": {
+      "instantMinus14": 4,
+      "dayMinus14": 1
+    },
+    "the-last-few-days@yearStart|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    },
+    "the-last-90-days@weekWednesday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-90-days@weekSunday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-90-days@monthFirst|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-last-90-days@monthLast|openai/gpt-5.4-mini": {
+      "countBack90InclToday": 3,
+      "toNow": 2
+    },
+    "the-last-90-days@quarterEnd|openai/gpt-5.4-mini": {
+      "toNow": 4,
+      "other": 1
+    },
+    "the-past-24-hours@weekMonday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@weekSunday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@weekWednesday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@monthFirst|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@monthLast|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@quarterEnd|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-past-24-hours@yearStart|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "month-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@monthLast|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "month-to-date@yearStart|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@monthLast|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "quarter-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "so-far-this-week@weekMonday|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 5
+    },
+    "quarter-to-date@yearStart|openai/gpt-5.4-mini": {
+      "toInstant": 5
+    },
+    "so-far-this-week@monthFirst|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 4,
+      "sunWeekInclToday": 1
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 4,
+      "other": 1
+    },
+    "so-far-this-week@weekWednesday|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 5
+    },
+    "so-far-this-week@monthLast|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 4,
+      "sunWeekInclToday": 1
+    },
+    "so-far-this-week@quarterEnd|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 5
+    },
+    "next-week@weekMonday|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "so-far-this-week@yearStart|openai/gpt-5.4-mini": {
+      "monWeekToInstant": 5
+    },
+    "next-week@weekWednesday|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "next-week@weekSunday|openai/gpt-5.4-mini": {
+      "nextMonWeek=rolling7Forward": 5
+    },
+    "next-week@monthFirst|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "next-week@monthLast|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "next-week@yearStart|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "next-month@weekMonday|openai/gpt-5.4-mini": {
+      "nextCalendarMonth": 4,
+      "other": 1
+    },
+    "next-week@quarterEnd|openai/gpt-5.4-mini": {
+      "nextMonWeek": 5
+    },
+    "next-month@weekWednesday|openai/gpt-5.4-mini": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@weekSunday|openai/gpt-5.4-mini": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@monthFirst|openai/gpt-5.4-mini": {
+      "nextCalendarMonth": 5
+    },
+    "next-month@monthLast|openai/gpt-5.4-mini": {
+      "nextCalendarMonth=rollingMonthFromTomorrow": 5
+    },
+    "next-month@quarterEnd|openai/gpt-5.4-mini": {
+      "nextCalendarMonth=rollingMonthFromTomorrow": 5
+    },
+    "next-month@yearStart|openai/gpt-5.4-mini": {
+      "nextCalendarMonth": 5
+    },
+    "the-trailing-twelve-months@weekMonday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@weekSunday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@weekWednesday|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@monthFirst|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@monthLast|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@quarterEnd|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-trailing-twelve-months@yearStart|openai/gpt-5.4-mini": {
+      "toNow": 5
+    },
+    "the-beginning-of-the-month@weekWednesday|openai/gpt-5.4-mini": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.4-mini": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "other": 1,
+      "thisMonthFirstDay": 4
+    },
+    "the-beginning-of-the-month@monthLast|openai/gpt-5.4-mini": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@quarterEnd|openai/gpt-5.4-mini": {
+      "thisMonthFirstDay": 4,
+      "other": 1
+    },
+    "the-beginning-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "other": 4,
+      "thisMonthFirstDay": 1
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.4-mini": {
+      "sundayEodPoint": 2,
+      "sundayPoint": 2,
+      "other": 1
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.4-mini": {
+      "other": 2,
+      "sundayEodPoint": 3
+    },
+    "by-the-end-of-the-week@weekSunday|openai/gpt-5.4-mini": {
+      "other": 5
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.4-mini": {
+      "sundayEodPoint": 4,
+      "other": 1
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.4-mini": {
+      "sundayPoint": 1,
+      "sundayEodPoint": 3,
+      "other": 1
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.4-mini": {
+      "other": 2,
+      "sundayEodPoint": 2,
+      "sundayPoint": 1
+    },
+    "early-next-week@weekMonday|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "early-next-week@weekWednesday|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "by-the-end-of-the-week@yearStart|openai/gpt-5.4-mini": {
+      "sundayEodPoint": 5
+    },
+    "early-next-week@monthFirst|openai/gpt-5.4-mini": {
+      "nextMonWed": 4,
+      "nextMonTue": 1
+    },
+    "early-next-week@weekSunday|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "early-next-week@monthLast|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "early-next-week@quarterEnd|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "early-next-week@yearStart|openai/gpt-5.4-mini": {
+      "nextMonWed": 5
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.4-mini": {
+      "toNow": 3,
+      "other": 2
+    },
+    "the-last-few-days@monthLast|openai/gpt-5.4-mini": {
+      "rolling3InclToday": 5
+    }
+  },
+  "otherDetails": {
+    "year-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Jun 10 2026 14:00": 2
+    },
+    "year-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Apr 30 2026 15:00": 3
+    },
+    "year-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Jun 30 2026 11:00": 3
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-opus-4-8": {
+      "Jun 7 2026 09:00 → Jun 8 2026 09:01": 3
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-opus-4-8": {
+      "Jun 9 2026 14:00 → Jun 10 2026 14:01": 3
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-opus-4-8": {
+      "Jun 13 2026 13:00 → Jun 14 2026 13:01": 3
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-opus-4-8": {
+      "Jun 30 2026 10:00 → Jul 1 2026 10:01": 3
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-opus-4-8": {
+      "Apr 29 2026 15:00 → Apr 30 2026 15:01": 3
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-opus-4-8": {
+      "Jan 1 2026 10:00 → Jan 2 2026 10:01": 3
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-opus-4-8": {
+      "Jun 29 2026 11:00 → Jun 30 2026 11:01": 3
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-opus-4-8": {
+      "Jul 1 2026 → Jul 11 2026": 1
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "Jun 10 2026 14:00 → Jun 13 2026": 1
+    },
+    "year-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Jun 8 2026 09:00": 2
+    },
+    "year-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Jun 14 2026 13:00": 1,
+      "Dec 31 2025 23:00 → Jun 14 2026 13:01": 1
+    },
+    "year-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "Dec 31 2025 23:00 → Jul 1 2026 10:00": 2
+    },
+    "the-beginning-of-the-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "Jun 1 2026 → Jun 11 2026": 1
+    },
+    "last-month@monthLast|anthropic/claude-opus-4-8": {
+      "Feb 28 2026 23:00 → Apr 1 2026": 1
+    },
+    "so-far-this-week@monthLast|anthropic/claude-opus-4-8": {
+      "Apr 27 2026 → Apr 30 2026 15:01": 1
+    },
+    "so-far-this-week@yearStart|anthropic/claude-opus-4-8": {
+      "Dec 29 2025 → Jan 2 2026 10:01": 1
+    },
+    "the-past-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "Jun 25 2026 → Jul 1 2026 10:00": 1
+    },
+    "the-last-30-days@monthLast|anthropic/claude-haiku-4-5": {
+      "Apr 1 2026 → Apr 30 2026 15:00": 1,
+      "Apr 1 2026 15:00 → Apr 30 2026 15:00": 1
+    },
+    "last-weekend@yearStart|anthropic/claude-haiku-4-5": {
+      "Dec 26 2025 → Dec 28 2025": 2
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-haiku-4-5": {
+      "Jun 29 2026 11:00 → Jun 30 2026 11:01": 2
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-haiku-4-5": {
+      "Jan 1 2026 10:00 → Jan 2 2026 10:01": 3
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "Jun 10 2025 → Jun 13 2026": 1,
+      "Jun 10 2026 14:00 → Jun 13 2026": 1
+    },
+    "by-the-end-of-the-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "Jun 14 2026 13:00 → Jun 22 2026": 1,
+      "Jun 14 2026 13:00 → Jun 21 2026": 1,
+      "Jun 14 2026 → Jun 21 2026": 1,
+      "Jun 14 2026 13:00 → Jun 20 2026 23:59": 1,
+      "Jun 14 2026 13:00 → Jun 20 2026": 1
+    },
+    "by-the-end-of-the-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "Jul 1 2026 10:00 → Jul 4 2026": 2
+    },
+    "by-the-end-of-the-week@monthLast|anthropic/claude-haiku-4-5": {
+      "Apr 30 2026 15:00 → May 2 2026": 3
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-haiku-4-5": {
+      "Jun 7 2026 09:00 → Jun 8 2026 09:01": 2
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-haiku-4-5": {
+      "Jun 13 2026 13:00 → Jun 14 2026 13:01": 1
+    },
+    "so-far-this-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "Jun 14 2026 → Jun 14 2026 13:01": 2,
+      "Jun 14 2026 → Jun 14 2026 13:00": 1
+    },
+    "the-beginning-of-the-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "Jun 1 2026 → Jun 10 2026": 1,
+      "Jun 1 2026 → Jun 11 2026": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "Jun 30 2026 11:00 → Jul 4 2026": 2
+    },
+    "the-last-few-days@monthLast|anthropic/claude-haiku-4-5": {
+      "Apr 26 2026 → May 1 2026": 1
+    },
+    "so-far-this-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "Jun 8 2026 → Jun 8 2026 09:01": 2
+    },
+    "by-the-end-of-the-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "Jun 8 2026 09:00 → Jun 13 2026": 1
+    },
+    "last-week@yearStart|anthropic/claude-haiku-4-5": {
+      "Dec 21 2025 → Dec 29 2025": 1
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-haiku-4-5": {
+      "Apr 29 2026 15:00 → Apr 30 2026 15:01": 1
+    },
+    "so-far-this-week@yearStart|anthropic/claude-haiku-4-5": {
+      "Dec 29 2025 → Jan 2 2026 10:01": 1
+    },
+    "the-beginning-of-the-month@yearStart|anthropic/claude-haiku-4-5": {
+      "Jan 1 2026 → Jan 10 2026": 1
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-haiku-4-5": {
+      "Jun 9 2026 14:00 → Jun 10 2026 14:01": 1
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-haiku-4-5": {
+      "Jun 30 2026 10:00 → Jul 1 2026 10:01": 1
+    },
+    "the-beginning-of-the-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "Jun 1 2026 → Jun 10 2026": 1
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "Jul 1 2026 → Jul 10 2026": 1
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.5": {
+      "the moment Jun 1 2026 00:00": 1
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.5": {
+      "Jun 8 2025 → Jun 15 2026": 1,
+      "the moment Jun 15 2026 00:00": 1
+    },
+    "by-the-end-of-the-week@yearStart|openai/gpt-5.5": {
+      "the moment Jan 5 2026 00:00": 2,
+      "Jan 2 2025 → Jan 5 2026": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.5": {
+      "the moment Jul 6 2026 00:00": 3
+    },
+    "last-month@monthLast|openai/gpt-5.5": {
+      "Feb 28 2026 23:00 → Apr 1 2026": 1
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.5": {
+      "Jun 14 2026 → Jun 14 2026 13:00": 2
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.5": {
+      "the moment Jul 1 2026 00:00": 2
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.5": {
+      "the moment Jun 15 2026 00:00": 1,
+      "Jun 10 2025 → Jun 15 2026": 1
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.5": {
+      "Jul 1 2025 → Jul 6 2026": 2
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.5": {
+      "Oct 4 2025 11:00 → Jan 2 2026 10:00": 1
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.5": {
+      "Apr 30 2025 → May 2 2026": 1
+    },
+    "this-quarter@yearStart|openai/gpt-5.4-mini": {
+      "Jan 1 2026 → Apr 1 2026 01:00": 2
+    },
+    "last-year@weekSunday|openai/gpt-5.4-mini": {
+      "Dec 31 2024 23:00 → Jan 1 2026": 1
+    },
+    "the-end-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "the moment Jun 30 2026 23:59": 1
+    },
+    "the-beginning-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "the moment Jun 1 2026 00:00": 1
+    },
+    "the-beginning-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "the moment Jan 1 2026 00:00": 4
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.4-mini": {
+      "Jun 10 2025 → Jun 15 2026": 2
+    },
+    "by-the-end-of-the-week@weekSunday|openai/gpt-5.4-mini": {
+      "the moment Jun 20 2026 23:59": 4,
+      "Jun 14 2026 13:00 → Jun 21 2026": 1
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.4-mini": {
+      "Jul 1 2025 → Jul 6 2026": 2
+    },
+    "last-quarter@weekMonday|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Apr 1 2026": 1
+    },
+    "year-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Jul 1 2026 10:00": 1
+    },
+    "this-year@quarterEnd|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Jan 1 2027": 1
+    },
+    "last-year@monthFirst|openai/gpt-5.4-mini": {
+      "Dec 31 2024 23:00 → Jan 1 2026": 3
+    },
+    "last-year@weekMonday|openai/gpt-5.4-mini": {
+      "Dec 31 2024 23:00 → Jan 1 2026": 1
+    },
+    "the-end-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "the moment Jun 30 2026 23:59": 1
+    },
+    "the-end-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "the moment Jan 31 2026 23:59": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.4-mini": {
+      "Jun 30 2025 → Jul 6 2026": 1
+    },
+    "year-to-date@monthLast|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Apr 30 2026 15:00": 1
+    },
+    "this-year@weekMonday|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Jan 1 2027": 1,
+      "the day Jan 1 2026": 1
+    },
+    "the-last-90-days@quarterEnd|openai/gpt-5.4-mini": {
+      "Apr 2 2026 11:00 → Jun 30 2026 11:00": 1
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.4-mini": {
+      "Jun 14 2026 → Jun 14 2026 13:00": 1
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "the moment Jun 1 2026 00:00": 1
+    },
+    "last-month@monthLast|openai/gpt-5.4-mini": {
+      "Feb 28 2026 23:00 → Apr 1 2026": 1
+    },
+    "last-quarter@quarterEnd|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Apr 1 2026": 1
+    },
+    "year-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Jun 30 2026 11:00": 1
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.4-mini": {
+      "Oct 4 2025 11:00 → Jan 2 2026 10:00": 2
+    },
+    "next-month@weekMonday|openai/gpt-5.4-mini": {
+      "the day Jul 1 2026": 1
+    },
+    "the-beginning-of-the-month@weekWednesday|openai/gpt-5.4-mini": {
+      "the moment Jun 1 2026 00:00": 1
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.4-mini": {
+      "Apr 30 2025 → May 4 2026": 1
+    },
+    "this-year@monthFirst|openai/gpt-5.4-mini": {
+      "Dec 31 2025 23:00 → Jan 1 2027": 1
+    },
+    "the-beginning-of-the-month@monthLast|openai/gpt-5.4-mini": {
+      "the moment Apr 1 2026 00:00": 1
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.4-mini": {
+      "the moment Jul 1 2026 00:00": 1
+    },
+    "the-beginning-of-the-month@quarterEnd|openai/gpt-5.4-mini": {
+      "the moment Jun 1 2026 00:00": 1
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.4-mini": {
+      "Jun 8 2025 → Jun 15 2026": 1
+    }
+  },
+  "shapes": {
+    "last-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-week@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-month@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-month@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-30-days@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-quarter@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-quarter@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-quarter@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "year-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-year@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-year@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-year@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-year@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-year@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-year@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "this-weekend@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-weekend@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-end-of-the-month@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "a-week-ago@weekMonday|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "the-end-of-the-month@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-end-of-the-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "a-week-ago@weekWednesday|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "the-end-of-the-month@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "a-week-ago@monthFirst|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "a-week-ago@quarterEnd|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@weekMonday|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@weekSunday|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@weekWednesday|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@monthLast|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@quarterEnd|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "two-weeks-ago@yearStart|anthropic/claude-opus-4-8": {
+      "point": 3
+    },
+    "the-last-few-days@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-few-days@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-last-90-days@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "month-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "quarter-to-date@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "next-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "next-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "so-far-this-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "next-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "next-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "next-month@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@weekSunday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@weekMonday|anthropic/claude-opus-4-8": {
+      "range": 2,
+      "point": 1
+    },
+    "by-the-end-of-the-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@quarterEnd|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "early-next-week@monthFirst|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-past-week@yearStart|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "early-next-week@weekWednesday|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@monthLast|anthropic/claude-opus-4-8": {
+      "range": 3
+    },
+    "last-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-month@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-month@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-month@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-30-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-quarter@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-quarter@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "year-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-year@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-year@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "this-weekend@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-end-of-the-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "point": 4,
+      "range": 1
+    },
+    "last-weekend@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-weekend@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-end-of-the-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "the-end-of-the-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "point": 4,
+      "range": 1
+    },
+    "the-end-of-the-month@monthLast|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "the-end-of-the-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "point": 4,
+      "range": 1
+    },
+    "the-end-of-the-month@yearStart|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "the-end-of-the-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@monthLast|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@weekSunday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@monthFirst|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@weekMonday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@weekWednesday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@quarterEnd|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "a-week-ago@yearStart|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@weekMonday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@weekSunday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@monthFirst|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@quarterEnd|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@monthLast|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@weekWednesday|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "two-weeks-ago@yearStart|anthropic/claude-haiku-4-5": {
+      "point": 5
+    },
+    "the-last-few-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-few-days@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-last-90-days@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-past-24-hours@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "month-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "quarter-to-date@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 4
+    },
+    "quarter-to-date@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "so-far-this-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "next-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-beginning-of-the-month@weekMonday|anthropic/claude-haiku-4-5": {
+      "point": 2,
+      "range": 3
+    },
+    "the-trailing-twelve-months@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "the-beginning-of-the-month@weekWednesday|anthropic/claude-haiku-4-5": {
+      "point": 4,
+      "range": 1
+    },
+    "the-beginning-of-the-month@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 1,
+      "point": 4
+    },
+    "the-beginning-of-the-month@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 3,
+      "point": 2
+    },
+    "the-beginning-of-the-month@monthLast|anthropic/claude-haiku-4-5": {
+      "point": 4,
+      "range": 1
+    },
+    "the-beginning-of-the-month@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 2,
+      "point": 3
+    },
+    "the-beginning-of-the-month@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@weekMonday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@weekWednesday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@weekSunday|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@monthLast|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@quarterEnd|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@monthFirst|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "early-next-week@yearStart|anthropic/claude-haiku-4-5": {
+      "range": 5
+    },
+    "last-week@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-week@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-week@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-week@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-week@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-month@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-week@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-month@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-quarter@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-30-days@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-quarter@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-quarter@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "year-to-date@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-year@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-year@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-year@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-year@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-year@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-year@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "last-weekend@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "this-weekend@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-end-of-the-month@weekMonday|openai/gpt-5.5": {
+      "point": 2,
+      "range": 1
+    },
+    "the-end-of-the-month@weekSunday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-end-of-the-month@quarterEnd|openai/gpt-5.5": {
+      "point": 3
+    },
+    "a-week-ago@weekMonday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "a-week-ago@weekWednesday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "a-week-ago@monthFirst|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-end-of-the-month@yearStart|openai/gpt-5.5": {
+      "point": 3
+    },
+    "a-week-ago@quarterEnd|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@weekMonday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@weekWednesday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@weekSunday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@monthLast|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@quarterEnd|openai/gpt-5.5": {
+      "point": 3
+    },
+    "two-weeks-ago@yearStart|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-last-few-days@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-few-days@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-past-24-hours@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "month-to-date@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "quarter-to-date@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "next-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "next-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "next-week@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "next-month@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "next-week@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekMonday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@weekSunday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "so-far-this-week@monthLast|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@yearStart|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-trailing-twelve-months@quarterEnd|openai/gpt-5.5": {
+      "range": 3
+    },
+    "the-beginning-of-the-month@weekSunday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@weekWednesday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@monthLast|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@yearStart|openai/gpt-5.5": {
+      "point": 3
+    },
+    "the-beginning-of-the-month@quarterEnd|openai/gpt-5.5": {
+      "point": 3
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.5": {
+      "range": 1,
+      "point": 2
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.5": {
+      "range": 2,
+      "point": 1
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.5": {
+      "point": 2,
+      "range": 1
+    },
+    "early-next-week@weekWednesday|openai/gpt-5.5": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "early-next-week@monthFirst|openai/gpt-5.5": {
+      "range": 3
+    },
+    "by-the-end-of-the-week@yearStart|openai/gpt-5.5": {
+      "point": 2,
+      "range": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.5": {
+      "point": 3
+    },
+    "last-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-month@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-month@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-month@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-30-days@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-quarter@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-quarter@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "year-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@weekMonday|openai/gpt-5.4-mini": {
+      "range": 4,
+      "point": 1
+    },
+    "year-to-date@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-year@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-year@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "this-weekend@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "last-weekend@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-end-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@weekWednesday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@monthFirst|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@monthLast|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-end-of-the-month@quarterEnd|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@weekWednesday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@weekMonday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@monthFirst|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@monthLast|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@yearStart|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@quarterEnd|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "a-week-ago@weekSunday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@weekMonday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@weekSunday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@monthLast|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@weekWednesday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@monthFirst|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "two-weeks-ago@yearStart|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-last-few-days@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-few-days@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-few-days@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-few-days@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-few-days@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "two-weeks-ago@quarterEnd|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-last-few-days@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-past-24-hours@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "month-to-date@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "quarter-to-date@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "so-far-this-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@weekMonday|openai/gpt-5.4-mini": {
+      "range": 4,
+      "point": 1
+    },
+    "next-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "next-month@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-trailing-twelve-months@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-beginning-of-the-month@weekWednesday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@weekMonday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@monthFirst|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@weekSunday|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@monthLast|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@quarterEnd|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "the-beginning-of-the-month@yearStart|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "by-the-end-of-the-week@weekMonday|openai/gpt-5.4-mini": {
+      "point": 4,
+      "range": 1
+    },
+    "by-the-end-of-the-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 2,
+      "point": 3
+    },
+    "by-the-end-of-the-week@weekSunday|openai/gpt-5.4-mini": {
+      "point": 4,
+      "range": 1
+    },
+    "by-the-end-of-the-week@quarterEnd|openai/gpt-5.4-mini": {
+      "point": 4,
+      "range": 1
+    },
+    "by-the-end-of-the-week@monthLast|openai/gpt-5.4-mini": {
+      "point": 4,
+      "range": 1
+    },
+    "by-the-end-of-the-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 2,
+      "point": 3
+    },
+    "early-next-week@weekMonday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "early-next-week@weekWednesday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "by-the-end-of-the-week@yearStart|openai/gpt-5.4-mini": {
+      "point": 5
+    },
+    "early-next-week@monthFirst|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "early-next-week@weekSunday|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "early-next-week@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "early-next-week@quarterEnd|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "early-next-week@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-90-days@yearStart|openai/gpt-5.4-mini": {
+      "range": 5
+    },
+    "the-last-few-days@monthLast|openai/gpt-5.4-mini": {
+      "range": 5
+    }
+  }
+}

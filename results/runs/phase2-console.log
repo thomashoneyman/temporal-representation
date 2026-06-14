@@ -1,0 +1,1561 @@
+
+> temporal-research@0.1.0 phase2 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/phase2.ts
+
+This storage provider does not support batch creating metrics
+task4 openai/mini iso rep1 specific: 14 items, 0 errors
+This storage provider does not support batch creating scores
+task4 openai/mini iso rep1 relative: 20 items, 0 errors
+task4 openai/mini iso rep1 named: 21 items, 0 errors
+task4 openai/mini iso rep1 custom: 10 items, 0 errors
+task4 openai/mini iso rep1 ranges: 17 items, 0 errors
+task4 openai/mini iso rep1 multipart: 12 items, 0 errors
+task4 openai/mini iso rep1 notime: 8 items, 0 errors
+task4 openai/mini iso rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini iso rep2 specific: 14 items, 0 errors
+task4 openai/mini iso rep2 relative: 20 items, 0 errors
+task4 openai/mini iso rep2 named: 21 items, 0 errors
+task4 openai/mini iso rep2 custom: 10 items, 0 errors
+task4 openai/mini iso rep2 ranges: 17 items, 0 errors
+task4 openai/mini iso rep2 multipart: 12 items, 0 errors
+task4 openai/mini iso rep2 notime: 8 items, 0 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received NaN
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23586:16)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: undefined,
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: '{"kind":"time","value":{"cardinality":"range","start":"2026-06-13T00:00:00-04:00","end":"2026-06-15T00:00:00-04:00","bounds":"[)"},"ambiguity":{"1":1,"2":2,"3":3,"4":4,"5":5},"reasoning":"\\"The weekend\\" most likely refers to the upcoming Saturday-Sunday period relative to the Tuesday anchor, though the previous weekend is also a plausible interpretation."}'
+    }
+  },
+  runId: '35d9c99b-6efa-41bc-99f9-7a80639006d9',
+  provider: 'openai',
+  modelId: 'gpt-5.4-mini'
+}
+task4 openai/mini iso rep2 ambiguous: attempt 1 failed: Failed to run experiment: Error generating result from target
+This storage provider does not support batch creating logs
+task4 openai/mini iso rep2 ambiguous: 1 items, 0 errors (attempt 2)
+task4 openai/mini iso rep3 specific: 14 items, 0 errors
+task4 openai/mini iso rep3 relative: 20 items, 0 errors
+task4 openai/mini iso rep3 named: 21 items, 0 errors
+task4 openai/mini iso rep3 custom: 10 items, 0 errors
+task4 openai/mini iso rep3 ranges: 17 items, 0 errors
+task4 openai/mini iso rep3 multipart: 12 items, 0 errors
+task4 openai/mini iso rep3 notime: 8 items, 0 errors
+task4 openai/mini iso rep3 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep1 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep1 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep1 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep1 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep1 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep1 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep1 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep2 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep2 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep2 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep2 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep2 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep2 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep2 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep2 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep3 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep3 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep3 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep3 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep3 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep3 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep3 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep3 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep1 specific: 14 items, 0 errors
+task4 openai/mini ir rep1 relative: 20 items, 0 errors
+task4 openai/mini ir rep1 named: 21 items, 0 errors
+task4 openai/mini ir rep1 custom: 10 items, 0 errors
+task4 openai/mini ir rep1 ranges: 17 items, 0 errors
+task4 openai/mini ir rep1 multipart: 12 items, 0 errors
+task4 openai/mini ir rep1 notime: 8 items, 0 errors
+task4 openai/mini ir rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep2 specific: 14 items, 0 errors
+task4 openai/mini ir rep2 relative: 20 items, 0 errors
+task4 openai/mini ir rep2 named: 21 items, 0 errors
+task4 openai/mini ir rep2 custom: 10 items, 0 errors
+task4 openai/mini ir rep2 ranges: 17 items, 0 errors
+task4 openai/mini ir rep2 multipart: 12 items, 0 errors
+task4 openai/mini ir rep2 notime: 8 items, 0 errors
+task4 openai/mini ir rep2 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep3 specific: 14 items, 0 errors
+task4 openai/mini ir rep3 relative: 20 items, 0 errors
+task4 openai/mini ir rep3 named: 21 items, 0 errors
+task4 openai/mini ir rep3 custom: 10 items, 0 errors
+task4 openai/mini ir rep3 ranges: 17 items, 0 errors
+task4 openai/mini ir rep3 multipart: 12 items, 0 errors
+task4 openai/mini ir rep3 notime: 8 items, 0 errors
+task4 openai/mini ir rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep1 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep1 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep1 named: 21 items, 0 errors
+task4 anthropic/mini iso rep1 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep1 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep2 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep2 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep2 named: 21 items, 0 errors
+task4 anthropic/mini iso rep2 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep2 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep2 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep3 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep3 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep3 named: 21 items, 0 errors
+task4 anthropic/mini iso rep3 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep3 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep3 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep1 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep1 relative: 20 items, 0 errors
+task4 anthropic/mini iso-preset rep1 named: 21 items, 0 errors
+task4 anthropic/mini iso-preset rep1 custom: 10 items, 0 errors
+task4 anthropic/mini iso-preset rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini iso-preset rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep1 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep2 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep2 relative: 20 items, 0 errors
+task4 anthropic/mini iso-preset rep2 named: 21 items, 0 errors
+task4 anthropic/mini iso-preset rep2 custom: 10 items, 0 errors
+task4 anthropic/mini iso-preset rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini iso-preset rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep2 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep2 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep3 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep3 relative: 20 items, 0 errors
+task4 anthropic/mini iso-preset rep3 named: 21 items, 0 errors
+task4 anthropic/mini iso-preset rep3 custom: 10 items, 0 errors
+task4 anthropic/mini iso-preset rep3 ranges: 17 items, 0 errors
+task4 anthropic/mini iso-preset rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep3 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini ir rep1 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep1 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep1 named: 21 items, 0 errors
+task4 anthropic/mini ir rep1 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep1 notime: 8 items, 0 errors
+task4 anthropic/mini ir rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini ir rep2 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep2 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep2 named: 21 items, 0 errors
+task4 anthropic/mini ir rep2 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep2 notime: 8 items, 0 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - value: Invalid input
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "code": "invalid_union",
+        "errors": [
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "now"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"now\""
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "date"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"date\""
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "preset"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"preset\""
+            },
+            {
+              "code": "invalid_value",
+              "values": [
+                "today",
+                "yesterday",
+                "tomorrow",
+                "this_week",
+                "last_week",
+                "next_week",
+                "this_month",
+                "last_month",
+                "next_month",
+                "this_quarter",
+                "last_quarter",
+                "next_quarter",
+                "this_year",
+                "last_year",
+                "next_year",
+                "ytd",
+                "mtd",
+                "qtd"
+              ],
+              "path": [
+                "name"
+              ],
+              "message": "Invalid option: expected one of \"today\"|\"yesterday\"|\"tomorrow\"|\"this_week\"|\"last_week\"|\"next_week\"|\"this_month\"|\"last_month\"|\"next_month\"|\"this_quarter\"|\"last_quarter\"|\"next_quarter\"|\"this_year\"|\"last_year\"|\"next_year\"|\"ytd\"|\"mtd\"|\"qtd\""
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "ref"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"ref\""
+            },
+            {
+              "expected": "string",
+              "code": "invalid_type",
+              "path": [
+                "id"
+              ],
+              "message": "Invalid input: expected string, received undefined"
+            }
+          ],
+          [
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "now"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"now\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "date"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"date\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "preset"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"preset\""
+                  },
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "today",
+                      "yesterday",
+                      "tomorrow",
+                      "this_week",
+                      "last_week",
+                      "next_week",
+                      "this_month",
+                      "last_month",
+                      "next_month",
+                      "this_quarter",
+                      "last_quarter",
+                      "next_quarter",
+                      "this_year",
+                      "last_year",
+                      "next_year",
+                      "ytd",
+                      "mtd",
+                      "qtd"
+                    ],
+                    "path": [
+                      "name"
+                    ],
+                    "message": "Invalid option: expected one of \"today\"|\"yesterday\"|\"tomorrow\"|\"this_week\"|\"last_week\"|\"next_week\"|\"this_month\"|\"last_month\"|\"next_month\"|\"this_quarter\"|\"last_quarter\"|\"next_quarter\"|\"this_year\"|\"last_year\"|\"next_year\"|\"ytd\"|\"mtd\"|\"qtd\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "ref"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"ref\""
+                  },
+                  {
+                    "expected": "string",
+                    "code": "invalid_type",
+                    "path": [
+                      "id"
+                    ],
+                    "message": "Invalid input: expected string, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "shift"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"shift\""
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "base"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "expected": "string",
+                    "code": "invalid_type",
+                    "path": [
+                      "by"
+                    ],
+                    "message": "Invalid input: expected string, received undefined"
+                  },
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "before",
+                      "after"
+                    ],
+                    "path": [
+                      "direction"
+                    ],
+                    "message": "Invalid option: expected one of \"before\"|\"after\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "weekday"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"weekday\""
+                  },
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "mon",
+                      "tue",
+                      "wed",
+                      "thu",
+                      "fri",
+                      "sat",
+                      "sun"
+                    ],
+                    "path": [
+                      "day"
+                    ],
+                    "message": "Invalid option: expected one of \"mon\"|\"tue\"|\"wed\"|\"thu\"|\"fri\"|\"sat\"|\"sun\""
+                  },
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "this",
+                      "next",
+                      "last",
+                      "nearest"
+                    ],
+                    "path": [
+                      "which"
+                    ],
+                    "message": "Invalid option: expected one of \"this\"|\"next\"|\"last\"|\"nearest\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "nth"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"nth\""
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "number",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected number, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "code": "invalid_value",
+                          "values": [
+                            "last"
+                          ],
+                          "path": [],
+                          "message": "Invalid input: expected \"last\""
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "n"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "code": "invalid_value",
+                          "values": [
+                            "minute",
+                            "hour",
+                            "day",
+                            "week",
+                            "month",
+                            "quarter",
+                            "year"
+                          ],
+                          "path": [],
+                          "message": "Invalid option: expected one of \"minute\"|\"hour\"|\"day\"|\"week\"|\"month\"|\"quarter\"|\"year\""
+                        }
+                      ],
+                      [
+                        {
+                          "code": "invalid_value",
+                          "values": [
+                            "mon",
+                            "tue",
+                            "wed",
+                            "thu",
+                            "fri",
+                            "sat",
+                            "sun"
+                          ],
+                          "path": [],
+                          "message": "Invalid option: expected one of \"mon\"|\"tue\"|\"wed\"|\"thu\"|\"fri\"|\"sat\"|\"sun\""
+                        }
+                      ],
+                      [
+                        {
+                          "code": "invalid_value",
+                          "values": [
+                            "business_day"
+                          ],
+                          "path": [],
+                          "message": "Invalid input: expected \"business_day\""
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "unit"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "of"
+                    ],
+                    "message": "Invalid input"
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "range"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"range\""
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "from"
+                    ],
+                    "message": "Invalid input"
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "to"
+                    ],
+                    "message": "Invalid input"
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "filter"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"filter\""
+                  },
+                  {
+                    "code": "invalid_union",
+                    "errors": [
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ],
+                      [
+                        {
+                          "expected": "object",
+                          "code": "invalid_type",
+                          "path": [],
+                          "message": "Invalid input: expected object, received undefined"
+                        }
+                      ]
+                    ],
+                    "path": [
+                      "within"
+                    ],
+                    "message": "Invalid input"
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "union"
+                    ],
+                    "path": [
+                      "type"
+                    ],
+                    "message": "Invalid input: expected \"union\""
+                  },
+                  {
+                    "expected": "array",
+                    "code": "invalid_type",
+                    "path": [
+                      "of"
+                    ],
+                    "message": "Invalid input: expected array, received undefined"
+                  }
+                ]
+              ],
+              "path": [
+                "base"
+              ],
+              "message": "Invalid input"
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "weekday"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"weekday\""
+            },
+            {
+              "code": "invalid_value",
+              "values": [
+                "mon",
+                "tue",
+                "wed",
+                "thu",
+                "fri",
+                "sat",
+                "sun"
+              ],
+              "path": [
+                "day"
+              ],
+              "message": "Invalid option: expected one of \"mon\"|\"tue\"|\"wed\"|\"thu\"|\"fri\"|\"sat\"|\"sun\""
+            },
+            {
+              "code": "invalid_value",
+              "values": [
+                "this",
+                "next",
+                "last",
+                "nearest"
+              ],
+              "path": [
+                "which"
+              ],
+              "message": "Invalid option: expected one of \"this\"|\"next\"|\"last\"|\"nearest\""
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "nth"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"nth\""
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "expected": "number",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected number, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "last"
+                    ],
+                    "path": [],
+                    "message": "Invalid input: expected \"last\""
+                  }
+                ]
+              ],
+              "path": [
+                "n"
+              ],
+              "message": "Invalid input"
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "minute",
+                      "hour",
+                      "day",
+                      "week",
+                      "month",
+                      "quarter",
+                      "year"
+                    ],
+                    "path": [],
+                    "message": "Invalid option: expected one of \"minute\"|\"hour\"|\"day\"|\"week\"|\"month\"|\"quarter\"|\"year\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "mon",
+                      "tue",
+                      "wed",
+                      "thu",
+                      "fri",
+                      "sat",
+                      "sun"
+                    ],
+                    "path": [],
+                    "message": "Invalid option: expected one of \"mon\"|\"tue\"|\"wed\"|\"thu\"|\"fri\"|\"sat\"|\"sun\""
+                  }
+                ],
+                [
+                  {
+                    "code": "invalid_value",
+                    "values": [
+                      "business_day"
+                    ],
+                    "path": [],
+                    "message": "Invalid input: expected \"business_day\""
+                  }
+                ]
+              ],
+              "path": [
+                "unit"
+              ],
+              "message": "Invalid input"
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ]
+              ],
+              "path": [
+                "of"
+              ],
+              "message": "Invalid input"
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "range"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"range\""
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ]
+              ],
+              "path": [
+                "from"
+              ],
+              "message": "Invalid input"
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ]
+              ],
+              "path": [
+                "to"
+              ],
+              "message": "Invalid input"
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "filter"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"filter\""
+            },
+            {
+              "code": "invalid_union",
+              "errors": [
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ],
+                [
+                  {
+                    "expected": "object",
+                    "code": "invalid_type",
+                    "path": [],
+                    "message": "Invalid input: expected object, received undefined"
+                  }
+                ]
+              ],
+              "path": [
+                "within"
+              ],
+              "message": "Invalid input"
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "union"
+              ],
+              "path": [
+                "type"
+              ],
+              "message": "Invalid input: expected \"union\""
+            },
+            {
+              "expected": "array",
+              "code": "invalid_type",
+              "path": [
+                "of"
+              ],
+              "message": "Invalid input: expected array, received undefined"
+            }
+          ]
+        ],
+        "path": [
+          "value"
+        ],
+        "message": "Invalid input"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: `{"kind":"time","value":{"type":"shift","base":{},"by":"P1W","direction":"after"},"ambiguity":5,"reasoning":"The word 'soon' is too vague to pin down a specific timeframe—it could mean hours, days, or weeks depending on context—so no single structured date is reliably defensible."}`
+    }
+  },
+  runId: '8571092d-7dec-44be-8402-94d2d5b8759d',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+task4 anthropic/mini ir rep2 ambiguous: attempt 1 failed: Failed to run experiment: Error generating result from target
+task4 anthropic/mini ir rep2 ambiguous: 7 items, 0 errors (attempt 2)
+task4 anthropic/mini ir rep3 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep3 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep3 named: 21 items, 0 errors
+task4 anthropic/mini ir rep3 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep3 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep3 notime: 8 items, 0 errors
+task4 anthropic/mini ir rep3 ambiguous: 14 items, 0 errors
+grading 2089 raw rows from results/runs/phase2
+wrote results/phase2.json (63 cells)

@@ -1,0 +1,12 @@
+
+> temporal-research@0.1.0 task8 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/task8.ts
+
+task8: 270 cases queued across route-v1/route-v2/route-v3 (concurrency 8)
+
+wrote results/task8.json — 450 rows
+bookends: always-ISO 63% · always-resolve 72% · 5 items genuinely need resolve
+route-v1   acc 71%  resolve-rate 24%  recall(needs-resolve) 53%  over-resolve(fine) 18%
+route-v2   acc 80%  resolve-rate 71%  recall(needs-resolve) 80%  over-resolve(fine) 65%
+route-v3   acc 73%  resolve-rate 63%  recall(needs-resolve) 80%  over-resolve(fine) 51%
+wrote artifacts/routing-eval.json

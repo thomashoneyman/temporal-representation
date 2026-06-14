@@ -1,0 +1,4746 @@
+{
+ "keyVersion": "v0.3",
+ "promptVersion": "30b61a223a79",
+ "models": [
+  "anthropic/claude-opus-4-8",
+  "anthropic/claude-haiku-4-5",
+  "openai/gpt-5.5",
+  "openai/gpt-5.4-mini"
+ ],
+ "baseline": "chrono-node",
+ "slices": [
+  "specific",
+  "ALL",
+  "HARD",
+  "relative",
+  "named",
+  "custom",
+  "ranges",
+  "multipart",
+  "notime",
+  "ambiguous"
+ ],
+ "tasks": [
+  "task4",
+  "task5",
+  "task6",
+  "task7",
+  "task7b"
+ ],
+ "cells": [
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.9361702127659575,
+   "n": 141,
+   "ci": {
+    "lo": 0.8831444295568818,
+    "hi": 0.9660591141764103
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9787234042553191,
+   "n": 141,
+   "ci": {
+    "lo": 0.9393144822954278,
+    "hi": 0.9927381876557464
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.9166666666666666,
+   "n": 24,
+   "ci": {
+    "lo": 0.741507847985494,
+    "hi": 0.9768416721570266
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9583333333333334,
+   "n": 24,
+   "ci": {
+    "lo": 0.7975777375115778,
+    "hi": 0.992606734645195
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9714285714285714,
+   "n": 35,
+   "ci": {
+    "lo": 0.8546659090672868,
+    "hi": 0.9949386386341466
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 35,
+   "ci": {
+    "lo": 0.9010957324106112,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.9130434782608695,
+   "n": 23,
+   "ci": {
+    "lo": 0.7320359570190598,
+    "hi": 0.9758205045927666
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 0.9565217391304348,
+   "n": 23,
+   "ci": {
+    "lo": 0.7900841350594088,
+    "hi": 0.9922835330378734
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.95,
+   "n": 20,
+   "ci": {
+    "lo": 0.7638641064874331,
+    "hi": 0.9911187805671268
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 20,
+   "ci": {
+    "lo": 0.8388698745050667,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7857142857142857,
+   "n": 14,
+   "ci": {
+    "lo": 0.5241027622679172,
+    "hi": 0.9242875166308363
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.8571428571428571,
+   "n": 14,
+   "ci": {
+    "lo": 0.600580922361363,
+    "hi": 0.9599069262620787
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.8571428571428571,
+   "n": 14,
+   "ci": {
+    "lo": 0.600580922361363,
+    "hi": 0.9599069262620787
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.8666666666666667,
+   "n": 15,
+   "ci": {
+    "lo": 0.6211750079348376,
+    "hi": 0.9626395301086407
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8666666666666667,
+   "n": 120,
+   "ci": {
+    "lo": 0.7943505063345165,
+    "hi": 0.9162346282244686
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.95,
+   "n": 120,
+   "ci": {
+    "lo": 0.8951958053541377,
+    "hi": 0.9768859506955258
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.8571428571428571,
+   "n": 21,
+   "ci": {
+    "lo": 0.6536350585077049,
+    "hi": 0.950190782017865
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9523809523809523,
+   "n": 21,
+   "ci": {
+    "lo": 0.7733018341376452,
+    "hi": 0.9915442305280766
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9411764705882353,
+   "n": 34,
+   "ci": {
+    "lo": 0.8090606311053629,
+    "hi": 0.9837176869361576
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 34,
+   "ci": {
+    "lo": 0.8984820937803899,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.9130434782608695,
+   "n": 23,
+   "ci": {
+    "lo": 0.7320359570190598,
+    "hi": 0.9758205045927666
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8333333333333334,
+   "n": 12,
+   "ci": {
+    "lo": 0.5519636426153274,
+    "hi": 0.9530358523851776
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.9166666666666666,
+   "n": 12,
+   "ci": {
+    "lo": 0.6461140782014047,
+    "hi": 0.9851352905492264
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7857142857142857,
+   "n": 14,
+   "ci": {
+    "lo": 0.5241027622679172,
+    "hi": 0.9242875166308363
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.8,
+   "n": 15,
+   "ci": {
+    "lo": 0.5481406466534955,
+    "hi": 0.9295257935638959
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.85,
+   "n": 120,
+   "ci": {
+    "lo": 0.7753231505975375,
+    "hi": 0.9029626596633118
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9583333333333334,
+   "n": 120,
+   "ci": {
+    "lo": 0.9061578707045692,
+    "hi": 0.9820735474941622
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.9047619047619048,
+   "n": 21,
+   "ci": {
+    "lo": 0.7108541613925933,
+    "hi": 0.9734817912030528
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 21,
+   "ci": {
+    "lo": 0.8453561767357979,
+    "hi": 0.9999999999999999
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9411764705882353,
+   "n": 34,
+   "ci": {
+    "lo": 0.8090606311053629,
+    "hi": 0.9837176869361576
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 34,
+   "ci": {
+    "lo": 0.8984820937803899,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.782608695652174,
+   "n": 23,
+   "ci": {
+    "lo": 0.5809611981726508,
+    "hi": 0.9033616439828094
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8333333333333334,
+   "n": 12,
+   "ci": {
+    "lo": 0.5519636426153274,
+    "hi": 0.9530358523851776
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.9285714285714286,
+   "n": 14,
+   "ci": {
+    "lo": 0.6853073044604219,
+    "hi": 0.9872781138877085
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.8,
+   "n": 45,
+   "ci": {
+    "lo": 0.6617674868607056,
+    "hi": 0.8910399559749099
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8729016786570744,
+   "n": 417,
+   "ci": {
+    "lo": 0.837492557325542,
+    "hi": 0.9015028271611628
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9568345323741008,
+   "n": 417,
+   "ci": {
+    "lo": 0.9328045597601448,
+    "hi": 0.9725241910097412
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.9565217391304348,
+   "n": 69,
+   "ci": {
+    "lo": 0.8797860261535665,
+    "hi": 0.9851043661497328
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.9223669266494263,
+    "hi": 0.9974371413556695
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9901960784313726,
+   "n": 102,
+   "ci": {
+    "lo": 0.9465407803733753,
+    "hi": 0.9982673102072662
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 0.9901960784313726,
+   "n": 102,
+   "ci": {
+    "lo": 0.9465407803733753,
+    "hi": 0.9982673102072662
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.7533626140708477,
+    "hi": 0.9193299132761629
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8611111111111112,
+   "n": 36,
+   "ci": {
+    "lo": 0.7134014871960681,
+    "hi": 0.9391827463688489
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.8888888888888888,
+   "n": 36,
+   "ci": {
+    "lo": 0.7468487098496367,
+    "hi": 0.9559343109125816
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.9298245614035088,
+   "n": 57,
+   "ci": {
+    "lo": 0.8329959829878215,
+    "hi": 0.9723740270053409
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 57,
+   "ci": {
+    "lo": 0.936858991216536,
+    "hi": 0.9999999999999999
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.6904761904761905,
+   "n": 42,
+   "ci": {
+    "lo": 0.5397372223365942,
+    "hi": 0.8092907348027727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 0.9523809523809523,
+   "n": 42,
+   "ci": {
+    "lo": 0.8420986468452026,
+    "hi": 0.9868427513607937
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.7380952380952381,
+   "n": 42,
+   "ci": {
+    "lo": 0.5893098001502445,
+    "hi": 0.8469751462739642
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.7380952380952381,
+   "n": 42,
+   "ci": {
+    "lo": 0.5893098001502445,
+    "hi": 0.8469751462739642
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.9333333333333333,
+   "n": 45,
+   "ci": {
+    "lo": 0.8214312561135918,
+    "hi": 0.977068383537853
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8201438848920863,
+   "n": 417,
+   "ci": {
+    "lo": 0.7804105179524714,
+    "hi": 0.8540324648705195
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9592326139088729,
+   "n": 417,
+   "ci": {
+    "lo": 0.9356874766078592,
+    "hi": 0.9743936560558318
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.7681159420289855,
+   "n": 69,
+   "ci": {
+    "lo": 0.6560292969473013,
+    "hi": 0.8519222032943189
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.8921568627450981,
+   "n": 102,
+   "ci": {
+    "lo": 0.8171390383936558,
+    "hi": 0.9387074340708573
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 102,
+   "ci": {
+    "lo": 0.9637042523922542,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.7971014492753623,
+   "n": 69,
+   "ci": {
+    "lo": 0.6877573759423549,
+    "hi": 0.875107800001062
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 0.9855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.9223669266494263,
+    "hi": 0.9974371413556695
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.7777777777777778,
+   "n": 36,
+   "ci": {
+    "lo": 0.6191498017214091,
+    "hi": 0.882838070251604
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.9444444444444444,
+   "n": 36,
+   "ci": {
+    "lo": 0.8185502589238878,
+    "hi": 0.9846303362329332
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7380952380952381,
+   "n": 42,
+   "ci": {
+    "lo": 0.5893098001502445,
+    "hi": 0.8469751462739642
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 42,
+   "ci": {
+    "lo": 0.9161983874908382,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6666666666666666,
+   "n": 42,
+   "ci": {
+    "lo": 0.5155222701166692,
+    "hi": 0.7898771923802769
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6666666666666666,
+   "n": 42,
+   "ci": {
+    "lo": 0.5155222701166692,
+    "hi": 0.7898771923802769
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.7543859649122807,
+   "n": 57,
+   "ci": {
+    "lo": 0.6289745615892073,
+    "hi": 0.8476729953455215
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 57,
+   "ci": {
+    "lo": 0.936858991216536,
+    "hi": 0.9999999999999999
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.8888888888888888,
+   "n": 45,
+   "ci": {
+    "lo": 0.7650062450910905,
+    "hi": 0.9515959956217445
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.7817745803357314,
+   "n": 417,
+   "ci": {
+    "lo": 0.7396556931165056,
+    "hi": 0.8187491794056024
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.947242206235012,
+   "n": 417,
+   "ci": {
+    "lo": 0.9214144343972753,
+    "hi": 0.9649047887973897
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.7536231884057971,
+   "n": 69,
+   "ci": {
+    "lo": 0.6403911369020479,
+    "hi": 0.840103525488674
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9710144927536232,
+   "n": 69,
+   "ci": {
+    "lo": 0.9003322653873425,
+    "hi": 0.992014964766855
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.8823529411764706,
+   "n": 102,
+   "ci": {
+    "lo": 0.8055441009473682,
+    "hi": 0.9314062097055321
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 0.9803921568627451,
+   "n": 102,
+   "ci": {
+    "lo": 0.9313055678943739,
+    "hi": 0.9946063608746546
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.6956521739130435,
+   "n": 69,
+   "ci": {
+    "lo": 0.5791620736176137,
+    "hi": 0.7915052373695144
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8333333333333334,
+   "n": 36,
+   "ci": {
+    "lo": 0.6810888526532568,
+    "hi": 0.9212965937143589
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 36,
+   "ci": {
+    "lo": 0.9035781695514236,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.6190476190476191,
+   "n": 42,
+   "ci": {
+    "lo": 0.46813768219996377,
+    "hi": 0.7500047910121407
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 0.9761904761904762,
+   "n": 42,
+   "ci": {
+    "lo": 0.8767851883475174,
+    "hi": 0.9957847045008997
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.7142857142857143,
+   "n": 42,
+   "ci": {
+    "lo": 0.5643250392275445,
+    "hi": 0.8283314125542434
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.7142857142857143,
+   "n": 42,
+   "ci": {
+    "lo": 0.5643250392275445,
+    "hi": 0.8283314125542434
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.6666666666666666,
+   "n": 57,
+   "ci": {
+    "lo": 0.5372226902277747,
+    "hi": 0.7750636401777372
+   }
+  },
+  {
+   "task": "task4",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 0.8771929824561403,
+   "n": 57,
+   "ci": {
+    "lo": 0.7675331041107074,
+    "hi": 0.939220169964925
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.920863309352518,
+   "n": 139,
+   "ci": {
+    "lo": 0.863849934269185,
+    "hi": 0.9552391826267332
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9640287769784173,
+   "n": 139,
+   "ci": {
+    "lo": 0.9185588702004348,
+    "hi": 0.9845393868899366
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9705882352941176,
+   "n": 34,
+   "ci": {
+    "lo": 0.8508409778365519,
+    "hi": 0.9947892280744034
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 34,
+   "ci": {
+    "lo": 0.8984820937803899,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.9565217391304348,
+   "n": 23,
+   "ci": {
+    "lo": 0.7900841350594088,
+    "hi": 0.9922835330378734
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.9473684210526315,
+   "n": 19,
+   "ci": {
+    "lo": 0.7536078466345479,
+    "hi": 0.99064824750947
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 19,
+   "ci": {
+    "lo": 0.8318156346315496,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7857142857142857,
+   "n": 14,
+   "ci": {
+    "lo": 0.5241027622679172,
+    "hi": 0.9242875166308363
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8916666666666667,
+   "n": 120,
+   "ci": {
+    "lo": 0.8234449199472613,
+    "hi": 0.9355892010589275
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9583333333333334,
+   "n": 120,
+   "ci": {
+    "lo": 0.9061578707045692,
+    "hi": 0.9820735474941622
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.9523809523809523,
+   "n": 21,
+   "ci": {
+    "lo": 0.7733018341376452,
+    "hi": 0.9915442305280766
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 21,
+   "ci": {
+    "lo": 0.8453561767357979,
+    "hi": 0.9999999999999999
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9411764705882353,
+   "n": 34,
+   "ci": {
+    "lo": 0.8090606311053629,
+    "hi": 0.9837176869361576
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 34,
+   "ci": {
+    "lo": 0.8984820937803899,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.9130434782608695,
+   "n": 23,
+   "ci": {
+    "lo": 0.7320359570190598,
+    "hi": 0.9758205045927666
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.9166666666666666,
+   "n": 12,
+   "ci": {
+    "lo": 0.6461140782014047,
+    "hi": 0.9851352905492264
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7857142857142857,
+   "n": 14,
+   "ci": {
+    "lo": 0.5241027622679172,
+    "hi": 0.9242875166308363
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6428571428571429,
+   "n": 14,
+   "ci": {
+    "lo": 0.3876400468214042,
+    "hi": 0.8365550926279727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 15,
+   "ci": {
+    "lo": 0.7961107336956521,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8416666666666667,
+   "n": 120,
+   "ci": {
+    "lo": 0.7659051081885379,
+    "hi": 0.8962310399232437
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9583333333333334,
+   "n": 120,
+   "ci": {
+    "lo": 0.9061578707045692,
+    "hi": 0.9820735474941622
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.9047619047619048,
+   "n": 21,
+   "ci": {
+    "lo": 0.7108541613925933,
+    "hi": 0.9734817912030528
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 21,
+   "ci": {
+    "lo": 0.8453561767357979,
+    "hi": 0.9999999999999999
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9117647058823529,
+   "n": 34,
+   "ci": {
+    "lo": 0.7703918204763959,
+    "hi": 0.9695346096956899
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 34,
+   "ci": {
+    "lo": 0.8984820937803899,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.6956521739130435,
+   "n": 23,
+   "ci": {
+    "lo": 0.49133870939427393,
+    "hi": 0.8439617197902755
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 23,
+   "ci": {
+    "lo": 0.8568788745827374,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.9166666666666666,
+   "n": 12,
+   "ci": {
+    "lo": 0.6461140782014047,
+    "hi": 0.9851352905492264
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 12,
+   "ci": {
+    "lo": 0.7574992425007574,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7857142857142857,
+   "n": 14,
+   "ci": {
+    "lo": 0.5241027622679172,
+    "hi": 0.9242875166308363
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 14,
+   "ci": {
+    "lo": 0.7846829880728186,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 0.875,
+   "n": 8,
+   "ci": {
+    "lo": 0.5291051942301386,
+    "hi": 0.9775830911367038
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 0.875,
+   "n": 8,
+   "ci": {
+    "lo": 0.5291051942301386,
+    "hi": 0.9775830911367038
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.7142857142857143,
+   "n": 14,
+   "ci": {
+    "lo": 0.4535045882751561,
+    "hi": 0.882788120898909
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.7142857142857143,
+   "n": 14,
+   "ci": {
+    "lo": 0.4535045882751561,
+    "hi": 0.882788120898909
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.8444444444444444,
+   "n": 45,
+   "ci": {
+    "lo": 0.712158094887512,
+    "hi": 0.9225467468867133
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8776978417266187,
+   "n": 417,
+   "ci": {
+    "lo": 0.8427577495255681,
+    "hi": 0.9057423987487468
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9544364508393285,
+   "n": 417,
+   "ci": {
+    "lo": 0.9299368100617516,
+    "hi": 0.9706395588143291
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.7971014492753623,
+   "n": 69,
+   "ci": {
+    "lo": 0.6877573759423549,
+    "hi": 0.875107800001062
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9565217391304348,
+   "n": 69,
+   "ci": {
+    "lo": 0.8797860261535665,
+    "hi": 0.9851043661497328
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.8921568627450981,
+   "n": 102,
+   "ci": {
+    "lo": 0.8171390383936558,
+    "hi": 0.9387074340708573
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 0.9803921568627451,
+   "n": 102,
+   "ci": {
+    "lo": 0.9313055678943739,
+    "hi": 0.9946063608746546
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.9130434782608695,
+   "n": 69,
+   "ci": {
+    "lo": 0.8229829488715114,
+    "hi": 0.9595369298790927
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.9722222222222222,
+   "n": 36,
+   "ci": {
+    "lo": 0.8582996626496918,
+    "hi": 0.9950797197044302
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.9722222222222222,
+   "n": 36,
+   "ci": {
+    "lo": 0.8582996626496918,
+    "hi": 0.9950797197044302
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.9298245614035088,
+   "n": 57,
+   "ci": {
+    "lo": 0.8329959829878215,
+    "hi": 0.9723740270053409
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 0.9824561403508771,
+   "n": 57,
+   "ci": {
+    "lo": 0.9070903306173727,
+    "hi": 0.9968964152933198
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7619047619047619,
+   "n": 42,
+   "ci": {
+    "lo": 0.6147216491768113,
+    "hi": 0.8651917918898182
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 0.9285714285714286,
+   "n": 42,
+   "ci": {
+    "lo": 0.8099028671147483,
+    "hi": 0.9754100364488272
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.7142857142857143,
+   "n": 42,
+   "ci": {
+    "lo": 0.5643250392275445,
+    "hi": 0.8283314125542434
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.7142857142857143,
+   "n": 42,
+   "ci": {
+    "lo": 0.5643250392275445,
+    "hi": 0.8283314125542434
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.9777777777777777,
+   "n": 45,
+   "ci": {
+    "lo": 0.8843305361128119,
+    "hi": 0.9960665024772425
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.8537170263788969,
+   "n": 417,
+   "ci": {
+    "lo": 0.8165703821575969,
+    "hi": 0.8844059471786665
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9544364508393285,
+   "n": 417,
+   "ci": {
+    "lo": 0.9299368100617516,
+    "hi": 0.9706395588143291
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.7533626140708477,
+    "hi": 0.9193299132761629
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.9855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.9223669266494263,
+    "hi": 0.9974371413556695
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.8823529411764706,
+   "n": 102,
+   "ci": {
+    "lo": 0.8055441009473682,
+    "hi": 0.9314062097055321
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 102,
+   "ci": {
+    "lo": 0.9637042523922542,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.855072463768116,
+   "n": 69,
+   "ci": {
+    "lo": 0.7533626140708477,
+    "hi": 0.9193299132761629
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8888888888888888,
+   "n": 36,
+   "ci": {
+    "lo": 0.7468487098496367,
+    "hi": 0.9559343109125816
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.9722222222222222,
+   "n": 36,
+   "ci": {
+    "lo": 0.8582996626496918,
+    "hi": 0.9950797197044302
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7380952380952381,
+   "n": 42,
+   "ci": {
+    "lo": 0.5893098001502445,
+    "hi": 0.8469751462739642
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 42,
+   "ci": {
+    "lo": 0.9161983874908382,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.6904761904761905,
+   "n": 42,
+   "ci": {
+    "lo": 0.5397372223365942,
+    "hi": 0.8092907348027727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.6904761904761905,
+   "n": 42,
+   "ci": {
+    "lo": 0.5397372223365942,
+    "hi": 0.8092907348027727
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.8245614035087719,
+   "n": 57,
+   "ci": {
+    "lo": 0.7063240094940684,
+    "hi": 0.9018125286640339
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 0.9122807017543859,
+   "n": 57,
+   "ci": {
+    "lo": 0.8105488754539574,
+    "hi": 0.9619488892333616
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.9555555555555556,
+   "n": 45,
+   "ci": {
+    "lo": 0.8517222081611939,
+    "hi": 0.9877261309595557
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 45,
+   "ci": {
+    "lo": 0.9213457380593594,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.841726618705036,
+   "n": 417,
+   "ci": {
+    "lo": 0.8035952193493461,
+    "hi": 0.8736192005178913
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.9592326139088729,
+   "n": 417,
+   "ci": {
+    "lo": 0.9356874766078592,
+    "hi": 0.9743936560558318
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.8985507246376812,
+   "n": 69,
+   "ci": {
+    "lo": 0.8050790434713212,
+    "hi": 0.9499839974283845
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.9117647058823529,
+   "n": 102,
+   "ci": {
+    "lo": 0.8407538217792032,
+    "hi": 0.9528849743085355
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 102,
+   "ci": {
+    "lo": 0.9637042523922542,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.7101449275362319,
+   "n": 69,
+   "ci": {
+    "lo": 0.5942832702456184,
+    "hi": 0.8038408785924083
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 69,
+   "ci": {
+    "lo": 0.9472609058559944,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0.8611111111111112,
+   "n": 36,
+   "ci": {
+    "lo": 0.7134014871960681,
+    "hi": 0.9391827463688489
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.9722222222222222,
+   "n": 36,
+   "ci": {
+    "lo": 0.8582996626496918,
+    "hi": 0.9950797197044302
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0.7619047619047619,
+   "n": 42,
+   "ci": {
+    "lo": 0.6147216491768113,
+    "hi": 0.8651917918898182
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 42,
+   "ci": {
+    "lo": 0.9161983874908382,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 24,
+   "ci": {
+    "lo": 0.8620194241710247,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.7619047619047619,
+   "n": 42,
+   "ci": {
+    "lo": 0.6147216491768113,
+    "hi": 0.8651917918898182
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.7619047619047619,
+   "n": 42,
+   "ci": {
+    "lo": 0.6147216491768113,
+    "hi": 0.8651917918898182
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0.8245614035087719,
+   "n": 57,
+   "ci": {
+    "lo": 0.7063240094940684,
+    "hi": 0.9018125286640339
+   }
+  },
+  {
+   "task": "task4",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 0.8947368421052632,
+   "n": 57,
+   "ci": {
+    "lo": 0.7887695089206027,
+    "hi": 0.9508560104608731
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "specific",
+   "metric": "exact",
+   "value": 0.6,
+   "n": 15,
+   "ci": {
+    "lo": 0.357464427565077,
+    "hi": 0.8017577191740534
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "specific",
+   "metric": "withinAcceptable",
+   "value": 0.6,
+   "n": 15,
+   "ci": {
+    "lo": 0.357464427565077,
+    "hi": 0.8017577191740534
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "exact",
+   "value": 0.3237410071942446,
+   "n": 139,
+   "ci": {
+    "lo": 0.2516017173175037,
+    "hi": 0.40536096022181245
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "withinAcceptable",
+   "value": 0.460431654676259,
+   "n": 139,
+   "ci": {
+    "lo": 0.37974890221800617,
+    "hi": 0.5432427192704117
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "HARD",
+   "metric": "exact",
+   "value": 0.17391304347826086,
+   "n": 23,
+   "ci": {
+    "lo": 0.06978540350612772,
+    "hi": 0.37138054785295666
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "HARD",
+   "metric": "withinAcceptable",
+   "value": 0.17391304347826086,
+   "n": 23,
+   "ci": {
+    "lo": 0.06978540350612772,
+    "hi": 0.37138054785295666
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "relative",
+   "metric": "exact",
+   "value": 0.5882352941176471,
+   "n": 34,
+   "ci": {
+    "lo": 0.42221304146519273,
+    "hi": 0.7363426221431113
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "relative",
+   "metric": "withinAcceptable",
+   "value": 0.6176470588235294,
+   "n": 34,
+   "ci": {
+    "lo": 0.4504071999938267,
+    "hi": 0.7610003514839122
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "named",
+   "metric": "exact",
+   "value": 0.043478260869565216,
+   "n": 23,
+   "ci": {
+    "lo": 0.0077164669621267445,
+    "hi": 0.20991586494059142
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "named",
+   "metric": "withinAcceptable",
+   "value": 0.4782608695652174,
+   "n": 23,
+   "ci": {
+    "lo": 0.2923686953994572,
+    "hi": 0.6703757013578151
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "custom",
+   "metric": "exact",
+   "value": 0,
+   "n": 12,
+   "ci": {
+    "lo": 0,
+    "hi": 0.2425007574992425
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "custom",
+   "metric": "withinAcceptable",
+   "value": 0.08333333333333333,
+   "n": 12,
+   "ci": {
+    "lo": 0.014864709450773478,
+    "hi": 0.35388592179859524
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ranges",
+   "metric": "exact",
+   "value": 0,
+   "n": 19,
+   "ci": {
+    "lo": 0,
+    "hi": 0.16818436536845052
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ranges",
+   "metric": "withinAcceptable",
+   "value": 0.21052631578947367,
+   "n": 19,
+   "ci": {
+    "lo": 0.08507538491591576,
+    "hi": 0.43334714240266087
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "multipart",
+   "metric": "exact",
+   "value": 0,
+   "n": 14,
+   "ci": {
+    "lo": 0,
+    "hi": 0.21531701192718142
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "multipart",
+   "metric": "withinAcceptable",
+   "value": 0.21428571428571427,
+   "n": 14,
+   "ci": {
+    "lo": 0.0757124833691637,
+    "hi": 0.4758972377320828
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "notime",
+   "metric": "exact",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "notime",
+   "metric": "withinAcceptable",
+   "value": 1,
+   "n": 8,
+   "ci": {
+    "lo": 0.6755843804891231,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ambiguous",
+   "metric": "exact",
+   "value": 0.5,
+   "n": 14,
+   "ci": {
+    "lo": 0.2679886791947528,
+    "hi": 0.7320113208052472
+   }
+  },
+  {
+   "task": "task4",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ambiguous",
+   "metric": "withinAcceptable",
+   "value": 0.5,
+   "n": 14,
+   "ci": {
+    "lo": 0.2679886791947528,
+    "hi": 0.7320113208052472
+   }
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.8,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.8,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.38095238095238093,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 0.9230769230769231,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.6153846153846154,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.38095238095238093,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.38095238095238093,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 0.8,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.8,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 0.875,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5769230769230769,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.7142857142857143,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5263157894736842,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.47619047619047616,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-preset",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.5882352941176471,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.47619047619047616,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "clarification-precision",
+   "value": 0.12121212121212122,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "clarification-recall",
+   "value": 0.5714285714285714,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "noTime-precision",
+   "value": 0.21052631578947367,
+   "n": null
+  },
+  {
+   "task": "task6",
+   "model": "chrono-node",
+   "arm": "baseline",
+   "slice": "ALL",
+   "metric": "noTime-recall",
+   "value": 1,
+   "n": null
+  },
+  {
+   "task": "task5",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact-free",
+   "value": 0.8729016786570744,
+   "n": 417,
+   "ci": {
+    "lo": 0.837492557325542,
+    "hi": 0.9015028271611628
+   }
+  },
+  {
+   "task": "task5",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact-steered",
+   "value": 0.9016786570743405,
+   "n": 417,
+   "ci": {
+    "lo": 0.8693289955277445,
+    "hi": 0.9266949716846223
+   }
+  },
+  {
+   "task": "task5",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact-free",
+   "value": 0.7817745803357314,
+   "n": 417,
+   "ci": {
+    "lo": 0.7396556931165056,
+    "hi": 0.8187491794056024
+   }
+  },
+  {
+   "task": "task5",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact-steered",
+   "value": 0.8513189448441247,
+   "n": 417,
+   "ci": {
+    "lo": 0.8139694966853276,
+    "hi": 0.8822544507571307
+   }
+  },
+  {
+   "task": "task5",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact-free",
+   "value": 0.8776978417266187,
+   "n": 417,
+   "ci": {
+    "lo": 0.8427577495255681,
+    "hi": 0.9057423987487468
+   }
+  },
+  {
+   "task": "task5",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "ALL",
+   "metric": "exact-steered",
+   "value": 0.8920863309352518,
+   "n": 417,
+   "ci": {
+    "lo": 0.8586478280625001,
+    "hi": 0.918366611574646
+   }
+  },
+  {
+   "task": "task5",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact-free",
+   "value": 0.841726618705036,
+   "n": 417,
+   "ci": {
+    "lo": 0.8035952193493461,
+    "hi": 0.8736192005178913
+   }
+  },
+  {
+   "task": "task5",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "ALL",
+   "metric": "exact-steered",
+   "value": 0.8657074340527577,
+   "n": 417,
+   "ci": {
+    "lo": 0.8296217279743981,
+    "hi": 0.8951165108308908
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9148936170212766,
+   "n": 47,
+   "ci": {
+    "lo": 0.8006819480497736,
+    "hi": 0.9664064205302869
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9361702127659575,
+   "n": 47,
+   "ci": {
+    "lo": 0.828371220656221,
+    "hi": 0.9780550129792271
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 1,
+   "n": 47,
+   "ci": {
+    "lo": 0.9244398288016114,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 1,
+   "n": 47,
+   "ci": {
+    "lo": 0.9244398288016114,
+    "hi": 1
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8936170212765957,
+   "n": 47,
+   "ci": {
+    "lo": 0.7740546030798721,
+    "hi": 0.9536959004448007
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9148936170212766,
+   "n": 47,
+   "ci": {
+    "lo": 0.8006819480497736,
+    "hi": 0.9664064205302869
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8723404255319149,
+   "n": 47,
+   "ci": {
+    "lo": 0.7482578662713097,
+    "hi": 0.9401547721979753
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8936170212765957,
+   "n": 47,
+   "ci": {
+    "lo": 0.7740546030798721,
+    "hi": 0.9536959004448007
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8794326241134752,
+   "n": 141,
+   "ci": {
+    "lo": 0.8153920951986041,
+    "hi": 0.9233459469108453
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8865248226950354,
+   "n": 141,
+   "ci": {
+    "lo": 0.8236114617593251,
+    "hi": 0.9289347680531044
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9148936170212766,
+   "n": 141,
+   "ci": {
+    "lo": 0.8571322383922675,
+    "hi": 0.9506467422320835
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9432624113475178,
+   "n": 141,
+   "ci": {
+    "lo": 0.892038495203873,
+    "hi": 0.9709732362323994
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8794326241134752,
+   "n": 141,
+   "ci": {
+    "lo": 0.8153920951986041,
+    "hi": 0.9233459469108453
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8865248226950354,
+   "n": 141,
+   "ci": {
+    "lo": 0.8236114617593251,
+    "hi": 0.9289347680531044
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8014184397163121,
+   "n": 141,
+   "ci": {
+    "lo": 0.7279646270433555,
+    "hi": 0.8588833503333098
+   }
+  },
+  {
+   "task": "task7",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8297872340425532,
+   "n": 141,
+   "ci": {
+    "lo": 0.7592132388004841,
+    "hi": 0.8828674893881027
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8297872340425532,
+   "n": 47,
+   "ci": {
+    "lo": 0.6985994892711489,
+    "hi": 0.9111374190873607
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8297872340425532,
+   "n": 47,
+   "ci": {
+    "lo": 0.6985994892711489,
+    "hi": 0.9111374190873607
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9574468085106383,
+   "n": 47,
+   "ci": {
+    "lo": 0.8575121280614056,
+    "hi": 0.9882519706294303
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9574468085106383,
+   "n": 47,
+   "ci": {
+    "lo": 0.8575121280614056,
+    "hi": 0.9882519706294303
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9361702127659575,
+   "n": 47,
+   "ci": {
+    "lo": 0.828371220656221,
+    "hi": 0.9780550129792271
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9361702127659575,
+   "n": 47,
+   "ci": {
+    "lo": 0.828371220656221,
+    "hi": 0.9780550129792271
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9361702127659575,
+   "n": 47,
+   "ci": {
+    "lo": 0.828371220656221,
+    "hi": 0.9780550129792271
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9574468085106383,
+   "n": 47,
+   "ci": {
+    "lo": 0.8575121280614056,
+    "hi": 0.9882519706294303
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.9078014184397163,
+   "n": 141,
+   "ci": {
+    "lo": 0.8486440170689254,
+    "hi": 0.9453267758524452
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "hybrid",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9432624113475178,
+   "n": 141,
+   "ci": {
+    "lo": 0.892038495203873,
+    "hi": 0.9709732362323994
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.900709219858156,
+   "n": 141,
+   "ci": {
+    "lo": 0.8402321307958763,
+    "hi": 0.939930474422514
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9219858156028369,
+   "n": 141,
+   "ci": {
+    "lo": 0.8657048398111694,
+    "hi": 0.9558823285161621
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8652482269503546,
+   "n": 141,
+   "ci": {
+    "lo": 0.7991140974492768,
+    "hi": 0.9120075692542118
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.8865248226950354,
+   "n": 141,
+   "ci": {
+    "lo": 0.8236114617593251,
+    "hi": 0.9289347680531044
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-exact",
+   "value": 0.8723404255319149,
+   "n": 141,
+   "ci": {
+    "lo": 0.8072275308836183,
+    "hi": 0.9177023235228505
+   }
+  },
+  {
+   "task": "task7",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-tool",
+   "slice": "chains",
+   "metric": "hop-withinAcceptable",
+   "value": 0.9148936170212766,
+   "n": 141,
+   "ci": {
+    "lo": 0.8571322383922675,
+    "hi": 0.9506467422320835
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8823529411764706,
+   "n": 17,
+   "ci": {
+    "lo": 0.6566315750229009,
+    "hi": 0.967120919987079
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9819444444444445,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8235294117647058,
+   "n": 17,
+   "ci": {
+    "lo": 0.5897007098262422,
+    "hi": 0.9380898628745101
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9802521008403362,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.9411764705882353,
+   "n": 17,
+   "ci": {
+    "lo": 0.730174547964372,
+    "hi": 0.9895398693548358
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-opus-4-8",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9852941176470589,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.6470588235294118,
+   "n": 51,
+   "ci": {
+    "lo": 0.5098580497281073,
+    "hi": 0.7636569461874021
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9348522334372983,
+   "n": 51
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.6078431372549019,
+   "n": 51,
+   "ci": {
+    "lo": 0.4708491122516505,
+    "hi": 0.7297285514197229
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9212685976185339,
+   "n": 51
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8235294117647058,
+   "n": 51,
+   "ci": {
+    "lo": 0.6974559482722196,
+    "hi": 0.9042770427419009
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "anthropic/claude-haiku-4-5",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.966589918795801,
+   "n": 51
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8823529411764706,
+   "n": 17,
+   "ci": {
+    "lo": 0.6566315750229009,
+    "hi": 0.967120919987079
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9965251252015958,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8235294117647058,
+   "n": 17,
+   "ci": {
+    "lo": 0.5897007098262422,
+    "hi": 0.9380898628745101
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9788780663780663,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.8823529411764706,
+   "n": 17,
+   "ci": {
+    "lo": 0.6566315750229009,
+    "hi": 0.967120919987079
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.5",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9965251252015958,
+   "n": 17
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.7058823529411765,
+   "n": 51,
+   "ci": {
+    "lo": 0.5700066466848335,
+    "hi": 0.8129143475968796
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9725486895887429,
+   "n": 51
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.803921568627451,
+   "n": 51,
+   "ci": {
+    "lo": 0.6754165732550456,
+    "hi": 0.8898477516370072
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "iso-tool",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.9801492138623766,
+   "n": 51
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "exact-set",
+   "value": 0.7647058823529411,
+   "n": 51,
+   "ci": {
+    "lo": 0.632375118636542,
+    "hi": 0.8599518740113747
+   }
+  },
+  {
+   "task": "task7b",
+   "model": "openai/gpt-5.4-mini",
+   "arm": "ir",
+   "slice": "compound",
+   "metric": "mean-f1",
+   "value": 0.977064095222347,
+   "n": 51
+  }
+ ],
+ "determinism": {
+  "anthropic/claude-haiku-4-5|ir": {
+   "unprompted": 0.8633093525179856,
+   "n": 139,
+   "prompted": 0.8345323741007195
+  },
+  "anthropic/claude-haiku-4-5|iso-preset": {
+   "unprompted": 0.7841726618705036,
+   "n": 139
+  },
+  "anthropic/claude-haiku-4-5|iso": {
+   "unprompted": 0.7697841726618705,
+   "n": 139,
+   "prompted": 0.8273381294964028
+  },
+  "openai/gpt-5.4-mini|ir": {
+   "unprompted": 0.8489208633093526,
+   "n": 139,
+   "prompted": 0.8561151079136691
+  },
+  "openai/gpt-5.4-mini|iso-preset": {
+   "unprompted": 0.8201438848920863,
+   "n": 139
+  },
+  "openai/gpt-5.4-mini|iso": {
+   "unprompted": 0.841726618705036,
+   "n": 139,
+   "prompted": 0.7769784172661871
+  }
+ },
+ "cost": {
+  "anthropic/claude-opus-4-8|ir": {
+   "per100Questions": 2.081063829787234,
+   "tokensPerAnswer": {
+    "in": 3297,
+    "out": 173
+   }
+  },
+  "anthropic/claude-opus-4-8|iso-preset": {
+   "per100Questions": 1.4338541666666669,
+   "tokensPerAnswer": {
+    "in": 1667,
+    "out": 240
+   }
+  },
+  "anthropic/claude-opus-4-8|iso": {
+   "per100Questions": 1.163375,
+   "tokensPerAnswer": {
+    "in": 1252,
+    "out": 215
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir": {
+   "per100Questions": 0.56871654676259,
+   "tokensPerAnswer": {
+    "in": 2404,
+    "out": 657
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset": {
+   "per100Questions": 0.45818009592326137,
+   "tokensPerAnswer": {
+    "in": 1337,
+    "out": 649
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso": {
+   "per100Questions": 0.40192278177458035,
+   "tokensPerAnswer": {
+    "in": 943,
+    "out": 615
+   }
+  },
+  "openai/gpt-5.5|ir": {
+   "per100Questions": 1.4829712230215826,
+   "tokensPerAnswer": {
+    "in": 2004,
+    "out": 160
+   }
+  },
+  "openai/gpt-5.5|iso-preset": {
+   "per100Questions": 1.1536541666666666,
+   "tokensPerAnswer": {
+    "in": 1176,
+    "out": 189
+   }
+  },
+  "openai/gpt-5.5|iso": {
+   "per100Questions": 0.9779541666666667,
+   "tokensPerAnswer": {
+    "in": 804,
+    "out": 192
+   }
+  },
+  "openai/gpt-5.4-mini|ir": {
+   "per100Questions": 0.09102865707434053,
+   "tokensPerAnswer": {
+    "in": 2004,
+    "out": 205
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset": {
+   "per100Questions": 0.0763107314148681,
+   "tokensPerAnswer": {
+    "in": 1172,
+    "out": 235
+   }
+  },
+  "openai/gpt-5.4-mini|iso": {
+   "per100Questions": 0.06587212230215826,
+   "tokensPerAnswer": {
+    "in": 800,
+    "out": 229
+   }
+  }
+ },
+ "decisionTable": [
+  {
+   "technique": "Direct ISO, no tool",
+   "adoptWhen": "the ISO arm already clears the accuracy + determinism bar on a slice",
+   "verdict": "ADOPT for the easy majority at frontier; insufficient alone",
+   "evidence": "Frontier ISO is strong on specific dates (opus 80%, gpt-5.5 100%) and — contrary to the 2024-25 literature — on day-grain arithmetic (relative slice: opus 94%, gpt-5.5 91%) once one grain-guidance sentence is in the prompt. But ISO never beats IR overall for ANY model (Task 4 ALL), trails on compound/custom slices, and is the only arm producing DST zone-offset errors (Task 7)."
+  },
+  {
+   "technique": "Preset crib",
+   "adoptWhen": "a precomputed preset measurably lifts a flaky-but-common case",
+   "verdict": "ADOPT, narrowly — cheap insurance, not a fix",
+   "evidence": "The crib lifts ISO +1..+5pt overall (Task 4: e.g. gpt-5.5 84→89%, opus 85→87%) and steering conventions in the prompt converts IR's reasonable-alternatives to exact while ISO's persist (Task 5). It never closes the ISO→IR gap."
+  },
+  {
+   "technique": "Resolve tool / tools accept a restricted IR",
+   "adoptWhen": "IR beats ISO on a slice (custom presets, ranges/sets)",
+   "verdict": "ADOPT — the headline result",
+   "evidence": "IR leads or ties ISO for all four models on overall translation (Task 4 ALL: haiku 87 vs 78, gpt-mini 88 vs 84, opus 94 vs 85, gpt-5.5 92 vs 84), with the biggest margins exactly where predicted: compound/multipart and custom presets. It holds in tool-threading (Task 7: IR best cell for all four) and decomposition (Task 7b: haiku +17pt, opus 94% vs 88%)."
+  },
+  {
+   "technique": "Arithmetic / shift tool",
+   "adoptWhen": "the model's own arithmetic is below bar or drifts over hops",
+   "verdict": "SKIP as a standalone tool — fold arithmetic into resolve",
+   "evidence": "Day-grain arithmetic is no longer below bar with grain guidance (Task 4 relative slice ≥91% at frontier); the residual failures are business-day/holiday table arithmetic and extreme magnitudes. Offered a shift tool, models used it in only 6–20% of attempts and it was net-NEGATIVE or neutral in both threading (Task 7: haiku 80 vs 88 plain-ISO) and decomposition (Task 7b: every model's tool arm ≤ its plain-ISO arm at frontier). The resolve tool already subsumes the arithmetic cases."
+  },
+  {
+   "technique": "Tool contract: ISO vs shape-restricted IR",
+   "adoptWhen": "ISO has significant threading/decomposition errors and a shape-restricted IR contract is better",
+   "verdict": "ADOPT IR-capable boundaries for weak/unknown models; ISO params acceptable at frontier",
+   "evidence": "H3 (\"ISO params will be just as accurate\") holds only at frontier (gpt-5.5: ISO ties IR in both Task 7 and 7b). At small-model tier the IR contract wins (Task 7 haiku 91 vs 88; Task 7b haiku 82 vs 65), the bounding-range collapse occurs ONLY under ISO contracts, and zone-offset (DST) errors are structurally impossible under the IR contract. Also measured: the tool's VALIDATION FEEDBACK is part of the contract (fixing one error message moved gpt-5.5's IR threading 91→96%), and iterated through nine hybrid-contract variants and found a sharp law: an expression channel works IFF its shape is non-optional AND the grammar is visible in-band. Optional object fields make GPT-family models emit degenerate {} (~0 well-formed in ~50 attempts); a string field with the grammar hidden yields fenceposts; a required object (schema IS the grammar) or a grammar-inlined string both work for every vendor (35/35 expressions correct in the string+grammar case). None beats resolve-then-query — the same law applied once at a central boundary — which remains the accuracy recommendation (90-100% for every model)."
+  }
+ ],
+ "toolContract": [
+  {
+   "contract": "Query tool takes ISO only",
+   "shape": "the model computes every date itself; no expression path",
+   "role": "floor",
+   "perModel": {
+    "anthropic/claude-haiku-4-5": 0.8794326241134752,
+    "openai/gpt-5.4-mini": 0.8652482269503546,
+    "anthropic/claude-opus-4-8": 0.8936170212765957,
+    "openai/gpt-5.5": 0.9361702127659575
+   },
+   "verdict": "Fine for easy traffic and the safe default in a free-form agent; leaves the hard categories (named/custom/ranges/business-day) on the table and admits two ISO-only failure classes (DST offset, bounding-range collapse)."
+  },
+  {
+   "contract": "One tool takes ISO *or* IR (optional polymorphic field)",
+   "shape": "a single query tool with an optional expression field",
+   "role": "avoid",
+   "perModel": {
+    "anthropic/claude-haiku-4-5": 0.8794326241134752,
+    "openai/gpt-5.4-mini": 0.9078014184397163,
+    "anthropic/claude-opus-4-8": 0.9148936170212766,
+    "openai/gpt-5.5": 0.8297872340425532
+   },
+   "verdict": "Anti-pattern. GPT-family models emit degenerate {} into an optional expression field and route only 1–68% of hops; the channel silently degrades to plain ISO plus a foot-gun. Choosing ISO is never penalized — the failures are the broken expression path."
+  },
+  {
+   "contract": "Dedicated resolve(IR)→ISO, then ISO query",
+   "shape": "separate resolve tool emits ISO; domain tools take ISO; instruction: resolve by default",
+   "role": "ceiling",
+   "perModel": {
+    "anthropic/claude-haiku-4-5": 0.9148936170212766,
+    "openai/gpt-5.4-mini": 0.900709219858156,
+    "anthropic/claude-opus-4-8": 1,
+    "openai/gpt-5.5": 0.9574468085106383
+   },
+   "verdict": "The accuracy ceiling and the recommendation. Query tools still take ISO; IR enters at one shared resolve boundary that emits ISO. The win is NOT structural — the model could still self-compute (query takes ISO) — it is the \"resolve by default\" instruction, which drives 93–100% routing here vs the hybrid's selective 1–68%. High routing is what reaches 90–100%; self-computed hops are the misses. (A required expression argument is also what makes that path safe — the optional-field anti-pattern above is the contrast; if a time arg must live on a domain tool, make it required, but prefer this shared boundary.)"
+  }
+ ]
+}

@@ -1,0 +1,2396 @@
+{
+ "promptVersion": "734d953a55e6",
+ "n": 96,
+ "scores": {
+  "anthropic/claude-haiku-4-5|ir|B8-01": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-11-20T00:00:00-05:00",
+      "end": "2026-01-04T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-05T00:00:00-05:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 1,
+   "tags": [
+    "extra-windows",
+    "wrong-count"
+   ],
+   "set": {
+    "precision": 0.9230769230769231,
+    "recall": 1,
+    "f1": 0.9600000000000001,
+    "countDelta": 1,
+    "exactMembers": 12
+   },
+   "iou": 0.9230769230769231,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2026-05-12T08:00:00-04:00",
+      "end": "2026-05-12T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-13T08:00:00-04:00",
+      "end": "2026-05-13T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-14T08:00:00-04:00",
+      "end": "2026-05-14T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-19T08:00:00-04:00",
+      "end": "2026-05-19T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-20T08:00:00-04:00",
+      "end": "2026-05-20T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-21T08:00:00-04:00",
+      "end": "2026-05-21T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-26T08:00:00-04:00",
+      "end": "2026-05-26T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-27T08:00:00-04:00",
+      "end": "2026-05-27T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-28T08:00:00-04:00",
+      "end": "2026-05-28T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-02T08:00:00-04:00",
+      "end": "2026-06-02T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-03T08:00:00-04:00",
+      "end": "2026-06-03T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-04T08:00:00-04:00",
+      "end": "2026-06-04T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-09T08:00:00-04:00",
+      "end": "2026-06-09T12:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-02T00:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "deltaDays": 365,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2027-03-04T00:00:00-05:00",
+      "end": "2027-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "deltaDays": 365,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2027-03-04T00:00:00-05:00",
+      "end": "2027-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|ir|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "anthropic/claude-haiku-4-5|ir|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|B8-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region",
+    "resolved-when-should-clarify"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-11-24T00:00:00-05:00",
+      "end": "2026-01-02T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-04T23:00:00-05:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 3,
+   "tags": [],
+   "set": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1": 0.75,
+    "countDelta": 0,
+    "exactMembers": 9
+   },
+   "iou": 0.6,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2026-05-05T08:00:00-04:00",
+      "end": "2026-05-05T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-06T08:00:00-04:00",
+      "end": "2026-05-06T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-07T08:00:00-04:00",
+      "end": "2026-05-07T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-12T08:00:00-04:00",
+      "end": "2026-05-12T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-13T08:00:00-04:00",
+      "end": "2026-05-13T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-14T08:00:00-04:00",
+      "end": "2026-05-14T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-19T08:00:00-04:00",
+      "end": "2026-05-19T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-20T08:00:00-04:00",
+      "end": "2026-05-20T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-21T08:00:00-04:00",
+      "end": "2026-05-21T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-26T08:00:00-04:00",
+      "end": "2026-05-26T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-27T08:00:00-04:00",
+      "end": "2026-05-27T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-28T08:00:00-04:00",
+      "end": "2026-05-28T12:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-02T00:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "anthropic/claude-haiku-4-5|iso-preset|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "anthropic/claude-haiku-4-5|iso|B8-01": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-11-25T00:00:00-05:00",
+      "end": "2026-01-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-05T00:00:00-05:00",
+      "end": "2026-03-12T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 3,
+   "tags": [
+    "wrong-period",
+    "too-wide"
+   ],
+   "iou": 0.995850622406639,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T06:01:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "iou": 0.9668989547038328,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 5,
+   "tags": [
+    "collapsed-to-bounding-range",
+    "wrong-count"
+   ],
+   "set": {
+    "precision": 0.06451612903225806,
+    "recall": 1,
+    "f1": 0.12121212121212122,
+    "countDelta": -11,
+    "exactMembers": 0
+   },
+   "iou": 0.06451612903225806,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-05-09T00:00:00-04:00",
+      "end": "2026-06-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-02T00:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "deltaDays": 365,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2027-03-04T00:00:00-05:00",
+      "end": "2027-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "anthropic/claude-haiku-4-5|iso|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "anthropic/claude-haiku-4-5|iso|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|ir|B8-01": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "unresolvable"
+   ],
+   "unresolvable": true
+  },
+  "openai/gpt-5.4-mini|ir|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-05T00:00:00-05:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|ir|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|ir|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 1,
+   "tags": [
+    "extra-windows",
+    "wrong-count"
+   ],
+   "set": {
+    "precision": 0.9411764705882353,
+    "recall": 1,
+    "f1": 0.9696969696969697,
+    "countDelta": 1,
+    "exactMembers": 12
+   },
+   "iou": 0.9411764705882353,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2026-05-12T08:00:00-04:00",
+      "end": "2026-05-12T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-13T08:00:00-04:00",
+      "end": "2026-05-13T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-14T08:00:00-04:00",
+      "end": "2026-05-14T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-19T08:00:00-04:00",
+      "end": "2026-05-19T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-20T08:00:00-04:00",
+      "end": "2026-05-20T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-21T08:00:00-04:00",
+      "end": "2026-05-21T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-26T08:00:00-04:00",
+      "end": "2026-05-26T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-27T08:00:00-04:00",
+      "end": "2026-05-27T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-28T08:00:00-04:00",
+      "end": "2026-05-28T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-02T08:00:00-04:00",
+      "end": "2026-06-02T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-03T08:00:00-04:00",
+      "end": "2026-06-03T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-04T08:00:00-04:00",
+      "end": "2026-06-04T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-09T08:00:00-04:00",
+      "end": "2026-06-09T11:00:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|ir|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-02T00:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "deltaDays": 365,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2027-03-04T00:00:00-05:00",
+      "end": "2027-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "deltaDays": 365,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2027-03-04T00:00:00-05:00",
+      "end": "2027-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|ir|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|ir|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|iso-preset|B8-01": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-12-20T00:00:00-05:00",
+      "end": "2026-01-03T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-03-12T00:00:00-04:00",
+      "end": "2026-03-12T14:30:00-04:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 5,
+   "tags": [],
+   "iou": 0.030751329787234043,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2027-03-12T00:00:00-05:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 1,
+   "tags": [
+    "extra-windows",
+    "wrong-count"
+   ],
+   "set": {
+    "precision": 0.9230769230769231,
+    "recall": 1,
+    "f1": 0.9600000000000001,
+    "countDelta": 1,
+    "exactMembers": 12
+   },
+   "iou": 0.9230769230769231,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2026-05-12T08:00:00-04:00",
+      "end": "2026-05-12T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-13T08:00:00-04:00",
+      "end": "2026-05-13T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-14T08:00:00-04:00",
+      "end": "2026-05-14T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-19T08:00:00-04:00",
+      "end": "2026-05-19T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-20T08:00:00-04:00",
+      "end": "2026-05-20T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-21T08:00:00-04:00",
+      "end": "2026-05-21T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-26T08:00:00-04:00",
+      "end": "2026-05-26T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-27T08:00:00-04:00",
+      "end": "2026-05-27T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-28T08:00:00-04:00",
+      "end": "2026-05-28T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-02T08:00:00-04:00",
+      "end": "2026-06-02T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-03T08:00:00-04:00",
+      "end": "2026-06-03T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-04T08:00:00-04:00",
+      "end": "2026-06-04T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-09T08:00:00-04:00",
+      "end": "2026-06-09T12:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-02T00:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso-preset|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|iso-preset|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|iso|B8-01": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 6,
+   "tags": [
+    "outside-acceptable-region"
+   ],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2025-12-20T00:00:00-05:00",
+      "end": "2026-01-03T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|B8-02": {
+   "clarifySignal": true,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 4,
+   "tags": [],
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-05T00:00:00-05:00",
+      "end": "2026-03-12T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|C4-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-06-13T02:00:00-04:00",
+      "end": "2026-06-13T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|C4-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 5,
+   "tags": [],
+   "iou": 0.004166666666666667,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-14T02:00:00-04:00",
+      "end": "2026-03-14T02:01:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|G5-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "iou": 1,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|G5-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": false,
+   "severity": 5,
+   "tags": [],
+   "iou": 0.030751329787234043,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T00:00:00-05:00",
+      "end": "2027-03-12T00:00:00-05:00"
+     }
+    ],
+    "open": true
+   }
+  },
+  "openai/gpt-5.4-mini|iso|M6-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.75,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 1,
+   "tags": [
+    "extra-windows",
+    "wrong-count"
+   ],
+   "set": {
+    "precision": 0.9230769230769231,
+    "recall": 1,
+    "f1": 0.9600000000000001,
+    "countDelta": 1,
+    "exactMembers": 12
+   },
+   "iou": 0.9230769230769231,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2026-05-12T08:00:00-04:00",
+      "end": "2026-05-12T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-13T08:00:00-04:00",
+      "end": "2026-05-13T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-14T08:00:00-04:00",
+      "end": "2026-05-14T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-19T08:00:00-04:00",
+      "end": "2026-05-19T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-20T08:00:00-04:00",
+      "end": "2026-05-20T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-21T08:00:00-04:00",
+      "end": "2026-05-21T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-26T08:00:00-04:00",
+      "end": "2026-05-26T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-27T08:00:00-04:00",
+      "end": "2026-05-27T12:00:00-04:00"
+     },
+     {
+      "start": "2026-05-28T08:00:00-04:00",
+      "end": "2026-05-28T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-02T08:00:00-04:00",
+      "end": "2026-06-02T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-03T08:00:00-04:00",
+      "end": "2026-06-03T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-04T08:00:00-04:00",
+      "end": "2026-06-04T12:00:00-04:00"
+     },
+     {
+      "start": "2026-06-09T08:00:00-04:00",
+      "end": "2026-06-09T12:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|M6-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "set": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "countDelta": 0,
+    "exactMembers": 8
+   },
+   "iou": 1,
+   "resolved": {
+    "cardinality": "set",
+    "intervals": [
+     {
+      "start": "2025-09-06T00:00:00-04:00",
+      "end": "2025-09-06T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-07T00:00:00-04:00",
+      "end": "2025-09-07T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-13T00:00:00-04:00",
+      "end": "2025-09-13T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-14T00:00:00-04:00",
+      "end": "2025-09-14T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-20T00:00:00-04:00",
+      "end": "2025-09-20T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-21T00:00:00-04:00",
+      "end": "2025-09-21T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-27T00:00:00-04:00",
+      "end": "2025-09-27T06:00:00-04:00"
+     },
+     {
+      "start": "2025-09-28T00:00:00-04:00",
+      "end": "2025-09-28T06:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|N3-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-12T00:00:00-04:00",
+      "end": "2026-03-13T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|N3-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": false,
+   "withinAcceptable": true,
+   "severity": 3,
+   "tags": [
+    "wrong-period",
+    "too-wide"
+   ],
+   "iou": 0.9940476190476191,
+   "deltaDays": 0,
+   "offByOne": false,
+   "timeCorrect": false,
+   "resolved": {
+    "cardinality": "range",
+    "intervals": [
+     {
+      "start": "2026-03-01T23:00:00-05:00",
+      "end": "2026-03-09T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|R2-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-06-06T00:00:00-04:00",
+      "end": "2026-06-07T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|R2-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-15T00:00:00-04:00",
+      "end": "2026-03-16T00:00:00-04:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|S1-01": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 0.5,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|S1-02": {
+   "clarifySignal": false,
+   "noTimeAnswer": false,
+   "ambiguityCalibration": 1,
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "deltaDays": 0,
+   "offByOne": false,
+   "grainMatch": true,
+   "timeCorrect": true,
+   "resolved": {
+    "cardinality": "point",
+    "intervals": [
+     {
+      "start": "2026-03-04T00:00:00-05:00",
+      "end": "2026-03-05T00:00:00-05:00"
+     }
+    ]
+   }
+  },
+  "openai/gpt-5.4-mini|iso|T7-01": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  },
+  "openai/gpt-5.4-mini|iso|T7-02": {
+   "exact": true,
+   "withinAcceptable": true,
+   "severity": 0,
+   "tags": [],
+   "clarifySignal": true,
+   "noTimeAnswer": true
+  }
+ }
+}

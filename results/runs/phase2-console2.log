@@ -1,0 +1,267 @@
+
+> temporal-research@0.1.0 phase2 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/phase2.ts
+
+This storage provider does not support batch creating metrics
+This storage provider does not support batch creating scores
+task4 openai/mini iso rep1 specific: 14 items, 0 errors
+task4 openai/mini iso rep1 relative: 20 items, 0 errors
+task4 openai/mini iso rep1 named: 21 items, 0 errors
+task4 openai/mini iso rep1 custom: 10 items, 0 errors
+task4 openai/mini iso rep1 ranges: 17 items, 0 errors
+task4 openai/mini iso rep1 multipart: 12 items, 0 errors
+task4 openai/mini iso rep1 notime: 8 items, 0 errors
+task4 openai/mini iso rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini iso rep2 specific: 14 items, 0 errors
+task4 openai/mini iso rep2 relative: 20 items, 0 errors
+task4 openai/mini iso rep2 named: 21 items, 0 errors
+task4 openai/mini iso rep2 custom: 10 items, 0 errors
+task4 openai/mini iso rep2 ranges: 17 items, 0 errors
+task4 openai/mini iso rep2 multipart: 12 items, 0 errors
+task4 openai/mini iso rep2 notime: 8 items, 0 errors
+task4 openai/mini iso rep2 ambiguous: 14 items, 0 errors
+task4 openai/mini iso rep3 specific: 14 items, 0 errors
+task4 openai/mini iso rep3 relative: 20 items, 0 errors
+task4 openai/mini iso rep3 named: 21 items, 0 errors
+task4 openai/mini iso rep3 custom: 10 items, 0 errors
+task4 openai/mini iso rep3 ranges: 17 items, 0 errors
+task4 openai/mini iso rep3 multipart: 12 items, 0 errors
+task4 openai/mini iso rep3 notime: 8 items, 0 errors
+task4 openai/mini iso rep3 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep1 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep1 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep1 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep1 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep1 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep1 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep1 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep2 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep2 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep2 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep2 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep2 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep2 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep2 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep2 ambiguous: 14 items, 0 errors
+task4 openai/mini iso-preset rep3 specific: 14 items, 0 errors
+task4 openai/mini iso-preset rep3 relative: 20 items, 0 errors
+task4 openai/mini iso-preset rep3 named: 21 items, 0 errors
+task4 openai/mini iso-preset rep3 custom: 10 items, 0 errors
+task4 openai/mini iso-preset rep3 ranges: 17 items, 0 errors
+task4 openai/mini iso-preset rep3 multipart: 12 items, 0 errors
+task4 openai/mini iso-preset rep3 notime: 8 items, 0 errors
+task4 openai/mini iso-preset rep3 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep1 specific: 14 items, 0 errors
+task4 openai/mini ir rep1 relative: 20 items, 0 errors
+task4 openai/mini ir rep1 named: 21 items, 0 errors
+task4 openai/mini ir rep1 custom: 10 items, 0 errors
+task4 openai/mini ir rep1 ranges: 17 items, 0 errors
+task4 openai/mini ir rep1 multipart: 12 items, 0 errors
+task4 openai/mini ir rep1 notime: 8 items, 0 errors
+task4 openai/mini ir rep1 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep2 specific: 14 items, 0 errors
+task4 openai/mini ir rep2 relative: 20 items, 0 errors
+task4 openai/mini ir rep2 named: 21 items, 0 errors
+task4 openai/mini ir rep2 custom: 10 items, 0 errors
+task4 openai/mini ir rep2 ranges: 17 items, 0 errors
+task4 openai/mini ir rep2 multipart: 12 items, 0 errors
+task4 openai/mini ir rep2 notime: 8 items, 0 errors
+task4 openai/mini ir rep2 ambiguous: 14 items, 0 errors
+task4 openai/mini ir rep3 specific: 14 items, 0 errors
+task4 openai/mini ir rep3 relative: 20 items, 0 errors
+task4 openai/mini ir rep3 named: 21 items, 0 errors
+task4 openai/mini ir rep3 custom: 10 items, 0 errors
+task4 openai/mini ir rep3 ranges: 17 items, 0 errors
+task4 openai/mini ir rep3 multipart: 12 items, 0 errors
+task4 openai/mini ir rep3 notime: 8 items, 0 errors
+task4 openai/mini ir rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep1 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep1 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep1 named: 21 items, 0 errors
+task4 anthropic/mini iso rep1 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep1 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep2 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep2 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep2 named: 21 items, 0 errors
+task4 anthropic/mini iso rep2 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep2 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep2 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso rep3 specific: 14 items, 0 errors
+task4 anthropic/mini iso rep3 relative: 20 items, 0 errors
+task4 anthropic/mini iso rep3 named: 21 items, 0 errors
+task4 anthropic/mini iso rep3 custom: 10 items, 0 errors
+task4 anthropic/mini iso rep3 ranges: 17 items, 0 errors
+task4 anthropic/mini iso rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini iso rep3 notime: 8 items, 0 errors
+task4 anthropic/mini iso rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep1 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep1 relative: 20 items, 0 errors
+task4 anthropic/mini iso-preset rep1 named: 21 items, 0 errors
+task4 anthropic/mini iso-preset rep1 custom: 10 items, 0 errors
+task4 anthropic/mini iso-preset rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini iso-preset rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep1 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep2 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep2 relative: 20 items, 0 errors
+task4 anthropic/mini iso-preset rep2 named: 21 items, 0 errors
+task4 anthropic/mini iso-preset rep2 custom: 10 items, 0 errors
+task4 anthropic/mini iso-preset rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini iso-preset rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep2 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep2 ambiguous: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep3 specific: 14 items, 0 errors
+task4 anthropic/mini iso-preset rep3 relative: 20 items, 0 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - root: Invalid input: expected object, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "object",
+        "code": "invalid_type",
+        "path": [],
+        "message": "Invalid input: expected object, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: { value: 'undefined' }
+  },
+  runId: 'f4cdef2b-cc7c-4d7c-98f6-301cfa8614ee',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+task4 anthropic/mini iso-preset rep3 named: attempt 1 failed: Failed to run experiment: Error generating result from target
+This storage provider does not support batch creating logs
+task4 anthropic/mini iso-preset rep3 named: 17 items, 0 errors (attempt 2)
+task4 anthropic/mini iso-preset rep3 custom: 10 items, 0 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - value: Invalid input
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "code": "invalid_union",
+        "errors": [
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "point"
+              ],
+              "path": [
+                "cardinality"
+              ],
+              "message": "Invalid input: expected \"point\""
+            },
+            {
+              "expected": "string",
+              "code": "invalid_type",
+              "path": [
+                "at"
+              ],
+              "message": "Invalid input: expected string, received undefined"
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "[)",
+                "[]",
+                "(]",
+                "()"
+              ],
+              "path": [
+                "bounds"
+              ],
+              "message": "Invalid option: expected one of \"[)\"|\"[]\"|\"(]\"|\"()\""
+            }
+          ],
+          [
+            {
+              "code": "invalid_value",
+              "values": [
+                "set"
+              ],
+              "path": [
+                "cardinality"
+              ],
+              "message": "Invalid input: expected \"set\""
+            },
+            {
+              "expected": "array",
+              "code": "invalid_type",
+              "path": [
+                "members"
+              ],
+              "message": "Invalid input: expected array, received undefined"
+            }
+          ]
+        ],
+        "path": [
+          "value"
+        ],
+        "message": "Invalid input"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: '{"kind":"time","value":{"cardinality":"range","start":"2026-03-01T00:00:00-05:00","end":null,"bounds":"["},"ambiguity":1,"reasoning":"Since March clearly indicates a range from the start of March (2026-03-01) to the present, with an open end."}'
+    }
+  },
+  runId: '44dcf176-d18e-4287-8d24-cd550d477e30',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+task4 anthropic/mini iso-preset rep3 ranges: attempt 1 failed: Failed to run experiment: Error generating result from target
+task4 anthropic/mini iso-preset rep3 ranges: 9 items, 0 errors (attempt 2)
+task4 anthropic/mini iso-preset rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini iso-preset rep3 notime: 8 items, 0 errors
+task4 anthropic/mini iso-preset rep3 ambiguous: 14 items, 0 errors
+task4 anthropic/mini ir rep1 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep1 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep1 named: 21 items, 0 errors
+task4 anthropic/mini ir rep1 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep1 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep1 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep1 notime: 8 items, 0 errors
+task4 anthropic/mini ir rep1 ambiguous: 14 items, 0 errors
+task4 anthropic/mini ir rep2 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep2 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep2 named: 21 items, 0 errors
+task4 anthropic/mini ir rep2 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep2 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep2 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep2 notime: 8 items, 0 errors
+task4 anthropic/mini ir rep2 ambiguous: 14 items, 0 errors
+task4 anthropic/mini ir rep3 specific: 14 items, 0 errors
+task4 anthropic/mini ir rep3 relative: 20 items, 0 errors
+task4 anthropic/mini ir rep3 named: 21 items, 0 errors
+task4 anthropic/mini ir rep3 custom: 10 items, 0 errors
+task4 anthropic/mini ir rep3 ranges: 17 items, 0 errors
+task4 anthropic/mini ir rep3 multipart: 12 items, 0 errors
+task4 anthropic/mini ir rep3 notime: 8 items, 0 errors
+task4 anthropic/mini ir rep3 ambiguous: 14 items, 0 errors
+grading 2089 raw rows from results/runs/phase2
+wrote results/phase2.json (63 cells)

@@ -1,0 +1,380 @@
+
+> temporal-research@0.1.0 task7 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/task7.ts
+
+task7 openai/mini iso rep1 CH-01: 4/4 hops correct
+task7 openai/mini iso rep1 CH-02: 4/4 hops correct
+task7 openai/mini iso rep1 CH-03: 5/5 hops correct
+task7 openai/mini iso rep1 CH-04: 4/4 hops correct
+task7 openai/mini iso rep1 CH-05: 5/5 hops correct
+task7 openai/mini iso rep1 CH-06: 2/3 hops correct
+task7 openai/mini iso rep1 CH-07: 5/5 hops correct
+task7 openai/mini iso rep1 CH-08: 5/5 hops correct
+task7 openai/mini iso rep1 CH-09: 3/4 hops correct
+task7 openai/mini iso rep1 CH-10: 5/8 hops correct
+task7 openai/mini iso rep2 CH-01: 4/4 hops correct
+task7 openai/mini iso rep2 CH-02: 4/4 hops correct
+task7 openai/mini iso rep2 CH-03: 5/5 hops correct
+task7 openai/mini iso rep2 CH-04: 4/4 hops correct
+task7 openai/mini iso rep2 CH-05: 5/5 hops correct
+task7 openai/mini iso rep2 CH-06: 2/3 hops correct
+task7 openai/mini iso rep2 CH-07: 3/5 hops correct
+task7 openai/mini iso rep2 CH-08: 5/5 hops correct
+task7 openai/mini iso rep2 CH-09: 3/4 hops correct
+task7 openai/mini iso rep2 CH-10: 5/8 hops correct
+task7 openai/mini iso rep3 CH-01: 4/4 hops correct
+task7 openai/mini iso rep3 CH-02: 4/4 hops correct
+task7 openai/mini iso rep3 CH-03: 5/5 hops correct
+task7 openai/mini iso rep3 CH-04: 4/4 hops correct
+task7 openai/mini iso rep3 CH-05: 5/5 hops correct
+task7 openai/mini iso rep3 CH-06: 1/3 hops correct
+task7 openai/mini iso rep3 CH-07: 4/5 hops correct
+task7 openai/mini iso rep3 CH-08: 5/5 hops correct
+task7 openai/mini iso rep3 CH-09: 3/4 hops correct
+task7 openai/mini iso rep3 CH-10: 5/8 hops correct
+task7 openai/mini iso-tool rep1 CH-01: 4/4 hops correct
+task7 openai/mini iso-tool rep1 CH-02: 4/4 hops correct
+task7 openai/mini iso-tool rep1 CH-03: 5/5 hops correct
+task7 openai/mini iso-tool rep1 CH-04: 4/4 hops correct
+task7 openai/mini iso-tool rep1 CH-05: 5/5 hops correct
+task7 openai/mini iso-tool rep1 CH-06: 3/3 hops correct
+task7 openai/mini iso-tool rep1 CH-07: 5/5 hops correct
+task7 openai/mini iso-tool rep1 CH-08: 5/5 hops correct
+task7 openai/mini iso-tool rep1 CH-09: 3/4 hops correct
+task7 openai/mini iso-tool rep1 CH-10: 5/8 hops correct
+task7 openai/mini iso-tool rep2 CH-01: 4/4 hops correct
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.4-mini',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: [Array],
+      tool_choice: 'auto'
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '51d28d7f-1a3c-4348-adb8-ad1a5312fb22',
+  provider: 'openai',
+  modelId: 'gpt-5.4-mini'
+}
+task7 openai/mini iso-tool rep2 CH-02: 3/4 hops correct
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.4-mini',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: [Array],
+      tool_choice: 'auto'
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '7a75534f-f790-426d-92d0-e5a1fccb86c2',
+  provider: 'openai',
+  modelId: 'gpt-5.4-mini'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.4-mini',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: [Array],
+      tool_choice: 'auto'
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: 'c0a065b0-564e-4683-a725-593e485384e8',
+  provider: 'openai',
+  modelId: 'gpt-5.4-mini'
+}
+task7 openai/mini iso-tool rep2 CH-03: 3/5 hops correct
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.4-mini',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: [Array],
+      tool_choice: 'auto'
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '985d40d0-7188-46aa-b5df-10dde24aea61',
+  provider: 'openai',
+  modelId: 'gpt-5.4-mini'
+}
+task7 openai/mini iso-tool rep2 CH-04: 3/4 hops correct
+
+> temporal-research@0.1.0 task7 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/task7.ts
+
+task7: 108 chain-runs queued (concurrency 8)
+task7 openai/mini iso-tool rep3 CH-01: 4/4 hops correct
+task7 openai/mini iso-tool rep2 CH-09: 3/4 hops correct
+task7 openai/mini iso-tool rep2 CH-06: 3/3 hops correct
+task7 openai/mini iso-tool rep2 CH-08: 5/5 hops correct
+task7 openai/mini iso-tool rep3 CH-02: 4/4 hops correct
+task7 openai/mini iso-tool rep2 CH-07: 4/5 hops correct
+task7 openai/mini iso-tool rep2 CH-10: 5/8 hops correct
+task7 openai/mini iso-tool rep3 CH-04: 4/4 hops correct
+task7 openai/mini iso-tool rep3 CH-05: 5/5 hops correct
+task7 openai/mini iso-tool rep3 CH-06: 3/3 hops correct
+task7 openai/mini iso-tool rep2 CH-05: 5/5 hops correct
+task7 openai/mini iso-tool rep3 CH-03: 5/5 hops correct
+task7 openai/mini iso-tool rep3 CH-08: 5/5 hops correct
+task7 openai/mini iso-tool rep3 CH-07: 4/5 hops correct
+task7 openai/mini iso-tool rep3 CH-09: 3/4 hops correct
+task7 openai/mini iso-tool rep3 CH-10: 5/8 hops correct
+task7 openai/mini ir rep1 CH-01: 4/4 hops correct
+task7 openai/mini ir rep1 CH-04: 4/4 hops correct
+task7 openai/mini ir rep1 CH-06: 3/3 hops correct
+task7 openai/mini ir rep1 CH-02: 4/4 hops correct
+task7 openai/mini ir rep1 CH-03: 5/5 hops correct
+task7 openai/mini ir rep1 CH-05: 5/5 hops correct
+task7 openai/mini ir rep1 CH-08: 5/5 hops correct
+task7 openai/mini ir rep1 CH-09: 2/4 hops correct
+task7 openai/mini ir rep2 CH-01: 4/4 hops correct
+task7 openai/mini ir rep2 CH-06: 3/3 hops correct
+task7 openai/mini ir rep1 CH-07: 4/5 hops correct
+task7 openai/mini ir rep2 CH-04: 4/4 hops correct
+task7 openai/mini ir rep2 CH-02: 4/4 hops correct
+task7 anthropic/mini iso rep1 CH-02: 4/4 hops correct
+task7 anthropic/mini iso rep1 CH-01: 4/4 hops correct
+task7 openai/mini ir rep2 CH-05: 5/5 hops correct
+task7 openai/mini ir rep2 CH-07: 5/5 hops correct
+task7 anthropic/mini iso rep1 CH-03: 5/5 hops correct
+task7 anthropic/mini iso rep1 CH-04: 4/4 hops correct
+task7 anthropic/mini iso rep1 CH-06: 1/3 hops correct
+task7 openai/mini ir rep2 CH-03: 4/5 hops correct
+task7 anthropic/mini iso rep1 CH-05: 5/5 hops correct
+task7 openai/mini ir rep1 CH-10: 8/8 hops correct
+task7 anthropic/mini iso rep1 CH-09: 4/4 hops correct
+task7 anthropic/mini iso rep1 CH-08: 5/5 hops correct
+task7 anthropic/mini iso rep2 CH-01: 4/4 hops correct
+task7 anthropic/mini iso rep2 CH-04: 4/4 hops correct
+task7 anthropic/mini iso rep1 CH-07: 4/5 hops correct
+task7 anthropic/mini iso rep2 CH-05: 5/5 hops correct
+task7 anthropic/mini iso rep2 CH-02: 4/4 hops correct
+task7 anthropic/mini iso rep2 CH-03: 5/5 hops correct
+task7 anthropic/mini iso rep1 CH-10: 8/8 hops correct
+task7 anthropic/mini iso rep2 CH-06: 2/3 hops correct
+task7 anthropic/mini iso rep2 CH-07: 3/5 hops correct
+task7 anthropic/mini iso rep2 CH-09: 4/4 hops correct
+task7 anthropic/mini iso rep3 CH-01: 4/4 hops correct
+task7 anthropic/mini iso rep2 CH-08: 5/5 hops correct
+task7 anthropic/mini iso rep3 CH-03: 5/5 hops correct
+task7 anthropic/mini iso rep3 CH-06: 2/3 hops correct
+task7 anthropic/mini iso rep3 CH-02: 4/4 hops correct
+task7 anthropic/mini iso rep2 CH-10: 7/8 hops correct
+task7 anthropic/mini iso rep3 CH-05: 0/5 hops correct
+task7 anthropic/mini iso rep3 CH-04: 4/4 hops correct
+task7 anthropic/mini iso rep3 CH-09: 4/4 hops correct
+task7 anthropic/mini iso rep3 CH-08: 5/5 hops correct
+task7 anthropic/mini iso rep3 CH-07: 4/5 hops correct
+task7 anthropic/mini iso-tool rep1 CH-06: 3/3 hops correct
+task7 anthropic/mini iso-tool rep1 CH-05: 0/5 hops correct
+task7 anthropic/mini iso-tool rep1 CH-02: 4/4 hops correct
+task7 anthropic/mini iso-tool rep1 CH-03: 5/5 hops correct
+task7 anthropic/mini iso-tool rep1 CH-04: 2/4 hops correct
+task7 anthropic/mini iso-tool rep1 CH-01: 4/4 hops correct
+task7 anthropic/mini iso rep3 CH-10: 5/8 hops correct
+task7 anthropic/mini iso-tool rep2 CH-01: 4/4 hops correct
+task7 anthropic/mini iso-tool rep1 CH-08: 5/5 hops correct
+task7 anthropic/mini iso-tool rep1 CH-09: 4/4 hops correct
+task7 anthropic/mini iso-tool rep1 CH-07: 3/5 hops correct
+task7 anthropic/mini iso-tool rep2 CH-02: 4/4 hops correct
+task7 anthropic/mini iso-tool rep2 CH-06: 2/3 hops correct
+task7 anthropic/mini iso-tool rep1 CH-10: 4/8 hops correct
+task7 anthropic/mini iso-tool rep2 CH-03: 5/5 hops correct
+task7 anthropic/mini iso-tool rep2 CH-04: 3/4 hops correct
+task7 anthropic/mini iso-tool rep2 CH-09: 4/4 hops correct
+task7 anthropic/mini iso-tool rep2 CH-07: 3/5 hops correct
+task7 anthropic/mini iso-tool rep2 CH-05: 5/5 hops correct
+task7 anthropic/mini iso-tool rep2 CH-08: 5/5 hops correct
+task7 anthropic/mini iso-tool rep3 CH-03: 5/5 hops correct
+task7 anthropic/mini iso-tool rep3 CH-02: 3/4 hops correct
+task7 anthropic/mini iso-tool rep3 CH-06: 3/3 hops correct
+task7 anthropic/mini iso-tool rep3 CH-04: 4/4 hops correct
+task7 anthropic/mini iso-tool rep3 CH-01: 4/4 hops correct
+task7 anthropic/mini iso-tool rep3 CH-05: 5/5 hops correct
+task7 anthropic/mini iso-tool rep3 CH-09: 4/4 hops correct
+task7 anthropic/mini iso-tool rep2 CH-10: 4/8 hops correct
+task7 anthropic/mini iso-tool rep3 CH-07: 3/5 hops correct
+task7 anthropic/mini iso-tool rep3 CH-08: 5/5 hops correct
+task7 anthropic/mini ir rep2 CH-06: 3/3 hops correct
+task7 anthropic/mini ir rep2 CH-07: 4/5 hops correct
+task7 anthropic/mini ir rep3 CH-01: 4/4 hops correct
+task7 anthropic/mini ir rep2 CH-09: 4/4 hops correct
+task7 anthropic/mini ir rep2 CH-08: 5/5 hops correct
+task7 anthropic/mini ir rep3 CH-02: 4/4 hops correct
+task7 anthropic/mini ir rep3 CH-03: 5/5 hops correct
+task7 anthropic/mini iso-tool rep3 CH-10: 4/8 hops correct
+task7 anthropic/mini ir rep3 CH-04: 4/4 hops correct
+task7 anthropic/mini ir rep3 CH-06: 3/3 hops correct
+task7 anthropic/mini ir rep2 CH-10: 6/8 hops correct
+task7 anthropic/mini ir rep3 CH-08: 5/5 hops correct
+task7 anthropic/mini ir rep3 CH-09: 4/4 hops correct
+task7 anthropic/mini ir rep3 CH-05: 5/5 hops correct
+task7 anthropic/mini ir rep3 CH-07: 5/5 hops correct
+task7 anthropic/mini ir rep3 CH-10: 7/8 hops correct
+
+aggregating 846 hop rows (re-scored against current keys)
+wrote results/task7.json

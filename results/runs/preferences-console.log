@@ -1,0 +1,239 @@
+
+> temporal-research@0.1.0 preferences /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/preferences.ts
+
+This storage provider does not support batch creating metrics
+grid openai rep1: 105 items, 0 errors
+grid openai rep2: 105 items, 0 errors
+grid openai rep3: 105 items, 0 errors
+grid openai rep4: 105 items, 0 errors
+grid openai rep5: 105 items, 0 errors
+grid anthropic rep1: 105 items, 0 errors
+grid anthropic rep2: 105 items, 0 errors
+grid anthropic rep3: 105 items, 0 errors
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async AnthropicMessagesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/anthropic/3.0.76/691eb81f357272782e73baa49e2bb3c736623dfc1173020062fa1cc2aa45a59e/node_modules/@ai-sdk/anthropic/src/anthropic-messages-language-model.ts:836:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 64000,
+      temperature: undefined,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      thinking: [Object],
+      system: [Array],
+      messages: [Array],
+      tools: undefined,
+      tool_choice: undefined,
+      stream: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: 'b1f12620-889e-4c00-b4b9-0f965178b890',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async AnthropicMessagesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/anthropic/3.0.76/691eb81f357272782e73baa49e2bb3c736623dfc1173020062fa1cc2aa45a59e/node_modules/@ai-sdk/anthropic/src/anthropic-messages-language-model.ts:836:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 64000,
+      temperature: undefined,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      thinking: [Object],
+      system: [Array],
+      messages: [Array],
+      tools: undefined,
+      tool_choice: undefined,
+      stream: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '1eab13c4-c9c8-44b8-9edd-27d67fb63856',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async AnthropicMessagesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/anthropic/3.0.76/691eb81f357272782e73baa49e2bb3c736623dfc1173020062fa1cc2aa45a59e/node_modules/@ai-sdk/anthropic/src/anthropic-messages-language-model.ts:836:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 64000,
+      temperature: undefined,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      thinking: [Object],
+      system: [Array],
+      messages: [Array],
+      tools: undefined,
+      tool_choice: undefined,
+      stream: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '4e46a0a3-cab0-4044-a83b-d4a4cd7ee9e4',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async AnthropicMessagesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/anthropic/3.0.76/691eb81f357272782e73baa49e2bb3c736623dfc1173020062fa1cc2aa45a59e/node_modules/@ai-sdk/anthropic/src/anthropic-messages-language-model.ts:836:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 64000,
+      temperature: undefined,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      thinking: [Object],
+      system: [Array],
+      messages: [Array],
+      tools: undefined,
+      tool_choice: undefined,
+      stream: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '1e08b7fe-93a3-4ae2-bfc6-2f0de52201ab',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async AnthropicMessagesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/anthropic/3.0.76/691eb81f357272782e73baa49e2bb3c736623dfc1173020062fa1cc2aa45a59e/node_modules/@ai-sdk/anthropic/src/anthropic-messages-language-model.ts:836:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.anthropic.com/v1/messages',
+    requestBodyValues: {
+      model: 'claude-haiku-4-5',
+      max_tokens: 64000,
+      temperature: undefined,
+      top_k: undefined,
+      top_p: undefined,
+      stop_sequences: undefined,
+      thinking: [Object],
+      system: [Array],
+      messages: [Array],
+      tools: undefined,
+      tool_choice: undefined,
+      stream: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: 'c41f7657-68ed-463d-b336-1f93ff245b52',
+  provider: 'anthropic',
+  modelId: 'claude-haiku-4-5'
+}
+This storage provider does not support batch creating logs
+grid anthropic rep4: 105 items, 5 errors
+grid anthropic rep5: 105 items, 0 errors
+
+aggregating 1050 grid rows
+wrote results/preferences.json + results/preferences-readout.md (210 cells)

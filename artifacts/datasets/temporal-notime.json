@@ -1,0 +1,247 @@
+{
+  "name": "temporal-notime",
+  "description": "No-time queries: must abstain, not invent a time. Near-misses: latest/open/times/current. (8 items, key v0.4)",
+  "keyVersion": "v0.4",
+  "items": [
+    {
+      "input": "summarize the latest report",
+      "groundTruth": {
+        "itemId": "T7-01",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Near-miss: \"latest\" is ordering, not a date — don't synthesize a recency window."
+      }
+    },
+    {
+      "input": "who owns the billing service?",
+      "groundTruth": {
+        "itemId": "T7-02",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Clean negative."
+      }
+    },
+    {
+      "input": "top 5 customers by revenue",
+      "groundTruth": {
+        "itemId": "T7-03",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Clean negative."
+      }
+    },
+    {
+      "input": "explain the spike in errors",
+      "groundTruth": {
+        "itemId": "T7-04",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "No time given; don't invent \"recent\"."
+      }
+    },
+    {
+      "input": "what is our uptime SLA?",
+      "groundTruth": {
+        "itemId": "T7-05",
+        "anchor": "2025-09-15T09:00:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Clean negative."
+      }
+    },
+    {
+      "input": "list all open incidents",
+      "groundTruth": {
+        "itemId": "T7-06",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Near-miss: \"open\" is state, not time."
+      }
+    },
+    {
+      "input": "how many times did the job fail?",
+      "groundTruth": {
+        "itemId": "T7-07",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Near-miss: \"times\" ≠ temporal."
+      }
+    },
+    {
+      "input": "what's the current status of the deploy?",
+      "groundTruth": {
+        "itemId": "T7-08",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "notime",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "expectClarify": false,
+        "isNoTime": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 1,
+        "notes": "Near-miss: \"current\" = now-state; no range needed. A today/now answer is a tracked Sev-3 variant, not a hard fail."
+      }
+    }
+  ]
+}

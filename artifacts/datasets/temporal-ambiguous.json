@@ -1,0 +1,614 @@
+{
+  "name": "temporal-ambiguous",
+  "description": "No safe single default: acceptable sets + should-clarify labels + over-clarification controls. (14 items, key v0.4)",
+  "keyVersion": "v0.4",
+  "items": [
+    {
+      "input": "around the holidays",
+      "groundTruth": {
+        "itemId": "B8-01",
+        "anchor": "2025-11-26T08:30:00-05:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2025-12-22T00:00:00-05:00",
+          "end": "2026-01-02T00:00:00-05:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 5,
+        "notes": "Christmas–New Year region; any resolved value is scored only by distance to it."
+      }
+    },
+    {
+      "input": "recently",
+      "groundTruth": {
+        "itemId": "B8-02",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2026-02-12T00:00:00-05:00",
+          "end": "2026-03-12T00:00:00-04:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 5,
+        "notes": "Last 1–4 weeks. No defensible single default."
+      }
+    },
+    {
+      "input": "soon",
+      "groundTruth": {
+        "itemId": "B8-03",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2026-03-12T00:00:00-04:00",
+          "end": "2026-04-09T00:00:00-04:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 5,
+        "notes": "Next few days–weeks (future-directed)."
+      }
+    },
+    {
+      "input": "next Friday",
+      "groundTruth": {
+        "itemId": "B8-04",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-12T00:00:00-04:00",
+                "end": "2026-06-13T00:00:00-04:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-19T00:00:00-04:00",
+                "end": "2026-06-20T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 3,
+        "probe": {
+          "axis": "occurrence",
+          "candidates": {
+            "comingFriday": [
+              {
+                "start": "2026-06-12T00:00:00-04:00",
+                "end": "2026-06-13T00:00:00-04:00"
+              }
+            ],
+            "nextWeekFriday": [
+              {
+                "start": "2026-06-19T00:00:00-04:00",
+                "end": "2026-06-20T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "OVER-CLARIFICATION CONTROL + Task-5 steerability item: both readings are acceptable; clarifying is the error. Note: the dataset labels \"coming Friday\" the convention, but the locked C4a text says next-<weekday> is week-relative (Jun 19) — flagged for the Task-3 convention review."
+      }
+    },
+    {
+      "input": "about a month ago",
+      "groundTruth": {
+        "itemId": "B8-05",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2026-02-05T00:00:00-05:00",
+          "end": "2026-02-19T00:00:00-05:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 4,
+        "notes": "Fuzzy region around Feb 12. Doubles as a Task-5 steerability item."
+      }
+    },
+    {
+      "input": "early next month",
+      "groundTruth": {
+        "itemId": "B8-06",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-04-01T00:00:00-04:00",
+                "end": "2026-04-08T00:00:00-04:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-04-01T00:00:00-04:00",
+                "end": "2026-04-11T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": true,
+        "clarifyOptional": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 4,
+        "notes": "First ~week-to-10-days of April; resolving to either is fine, clarifying also fine."
+      }
+    },
+    {
+      "input": "the weekend",
+      "groundTruth": {
+        "itemId": "B8-07",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-13T00:00:00-04:00",
+                "end": "2026-06-15T00:00:00-04:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "set",
+            "intervals": [
+              {
+                "start": "2026-06-13T00:00:00-04:00",
+                "end": "2026-06-14T00:00:00-04:00"
+              },
+              {
+                "start": "2026-06-14T00:00:00-04:00",
+                "end": "2026-06-15T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 3,
+        "notes": "Safe default: the coming weekend (Jun 13–14), as one range or two day-members."
+      }
+    },
+    {
+      "input": "the last few months",
+      "groundTruth": {
+        "itemId": "B8-08",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2025-12-01T00:00:00-05:00",
+          "end": "2026-03-01T00:00:00-05:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 4,
+        "notes": "Last 2–4 months."
+      }
+    },
+    {
+      "input": "end of year",
+      "groundTruth": {
+        "itemId": "B8-09",
+        "anchor": "2025-09-15T09:00:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2025-12-01T00:00:00-05:00",
+                "end": "2026-01-01T00:00:00-05:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2025-10-01T00:00:00-04:00",
+                "end": "2026-01-01T00:00:00-05:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2025-12-31T00:00:00-05:00",
+                "end": "2026-01-01T00:00:00-05:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 4,
+        "notes": "December, Q4, or Dec 31 — three structurally different readings."
+      }
+    },
+    {
+      "input": "mid-month",
+      "groundTruth": {
+        "itemId": "B8-10",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-15T00:00:00-04:00",
+                "end": "2026-06-16T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "region": {
+          "start": "2026-06-10T00:00:00-04:00",
+          "end": "2026-06-20T00:00:00-04:00"
+        },
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 3,
+        "notes": "Around the 15th; the 15th itself is the crispest acceptable answer."
+      }
+    },
+    {
+      "input": "the new year",
+      "groundTruth": {
+        "itemId": "B8-11",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-01-01T00:00:00-05:00",
+                "end": "2026-01-02T00:00:00-05:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-01-01T00:00:00-05:00",
+                "end": "2027-01-01T00:00:00-05:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 3,
+        "notes": "The day (Jan 1) or the year (2026) — both acceptable."
+      }
+    },
+    {
+      "input": "over the summer",
+      "groundTruth": {
+        "itemId": "B8-12",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-01T00:00:00-04:00",
+                "end": "2026-09-01T00:00:00-04:00"
+              }
+            ]
+          },
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-21T00:00:00-04:00",
+                "end": "2026-09-23T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 3,
+        "notes": "Meteorological (Jun–Aug) vs solstice (Jun 21 – Sep 22) summer, 2026."
+      }
+    },
+    {
+      "input": "before the long weekend",
+      "groundTruth": {
+        "itemId": "B8-13",
+        "anchor": "2025-11-26T08:30:00-05:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "region": {
+          "start": "2025-11-17T00:00:00-05:00",
+          "end": "2025-11-27T00:00:00-05:00"
+        },
+        "expectClarify": true,
+        "cardinality": "none",
+        "expectedAmbiguity": 5,
+        "notes": "Undefined extent before the Thanksgiving long weekend."
+      }
+    },
+    {
+      "input": "this afternoon",
+      "groundTruth": {
+        "itemId": "B8-14",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "ambiguous",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-06-09T12:00:00-04:00",
+                "end": "2026-06-09T18:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "none",
+        "expectedAmbiguity": 2,
+        "notes": "OVER-CLARIFICATION CONTROL: the C14 default (12:00–18:00) is perfectly safe; flagging this for clarification is the Task-6 precision error."
+      }
+    }
+  ]
+}

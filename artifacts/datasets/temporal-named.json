@@ -1,0 +1,1188 @@
+{
+  "name": "temporal-named",
+  "description": "Named presets & holidays: week start/membership, to-date inclusivity, holiday rules + rolling. (23 items, key v0.4)",
+  "keyVersion": "v0.4",
+  "items": [
+    {
+      "input": "today",
+      "groundTruth": {
+        "itemId": "N3-01",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "today"
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2026-03-12T00:00:00-04:00",
+              "end": "2026-03-13T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "last week",
+      "groundTruth": {
+        "itemId": "N3-02",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "last_week"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-03-02T00:00:00-05:00",
+              "end": "2026-03-09T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "week",
+        "expectedAmbiguity": 2,
+        "probe": {
+          "axis": "week-start",
+          "candidates": {
+            "monStart": [
+              {
+                "start": "2026-03-02T00:00:00-05:00",
+                "end": "2026-03-09T00:00:00-04:00"
+              }
+            ],
+            "sunStart": [
+              {
+                "start": "2026-03-01T00:00:00-05:00",
+                "end": "2026-03-08T00:00:00-05:00"
+              }
+            ],
+            "rolling7": [
+              {
+                "start": "2026-03-05T00:00:00-05:00",
+                "end": "2026-03-12T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "The week-start probe; this week also crosses the Mar 8 spring-forward DST change."
+      }
+    },
+    {
+      "input": "last week",
+      "groundTruth": {
+        "itemId": "N3-03",
+        "anchor": "2025-09-15T09:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "last_week"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-09-08T00:00:00-04:00",
+              "end": "2025-09-15T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "week",
+        "expectedAmbiguity": 2,
+        "notes": "Monday anchor: last week ends exactly at the anchor morning."
+      }
+    },
+    {
+      "input": "this week",
+      "groundTruth": {
+        "itemId": "N3-04",
+        "anchor": "2026-04-19T13:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_week"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-04-13T00:00:00-04:00",
+              "end": "2026-04-20T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "week",
+        "expectedAmbiguity": 2,
+        "probe": {
+          "axis": "week-start",
+          "candidates": {
+            "monStart": [
+              {
+                "start": "2026-04-13T00:00:00-04:00",
+                "end": "2026-04-20T00:00:00-04:00"
+              }
+            ],
+            "sunStart": [
+              {
+                "start": "2026-04-19T00:00:00-04:00",
+                "end": "2026-04-26T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "Sunday-anchor edge: under Mon-start, Sunday is the LAST day of the current week; under Sun-start it is the FIRST day of a new one."
+      }
+    },
+    {
+      "input": "last week",
+      "groundTruth": {
+        "itemId": "N3-05",
+        "anchor": "2026-04-19T13:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "last_week"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-04-06T00:00:00-04:00",
+              "end": "2026-04-13T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "week",
+        "expectedAmbiguity": 2
+      }
+    },
+    {
+      "input": "this quarter",
+      "groundTruth": {
+        "itemId": "N3-06",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_quarter"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-01T00:00:00-05:00",
+              "end": "2026-04-01T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "quarter",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "last quarter",
+      "groundTruth": {
+        "itemId": "N3-07",
+        "anchor": "2026-01-15T10:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "last_quarter"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-10-01T00:00:00-04:00",
+              "end": "2026-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "quarter",
+        "expectedAmbiguity": 2,
+        "notes": "Crosses the year boundary (Q4 2025)."
+      }
+    },
+    {
+      "input": "this quarter",
+      "groundTruth": {
+        "itemId": "N3-08",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_quarter"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-10-01T00:00:00-04:00",
+              "end": "2026-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "quarter",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "YTD",
+      "groundTruth": {
+        "itemId": "N3-09",
+        "anchor": "2026-01-15T10:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "ytd"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-01T00:00:00-05:00",
+              "end": "2026-01-16T00:00:00-05:00"
+            }
+          ],
+          "open": true
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "notes": "Coincidence probe: on Jan 15, YTD = QTD = MTD all start Jan 1. End includes today (C8); excluding today is the tracked Sev-1 variant."
+      }
+    },
+    {
+      "input": "YTD",
+      "groundTruth": {
+        "itemId": "N3-10",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "ytd"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-01T00:00:00-05:00",
+              "end": "2026-03-13T00:00:00-04:00"
+            }
+          ],
+          "open": true
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2
+      }
+    },
+    {
+      "input": "MTD",
+      "groundTruth": {
+        "itemId": "N3-11",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "mtd"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-03-01T00:00:00-05:00",
+              "end": "2026-03-13T00:00:00-04:00"
+            }
+          ],
+          "open": true
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2
+      }
+    },
+    {
+      "input": "this year",
+      "groundTruth": {
+        "itemId": "N3-12",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_year"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-01-01T00:00:00-05:00",
+              "end": "2026-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "year",
+        "expectedAmbiguity": 1,
+        "notes": "Two days before New Year — \"this year\" is still 2025."
+      }
+    },
+    {
+      "input": "last year",
+      "groundTruth": {
+        "itemId": "N3-13",
+        "anchor": "2026-01-15T10:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "last_year"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-01-01T00:00:00-05:00",
+              "end": "2026-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "year",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "next year",
+      "groundTruth": {
+        "itemId": "N3-14",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "next_year"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-01T00:00:00-05:00",
+              "end": "2027-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "year",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "Thanksgiving",
+      "groundTruth": {
+        "itemId": "N3-15",
+        "anchor": "2025-11-26T08:30:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "nth",
+          "n": 4,
+          "unit": "thu",
+          "of": {
+            "type": "date",
+            "month": 11
+          }
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-11-27T00:00:00-05:00",
+              "end": "2025-11-28T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 1,
+        "notes": "Asked the day BEFORE Thanksgiving — tomorrow, not next year."
+      }
+    },
+    {
+      "input": "Christmas",
+      "groundTruth": {
+        "itemId": "N3-16",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "date",
+          "month": 12,
+          "day": 25
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-12-25T00:00:00-05:00",
+              "end": "2025-12-26T00:00:00-05:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-12-25T00:00:00-05:00",
+                "end": "2026-12-26T00:00:00-05:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "notes": "RE-KEYED at Task 3 (v0.2): nearest from Jun 9 = LAST Christmas (166 days back vs 199 forward) — the surprising edge of the nearest policy; the upcoming Christmas is the Sev-4 alternative. Ambiguity raised to 2."
+      }
+    },
+    {
+      "input": "Thanksgiving",
+      "groundTruth": {
+        "itemId": "N3-17",
+        "anchor": "2026-01-15T10:00:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "nth",
+          "n": 4,
+          "unit": "thu",
+          "of": {
+            "type": "date",
+            "month": 11
+          }
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-11-27T00:00:00-05:00",
+              "end": "2025-11-28T00:00:00-05:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-11-26T00:00:00-05:00",
+                "end": "2026-11-27T00:00:00-05:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "notes": "RE-KEYED at Task 3 (v0.2): nearest from Jan 15 = LAST Thanksgiving (49 days back vs 315 forward) — in January, \"Thanksgiving\" most plausibly refers to the recent one (reports, comparisons)."
+      }
+    },
+    {
+      "input": "Halloween",
+      "groundTruth": {
+        "itemId": "N3-18",
+        "anchor": "2025-10-31T12:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "date",
+          "month": 10,
+          "day": 31
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-10-31T00:00:00-04:00",
+              "end": "2025-11-01T00:00:00-04:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-10-31T00:00:00-04:00",
+                "end": "2026-11-01T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 1,
+        "probe": {
+          "axis": "occurrence",
+          "candidates": {
+            "today": [
+              {
+                "start": "2025-10-31T00:00:00-04:00",
+                "end": "2025-11-01T00:00:00-04:00"
+              }
+            ],
+            "nextYear": [
+              {
+                "start": "2026-10-31T00:00:00-04:00",
+                "end": "2026-11-01T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "Self-reference probe: the anchor IS Halloween, so \"Halloween\" = today."
+      }
+    },
+    {
+      "input": "Labor Day",
+      "groundTruth": {
+        "itemId": "N3-19",
+        "anchor": "2025-09-15T09:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "nth",
+          "n": 1,
+          "unit": "mon",
+          "of": {
+            "type": "date",
+            "month": 9
+          }
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-09-01T00:00:00-04:00",
+              "end": "2025-09-02T00:00:00-04:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-09-07T00:00:00-04:00",
+                "end": "2026-09-08T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "probe": {
+          "axis": "occurrence",
+          "candidates": {
+            "next": [
+              {
+                "start": "2026-09-07T00:00:00-04:00",
+                "end": "2026-09-08T00:00:00-04:00"
+              }
+            ],
+            "mostRecent": [
+              {
+                "start": "2025-09-01T00:00:00-04:00",
+                "end": "2025-09-02T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "RE-KEYED at Task 3 (v0.2): nearest = the Labor Day 14 days ago, matching all 4 models (3/3 frontier). Next year's is the Sev-4 alternative."
+      }
+    },
+    {
+      "input": "Memorial Day",
+      "groundTruth": {
+        "itemId": "N3-20",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "nth",
+          "n": "last",
+          "unit": "mon",
+          "of": {
+            "type": "date",
+            "month": 5
+          }
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2026-05-25T00:00:00-04:00",
+              "end": "2026-05-26T00:00:00-04:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2027-05-31T00:00:00-04:00",
+                "end": "2027-06-01T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "probe": {
+          "axis": "occurrence",
+          "candidates": {
+            "next": [
+              {
+                "start": "2027-05-31T00:00:00-04:00",
+                "end": "2027-06-01T00:00:00-04:00"
+              }
+            ],
+            "mostRecent": [
+              {
+                "start": "2026-05-25T00:00:00-04:00",
+                "end": "2026-05-26T00:00:00-04:00"
+              }
+            ]
+          }
+        },
+        "notes": "RE-KEYED at Task 3 (v0.2): nearest = the Memorial Day 15 days ago, matching all 4 models. The ~11.7-months-forward roll was the old next-occurrence reading (now Sev 4)."
+      }
+    },
+    {
+      "input": "this month",
+      "groundTruth": {
+        "itemId": "N3-21",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_month"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-03-01T00:00:00-05:00",
+              "end": "2026-04-01T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "month",
+        "expectedAmbiguity": 1
+      }
+    },
+    {
+      "input": "the Tuesday after Thanksgiving",
+      "groundTruth": {
+        "itemId": "N3-22",
+        "anchor": "2025-11-26T08:30:00-05:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "weekday",
+          "day": "tue",
+          "which": "next",
+          "of": {
+            "type": "nth",
+            "n": 4,
+            "unit": "thu",
+            "of": {
+              "type": "date",
+              "month": 11,
+              "which": "this"
+            }
+          }
+        },
+        "resolved": {
+          "cardinality": "point",
+          "intervals": [
+            {
+              "start": "2025-12-02T00:00:00-05:00",
+              "end": "2025-12-03T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "point",
+        "granularity": "day",
+        "expectedAmbiguity": 1,
+        "notes": "Holiday rule chained into weekday arithmetic, crossing a month boundary."
+      }
+    },
+    {
+      "input": "the week of July 4th",
+      "groundTruth": {
+        "itemId": "N3-23",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "named",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "range",
+          "from": {
+            "type": "weekday",
+            "day": "mon",
+            "which": "this",
+            "of": {
+              "type": "date",
+              "month": 7,
+              "day": 4
+            }
+          },
+          "to": {
+            "type": "weekday",
+            "day": "sun",
+            "which": "this",
+            "of": {
+              "type": "date",
+              "month": 7,
+              "day": 4
+            }
+          }
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-06-29T00:00:00-04:00",
+              "end": "2026-07-06T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "notes": "\"Week containing a date\" has no direct node — must be composed from weekday anchors around the holiday (a grammar-composition probe). Jul 4 2026 is a Saturday; its Mon-start week is Jun 29 – Jul 5."
+      }
+    }
+  ]
+}

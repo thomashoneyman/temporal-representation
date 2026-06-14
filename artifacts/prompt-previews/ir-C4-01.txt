@@ -1,0 +1,48 @@
+EXACT PROMPT — arm=IR, item=C4-01 ("our next maintenance window"), anchor=2026-06-09T11:00:00-04:00
+
+┌─ role: system ──────────────────────────────────────────────────────
+You translate the time expression in a user's request into a structured value.
+- Treat the Anchor line as the current date/time. Never use the real clock.
+- If the request has no temporal aspect, return kind:"none" with one sentence of reasoning.
+- Otherwise return kind:"time" with the value, an ambiguity rating 1-5, and one sentence of reasoning.
+- Time zone is America/New_York; do not convert zones.
+Ambiguity scale:
+1. Completely clear what date to choose
+2. Clear first choice, but other options are plausible
+3. The chosen date is most likely from context, but others are reasonable
+4. Several contending options for the best choice
+5. Completely unclear which option is most appropriate
+
+Express the time as a TimeExpr value in this grammar (a tool will resolve it — do NOT compute dates yourself):
+- {type:"now"} — the anchor instant
+- {type:"date", year?, month?, day?, hour?, minute?, which?} — a calendar date/time; omit fields to widen the grain ("March" = month:3). For a bare date (no year), which picks the occurrence: "this" | "next" | "previous" | "nearest" (default: org policy).
+- {type:"preset", name} — one of: today, yesterday, tomorrow, this_week, last_week, next_week, this_month, last_month, next_month, this_quarter, last_quarter, next_quarter, this_year, last_year, next_year, ytd, mtd, qtd
+- {type:"ref", id} — an org-specific period defined in the prompt (use its id)
+- {type:"shift", base, by, direction, businessDays?} — move base by an ISO-8601 duration ("P3D", "P1M", "PT30M"); direction "before"|"after"; businessDays skips weekends+holidays. P1M pins the day-of-month; P30D is exactly 30 days.
+- {type:"weekday", day, which, of?, hour?, minute?} — day mon..sun; which "this"|"next"|"last"|"nearest"; optional clock time
+- {type:"nth", n, unit, of} — n-th sub-unit of a period: {type:"nth", n:4, unit:"thu", of:{type:"date", month:11}} is Thanksgiving; n can be "last"; unit can be a grain, weekday, or "business_day"
+- {type:"range", from, to} — inclusive range; null bound = open ("since March" = {from:{type:"date",month:3}, to:{type:"now"}})
+- {type:"filter", within, weekdays?, businessDays?, timeOfDay?} — keep matching days / clock windows inside a period ("weekends in March")
+- {type:"union", of:[...]} — several disjoint pieces ("March and May")
+
+Anchor (treat as now): 2026-06-09T11:00:00-04:00 (Tuesday)
+
+Org calendar definitions (treat these as authoritative for this org):
+- maintenance window: the 2nd Saturday of each month, 02:00–06:00 local. ("next" = the
+  next such window on or after now.)
+- fiscal year: starts February 1. Fiscal Q1 = Feb–Apr, Q2 = May–Jul, Q3 = Aug–Oct,
+  Q4 = Nov–Jan. ("this quarter" for this org means the fiscal quarter.)
+- sprint: 2-week cadence starting Monday 2026-01-05, 00:00. Each sprint is [start, start+14d).
+  ("current sprint" = the one containing now; "next sprint" = the following one.)
+- open enrollment: November 1–15 inclusive, every year.
+- peak season: the day after Thanksgiving through December 31 inclusive.
+- billing cycle: the 15th of a month through the 14th of the next month. ("current" = the
+  cycle containing today.)
+- all-hands: the last Friday of each month, 15:00–16:00 local.
+
+JSON schema:
+{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"kind":{"type":"string","enum":["none","time"],"description":"'none' = the request has no temporal aspect"},"value":{"anyOf":[{"$ref":"#/definitions/__schema0"},{"type":"null"}],"description":"the TimeExpr; null when kind='none'"},"ambiguity":{"anyOf":[{"type":"integer","minimum":1,"maximum":5},{"type":"null"}],"description":"1 = completely clear … 5 = completely unclear; null only when kind='none'"},"reasoning":{"type":"string","maxLength":240,"description":"one sentence: why this choice / why uncertain"}},"required":["kind","value","ambiguity","reasoning"],"additionalProperties":false,"definitions":{"__schema0":{"anyOf":[{"type":"object","properties":{"type":{"type":"string","const":"now"}},"required":["type"],"additionalProperties":false,"description":"the anchor instant (minute grain)"},{"type":"object","properties":{"type":{"type":"string","const":"date"},"year":{"type":"integer","minimum":1970,"maximum":2100},"month":{"type":"integer","minimum":1,"maximum":12},"day":{"type":"integer","minimum":1,"maximum":31},"hour":{"type":"integer","minimum":0,"maximum":23},"minute":{"type":"integer","minimum":0,"maximum":59},"which":{"description":"occurrence for a bare (yearless) date: 'this'=anchor's current cycle, 'next'/'previous'/'nearest' roll from the anchor. Omit to use the org default (ctx.conventions.datePolicy). Ignored when `year` is set.","type":"string","enum":["this","next","previous","nearest"]}},"required":["type"],"additionalProperties":false,"description":"a calendar date/time; grain = least-significant field. Bare (no year) → occurrence per `which` or the org default."},{"type":"object","properties":{"type":{"type":"string","const":"preset"},"name":{"type":"string","enum":["today","yesterday","tomorrow","this_week","last_week","next_week","this_month","last_month","next_month","this_quarter","last_quarter","next_quarter","this_year","last_year","next_year","ytd","mtd","qtd"]}},"required":["type","name"],"additionalProperties":false,"description":"a named business period; conventions resolved centrally"},{"type":"object","properties":{"type":{"type":"string","const":"ref"},"id":{"type":"string"}},"required":["type","id"],"additionalProperties":false,"description":"an org-specific preset defined in the prompt"},{"type":"object","properties":{"type":{"type":"string","const":"shift"},"base":{"allOf":[{"$ref":"#/definitions/__schema0"}]},"by":{"type":"string","description":"ISO-8601 duration: P3D, P2W, P1M, PT30M …"},"direction":{"type":"string","enum":["before","after"]},"businessDays":{"description":"skip weekends + holidays","type":"boolean"}},"required":["type","base","by","direction"],"additionalProperties":false,"description":"move base by a duration; P1M/P1Y use calendar math (same day-of-month), P30D is exact"},{"type":"object","properties":{"type":{"type":"string","const":"weekday"},"day":{"type":"string","enum":["mon","tue","wed","thu","fri","sat","sun"]},"which":{"type":"string","enum":["this","next","last","nearest"]},"of":{"description":"anchor period (default: now)","allOf":[{"$ref":"#/definitions/__schema0"}]},"hour":{"type":"integer","minimum":0,"maximum":23},"minute":{"type":"integer","minimum":0,"maximum":59}},"required":["type","day","which"],"additionalProperties":false,"description":"a relative weekday; optional clock narrows to a point"},{"type":"object","properties":{"type":{"type":"string","const":"nth"},"n":{"anyOf":[{"type":"integer","minimum":1,"maximum":366},{"type":"string","const":"last"}]},"unit":{"anyOf":[{"type":"string","enum":["minute","hour","day","week","month","quarter","year"]},{"type":"string","enum":["mon","tue","wed","thu","fri","sat","sun"]},{"type":"string","const":"business_day"}]},"of":{"allOf":[{"$ref":"#/definitions/__schema0"}]}},"required":["type","n","unit","of"],"additionalProperties":false,"description":"nth sub-unit of a period: nth(4,'thu', November) = Thanksgiving; nth('last','business_day', this_quarter)"},{"type":"object","properties":{"type":{"type":"string","const":"range"},"from":{"anyOf":[{"allOf":[{"$ref":"#/definitions/__schema0"}]},{"type":"null"}]},"to":{"anyOf":[{"allOf":[{"$ref":"#/definitions/__schema0"}]},{"type":"null"}]}},"required":["type","from","to"],"additionalProperties":false,"description":"inclusive range [from.start, to.endOfGrain); null bound = open (\"since March\")"},{"type":"object","properties":{"type":{"type":"string","const":"filter"},"within":{"allOf":[{"$ref":"#/definitions/__schema0"}]},"weekdays":{"type":"array","items":{"type":"string","enum":["mon","tue","wed","thu","fri","sat","sun"]}},"businessDays":{"description":"keep only business days (workweek minus US federal holidays)","type":"boolean"},"timeOfDay":{"description":"\"HH:MM\" half-open clock window","type":"object","properties":{"start":{"type":"string"},"end":{"type":"string"}},"required":["start","end"],"additionalProperties":false}},"required":["type","within"],"additionalProperties":false,"description":"bounded recurrence → a set: keep weekdays / clock window inside `within`"},{"type":"object","properties":{"type":{"type":"string","const":"union"},"of":{"type":"array","items":{"allOf":[{"$ref":"#/definitions/__schema0"}]}}},"required":["type","of"],"additionalProperties":false,"description":"union of sub-expressions → a set (disjoint named things)"}]}}}
+You MUST answer with a JSON object that matches the JSON schema above.
+
+┌─ role: user ────────────────────────────────────────────────────────
+our next maintenance window

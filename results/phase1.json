@@ -1,0 +1,850 @@
+{
+  "generatedAt": "2026-06-11T18:59:35.357Z",
+  "promptVersion": "b025fa615076",
+  "tier": "frontier",
+  "reps": 5,
+  "cells": {
+    "anthropic/claude-opus-4-8/iso": {
+      "rows": 234,
+      "noneRate": 0.02564102564102564,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 1,
+        "overAbstain": []
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 3
+          },
+          "otherDetails": {}
+        },
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 3
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "next": 3
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 3
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "mostRecent": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "monStart": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "mostRecent": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "days1to7": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-08": {
+          "axis": "occurrence",
+          "query": "Q1",
+          "counts": {
+            "next": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "inclusive": 3
+          },
+          "otherDetails": {}
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "nextWeekFriday": 3
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "mon": 9,
+        "sun": 3
+      },
+      "determinism": {
+        "itemsWithReps": 76,
+        "agreeingItems": 56,
+        "agreementRate": 0.7368421052631579
+      }
+    },
+    "anthropic/claude-haiku-4-5/iso": {
+      "rows": 580,
+      "noneRate": 0.08793103448275862,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 1,
+        "overAbstain": [
+          {
+            "itemId": "G5-08",
+            "query": "Q1",
+            "n": 5
+          },
+          {
+            "itemId": "G5-07",
+            "query": "Q1",
+            "n": 4
+          },
+          {
+            "itemId": "B8-02",
+            "query": "recently",
+            "n": 1
+          },
+          {
+            "itemId": "M6-09",
+            "query": "compare this month to last month",
+            "n": 1
+          }
+        ]
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "next": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "sunStart": 1,
+            "monStart": 4
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "mostRecent": 1,
+            "next": 4
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "next": 4,
+            "mostRecent": 1
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-18": {
+          "axis": "occurrence",
+          "query": "Halloween",
+          "counts": {
+            "today": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "days1to7": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "inclusive": 5
+          },
+          "otherDetails": {}
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "nextWeekFriday": 3,
+            "comingFriday": 2
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "sun": 11,
+        "mon": 14
+      },
+      "determinism": {
+        "itemsWithReps": 106,
+        "agreeingItems": 66,
+        "agreementRate": 0.6226415094339622
+      }
+    },
+    "anthropic/claude-haiku-4-5/ir": {
+      "rows": 580,
+      "noneRate": 0.07413793103448275,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 1,
+        "overAbstain": [
+          {
+            "itemId": "M6-09",
+            "query": "compare this month to last month",
+            "n": 2
+          },
+          {
+            "itemId": "B8-03",
+            "query": "soon",
+            "n": 1
+          }
+        ]
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 4,
+            "nextWeek": 1
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "next": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "next": 3,
+            "currentYear": 2
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "monStart": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "next": 4,
+            "mostRecent": 1
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "next": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-18": {
+          "axis": "occurrence",
+          "query": "Halloween",
+          "counts": {
+            "today": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "days1to7": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-08": {
+          "axis": "occurrence",
+          "query": "Q1",
+          "counts": {
+            "next": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "inclusive": 2,
+            "other": 3
+          },
+          "otherDetails": {
+            "Mar 1 2027 → Mar 5 2027": 3
+          }
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "comingFriday": 5
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "mon": 20,
+        "sun": 5
+      },
+      "determinism": {
+        "itemsWithReps": 108,
+        "agreeingItems": 89,
+        "agreementRate": 0.8240740740740741
+      }
+    },
+    "openai/gpt-5.5/iso": {
+      "rows": 234,
+      "noneRate": 0.004273504273504274,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 0.16666666666666666,
+        "overAbstain": []
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 3
+          },
+          "otherDetails": {}
+        },
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 3
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 3
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 3
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "mostRecent": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "sunStart": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "mostRecent": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "days1to7": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "inclusive": 3
+          },
+          "otherDetails": {}
+        },
+        "G5-08": {
+          "axis": "occurrence",
+          "query": "Q1",
+          "counts": {
+            "next": 2,
+            "mostRecent": 1
+          },
+          "otherDetails": {}
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "comingFriday": 3
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "sun": 9,
+        "mon": 3
+      },
+      "determinism": {
+        "itemsWithReps": 78,
+        "agreeingItems": 61,
+        "agreementRate": 0.782051282051282
+      }
+    },
+    "openai/gpt-5.4-mini/iso": {
+      "rows": 580,
+      "noneRate": 0.06206896551724138,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 0.9,
+        "overAbstain": []
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 3,
+            "next": 2
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "mostRecent": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "sunStart": 4,
+            "monStart": 1
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "mostRecent": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 1,
+            "other": 4
+          },
+          "otherDetails": {
+            "Mar 1 2026 23:00 → Mar 9 2026": 4
+          }
+        },
+        "N3-18": {
+          "axis": "occurrence",
+          "query": "Halloween",
+          "counts": {
+            "today": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "other": 2,
+            "days1to7": 3
+          },
+          "otherDetails": {
+            "Feb 28 2026 23:00 → Mar 7 2026 23:00": 2
+          }
+        },
+        "G5-08": {
+          "axis": "occurrence",
+          "query": "Q1",
+          "counts": {
+            "other": 1,
+            "next": 4
+          },
+          "otherDetails": {
+            "Jan 1 2026 → Apr 1 2026 01:00": 1
+          }
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "inclusive": 5
+          },
+          "otherDetails": {}
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "comingFriday": 5
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "sun": 14,
+        "mon": 9,
+        "sat": 2
+      },
+      "determinism": {
+        "itemsWithReps": 109,
+        "agreeingItems": 67,
+        "agreementRate": 0.6146788990825688
+      }
+    },
+    "openai/gpt-5.4-mini/ir": {
+      "rows": 580,
+      "noneRate": 0.06896551724137931,
+      "unresolvableRate": 0,
+      "noTime": {
+        "recall": 1,
+        "overAbstain": []
+      },
+      "rejections": [],
+      "probeTallies": {
+        "S1-04": {
+          "axis": "occurrence",
+          "query": "Tuesday at 3pm",
+          "counts": {
+            "sameDay": 5
+          },
+          "otherDetails": {}
+        },
+        "S1-01": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "currentYear": 4,
+            "next": 1
+          },
+          "otherDetails": {}
+        },
+        "S1-02": {
+          "axis": "occurrence",
+          "query": "March 4",
+          "counts": {
+            "next": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-06": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "R2-09": {
+          "axis": "rolling-vs-calendar",
+          "query": "a month ago",
+          "counts": {
+            "pinned": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-04": {
+          "axis": "week-start",
+          "query": "this week",
+          "counts": {
+            "monStart": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-19": {
+          "axis": "occurrence",
+          "query": "Labor Day",
+          "counts": {
+            "next": 4,
+            "mostRecent": 1
+          },
+          "otherDetails": {}
+        },
+        "N3-20": {
+          "axis": "occurrence",
+          "query": "Memorial Day",
+          "counts": {
+            "mostRecent": 2,
+            "next": 3
+          },
+          "otherDetails": {}
+        },
+        "N3-02": {
+          "axis": "week-start",
+          "query": "last week",
+          "counts": {
+            "monStart": 5
+          },
+          "otherDetails": {}
+        },
+        "N3-18": {
+          "axis": "occurrence",
+          "query": "Halloween",
+          "counts": {
+            "today": 5
+          },
+          "otherDetails": {}
+        },
+        "G5-06": {
+          "axis": "bounds",
+          "query": "the first week of March",
+          "counts": {
+            "other": 1,
+            "days1to7": 4
+          },
+          "otherDetails": {
+            "Mar 1 2026 → Mar 9 2026": 1
+          }
+        },
+        "G5-01": {
+          "axis": "bounds",
+          "query": "March 1 through 4",
+          "counts": {
+            "other": 2,
+            "inclusive": 3
+          },
+          "otherDetails": {
+            "Mar 1 2027 → Mar 5 2027": 2
+          }
+        },
+        "G5-08": {
+          "axis": "occurrence",
+          "query": "Q1",
+          "counts": {
+            "other": 4,
+            "next": 1
+          },
+          "otherDetails": {
+            "Jan 1 2026 → May 1 2026": 1,
+            "Jan 1 2026 → Apr 2 2026": 3
+          }
+        },
+        "B8-04": {
+          "axis": "occurrence",
+          "query": "next Friday",
+          "counts": {
+            "comingFriday": 5
+          },
+          "otherDetails": {}
+        }
+      },
+      "weekStartEvidence": {
+        "mon": 20,
+        "sun": 5
+      },
+      "determinism": {
+        "itemsWithReps": 108,
+        "agreeingItems": 85,
+        "agreementRate": 0.7870370370370371
+      }
+    }
+  }
+}

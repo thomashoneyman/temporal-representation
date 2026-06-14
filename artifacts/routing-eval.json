@@ -1,0 +1,437 @@
+{
+ "note": "Routing-discrimination eval. hardness labels are Haiku-empirical (direct-ISO failures in Task 4); the runner also derives needs-resolve from the always-ISO/always-resolve bookends. Goal: a routing prompt matching always-resolve accuracy at a lower resolve-rate.",
+ "cases": [
+  {
+   "id": "R2-12",
+   "query": "in 3 business days",
+   "anchor": "2025-11-26T08:30:00-05:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2025-12-02T00:00:00-05:00",
+     "end": "2025-12-03T00:00:00-05:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-24",
+   "query": "10 business days before the end of this quarter",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-06-15T00:00:00-04:00",
+     "end": "2026-06-16T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-22",
+   "query": "180 days before Christmas 2026",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-06-28T00:00:00-04:00",
+     "end": "2026-06-29T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-28",
+   "query": "400 days from now",
+   "anchor": "2025-09-15T09:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-10-20T00:00:00-04:00",
+     "end": "2026-10-21T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "N3-19",
+   "query": "Labor Day",
+   "anchor": "2025-09-15T09:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2025-09-01T00:00:00-04:00",
+     "end": "2025-09-02T00:00:00-04:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2026-09-07T00:00:00-04:00",
+      "end": "2026-09-08T00:00:00-04:00"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "N3-23",
+   "query": "the week of July 4th",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-06-29T00:00:00-04:00",
+     "end": "2026-07-06T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "N3-04",
+   "query": "this week",
+   "anchor": "2026-04-19T13:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-04-13T00:00:00-04:00",
+     "end": "2026-04-20T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "N3-16",
+   "query": "Christmas",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2025-12-25T00:00:00-05:00",
+     "end": "2025-12-26T00:00:00-05:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2026-12-25T00:00:00-05:00",
+      "end": "2026-12-26T00:00:00-05:00"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "N3-05",
+   "query": "last week",
+   "anchor": "2026-04-19T13:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-04-06T00:00:00-04:00",
+     "end": "2026-04-13T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "N3-20",
+   "query": "Memorial Day",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-05-25T00:00:00-04:00",
+     "end": "2026-05-26T00:00:00-04:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2027-05-31T00:00:00-04:00",
+      "end": "2027-06-01T00:00:00-04:00"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "G5-08",
+   "query": "Q1",
+   "anchor": "2025-12-30T13:00:00-05:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-01-01T00:00:00-05:00",
+     "end": "2026-04-01T00:00:00-04:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2025-01-01T00:00:00-05:00",
+      "end": "2025-04-01T00:00:00-04:00"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "G5-03",
+   "query": "since March",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-03-01T00:00:00-05:00",
+     "end": "2026-06-09T11:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "G5-13",
+   "query": "the last 7 days",
+   "anchor": "2026-03-12T14:30:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-03-05T00:00:00-05:00",
+     "end": "2026-03-12T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "G5-12",
+   "query": "the next three days",
+   "anchor": "2026-04-19T13:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2026-04-20T00:00:00-04:00",
+     "end": "2026-04-23T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-06",
+   "query": "the 1st",
+   "anchor": "2025-09-15T09:00:00-04:00",
+   "hardness": "hard",
+   "expected": [
+    {
+     "start": "2025-09-01T00:00:00-04:00",
+     "end": "2025-09-02T00:00:00-04:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2025-10-01T00:00:00-04:00",
+      "end": "2025-10-02T00:00:00-04:00"
+     }
+    ]
+   ]
+  },
+  {
+   "id": "S1-13",
+   "query": "April 30",
+   "anchor": "2026-04-19T13:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-04-30T00:00:00-04:00",
+     "end": "2026-05-01T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-09",
+   "query": "January 3rd",
+   "anchor": "2025-12-30T13:00:00-05:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-01-03T00:00:00-05:00",
+     "end": "2026-01-04T00:00:00-05:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-05",
+   "query": "Tuesday at 3pm",
+   "anchor": "2026-03-12T14:30:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-03-17T15:00:00-04:00",
+     "end": "2026-03-17T16:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-08",
+   "query": "December 25",
+   "anchor": "2025-11-26T08:30:00-05:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2025-12-25T00:00:00-05:00",
+     "end": "2025-12-26T00:00:00-05:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-11",
+   "query": "the 15th at noon",
+   "anchor": "2026-03-12T14:30:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-03-15T12:00:00-04:00",
+     "end": "2026-03-15T13:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-15",
+   "query": "the third Tuesday of next month",
+   "anchor": "2026-03-12T14:30:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-04-21T00:00:00-04:00",
+     "end": "2026-04-22T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-10",
+   "query": "6/15",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-06-15T00:00:00-04:00",
+     "end": "2026-06-16T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "S1-14",
+   "query": "noon on the 5th",
+   "anchor": "2025-10-31T12:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2025-11-05T12:00:00-05:00",
+     "end": "2025-11-05T13:00:00-05:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-20",
+   "query": "this time next week",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-06-16T11:00:00-04:00",
+     "end": "2026-06-16T11:01:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-11",
+   "query": "in 6 months",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-12-09T00:00:00-05:00",
+     "end": "2026-12-10T00:00:00-05:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-26",
+   "query": "the 100th day of the year",
+   "anchor": "2026-01-15T10:00:00-05:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-04-10T00:00:00-04:00",
+     "end": "2026-04-11T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-02",
+   "query": "in three days",
+   "anchor": "2026-03-12T14:30:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-03-15T00:00:00-04:00",
+     "end": "2026-03-16T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-17",
+   "query": "in two weeks",
+   "anchor": "2026-02-27T15:20:00-05:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-03-13T00:00:00-04:00",
+     "end": "2026-03-14T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-13",
+   "query": "5 business days ago",
+   "anchor": "2025-09-15T09:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2025-09-08T00:00:00-04:00",
+     "end": "2025-09-09T00:00:00-04:00"
+    }
+   ],
+   "acceptable": []
+  },
+  {
+   "id": "R2-29",
+   "query": "the Monday after next",
+   "anchor": "2026-06-09T11:00:00-04:00",
+   "hardness": "easy",
+   "expected": [
+    {
+     "start": "2026-06-22T00:00:00-04:00",
+     "end": "2026-06-23T00:00:00-04:00"
+    }
+   ],
+   "acceptable": [
+    [
+     {
+      "start": "2026-06-15T00:00:00-04:00",
+      "end": "2026-06-16T00:00:00-04:00"
+     }
+    ]
+   ]
+  }
+ ]
+}

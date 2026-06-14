@@ -1,0 +1,38 @@
+EXACT PROMPT — arm=ISO, item=C4-01 ("our next maintenance window"), anchor=2026-06-09T11:00:00-04:00
+
+┌─ role: system ──────────────────────────────────────────────────────
+You translate the time expression in a user's request into a structured value.
+- Treat the Anchor line as the current date/time. Never use the real clock.
+- If the request has no temporal aspect, return kind:"none" with one sentence of reasoning.
+- Otherwise return kind:"time" with the value, an ambiguity rating 1-5, and one sentence of reasoning.
+- Time zone is America/New_York; do not convert zones.
+Ambiguity scale:
+1. Completely clear what date to choose
+2. Clear first choice, but other options are plausible
+3. The chosen date is most likely from context, but others are reasonable
+4. Several contending options for the best choice
+5. Completely unclear which option is most appropriate
+
+Resolve the time to concrete ISO 8601: a point {cardinality:"point", at}, a range {cardinality:"range", start, end, bounds} (null start/end = open), or a set {cardinality:"set", members:[{start,end}]}.
+
+Anchor (treat as now): 2026-06-09T11:00:00-04:00 (Tuesday)
+
+Org calendar definitions (treat these as authoritative for this org):
+- maintenance window: the 2nd Saturday of each month, 02:00–06:00 local. ("next" = the
+  next such window on or after now.)
+- fiscal year: starts February 1. Fiscal Q1 = Feb–Apr, Q2 = May–Jul, Q3 = Aug–Oct,
+  Q4 = Nov–Jan. ("this quarter" for this org means the fiscal quarter.)
+- sprint: 2-week cadence starting Monday 2026-01-05, 00:00. Each sprint is [start, start+14d).
+  ("current sprint" = the one containing now; "next sprint" = the following one.)
+- open enrollment: November 1–15 inclusive, every year.
+- peak season: the day after Thanksgiving through December 31 inclusive.
+- billing cycle: the 15th of a month through the 14th of the next month. ("current" = the
+  cycle containing today.)
+- all-hands: the last Friday of each month, 15:00–16:00 local.
+
+JSON schema:
+{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"kind":{"type":"string","enum":["none","time"],"description":"'none' = the request has no temporal aspect"},"value":{"anyOf":[{"anyOf":[{"type":"object","properties":{"cardinality":{"type":"string","const":"point"},"at":{"type":"string"}},"required":["cardinality","at"],"additionalProperties":false,"description":"a single instant or calendar unit, ISO 8601; precision implies the grain (a bare date = that whole day)"},{"type":"object","properties":{"cardinality":{"type":"string","const":"range"},"start":{"anyOf":[{"type":"string"},{"type":"null"}],"description":"null = open start"},"end":{"anyOf":[{"type":"string"},{"type":"null"}],"description":"null = open end (\"since March\" → start only)"},"bounds":{"default":"[)","type":"string","enum":["[)","[]","(]","()"],"description":"interval bounds; default half-open [start, end)"}},"required":["cardinality","start","end","bounds"],"additionalProperties":false,"description":"one contiguous span"},{"type":"object","properties":{"cardinality":{"type":"string","const":"set"},"members":{"type":"array","items":{"type":"object","properties":{"start":{"type":"string"},"end":{"type":"string"}},"required":["start","end"],"additionalProperties":false},"description":"half-open [start, end) members"}},"required":["cardinality","members"],"additionalProperties":false,"description":"two or more disjoint spans, e.g. \"weekends in March\""}]},{"type":"null"}],"description":"the resolved time; null when kind='none'"},"ambiguity":{"anyOf":[{"type":"integer","minimum":1,"maximum":5},{"type":"null"}],"description":"1 = completely clear … 5 = completely unclear; null only when kind='none'"},"reasoning":{"type":"string","maxLength":240,"description":"one sentence: why this choice / why uncertain"}},"required":["kind","value","ambiguity","reasoning"],"additionalProperties":false}
+You MUST answer with a JSON object that matches the JSON schema above.
+
+┌─ role: user ────────────────────────────────────────────────────────
+our next maintenance window

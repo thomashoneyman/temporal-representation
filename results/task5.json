@@ -1,0 +1,335 @@
+{
+  "generatedAt": "2026-06-12T14:46:42.308Z",
+  "promptVersion": "30b61a223a79",
+  "conventionText": "Time interpretation conventions (follow these exactly):\n- Weeks start on Monday. \"Last week\" means the previous whole Monday through Sunday week.\n- A bare date or holiday with no year (\"March 4\", \"Memorial Day\") means the NEAREST occurrence (past or future).\n- Ranges stated with \"through\"/\"to\"/\"–\" INCLUDE the end day (\"March 1 through 4\" covers all of the 4th).\n- \"a month ago\" means the same day-of-month in the previous month (clamped if it does not exist); \"30 days ago\" means exactly 30 days.\n- Quarters are calendar quarters (Q1 = Jan–Mar).\n- \"YTD\"/\"MTD\"/\"QTD\" run from the period start through the END of today (today included).\n- \"The last N days\" are the N completed days before today (today excluded).\n- Business days are Monday/Tuesday/Wednesday/Thursday/Friday excluding US federal holidays.\n- \"The first week of <month>\" means days 1–7 of the month.\n- \"Next <weekday>\" (e.g. \"next Friday\") means the nearest upcoming one.",
+  "cells": {
+    "anthropic/claude-haiku-4-5|ir": {
+      "free": {
+        "exact": 0.8729016786570744,
+        "sev4": 27,
+        "convTags": 5,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 36,
+            "n": 45
+          },
+          "relative": {
+            "exact": 101,
+            "n": 102
+          },
+          "named": {
+            "exact": 59,
+            "n": 69
+          },
+          "custom": {
+            "exact": 31,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 53,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 29,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 31,
+            "n": 42
+          }
+        }
+      },
+      "steered": {
+        "exact": 0.9016786570743405,
+        "sev4": 11,
+        "convTags": 0,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 42,
+            "n": 45
+          },
+          "relative": {
+            "exact": 99,
+            "n": 102
+          },
+          "named": {
+            "exact": 66,
+            "n": 69
+          },
+          "custom": {
+            "exact": 28,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 52,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 34,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 31,
+            "n": 42
+          }
+        }
+      }
+    },
+    "anthropic/claude-haiku-4-5|iso": {
+      "free": {
+        "exact": 0.7817745803357314,
+        "sev4": 30,
+        "convTags": 19,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 40,
+            "n": 45
+          },
+          "relative": {
+            "exact": 90,
+            "n": 102
+          },
+          "named": {
+            "exact": 48,
+            "n": 69
+          },
+          "custom": {
+            "exact": 30,
+            "n": 36
+          },
+          "multipart": {
+            "exact": 26,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 30,
+            "n": 42
+          },
+          "ranges": {
+            "exact": 38,
+            "n": 57
+          }
+        }
+      },
+      "steered": {
+        "exact": 0.8513189448441247,
+        "sev4": 26,
+        "convTags": 8,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 41,
+            "n": 45
+          },
+          "relative": {
+            "exact": 95,
+            "n": 102
+          },
+          "named": {
+            "exact": 61,
+            "n": 69
+          },
+          "custom": {
+            "exact": 27,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 47,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 30,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 30,
+            "n": 42
+          }
+        }
+      }
+    },
+    "openai/gpt-5.4-mini|ir": {
+      "free": {
+        "exact": 0.8776978417266187,
+        "sev4": 17,
+        "convTags": 5,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 38,
+            "n": 45
+          },
+          "relative": {
+            "exact": 91,
+            "n": 102
+          },
+          "named": {
+            "exact": 63,
+            "n": 69
+          },
+          "custom": {
+            "exact": 35,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 53,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 32,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 30,
+            "n": 42
+          }
+        }
+      },
+      "steered": {
+        "exact": 0.8920863309352518,
+        "sev4": 6,
+        "convTags": 1,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 39,
+            "n": 45
+          },
+          "relative": {
+            "exact": 87,
+            "n": 102
+          },
+          "named": {
+            "exact": 68,
+            "n": 69
+          },
+          "custom": {
+            "exact": 35,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 54,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 34,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 31,
+            "n": 42
+          }
+        }
+      }
+    },
+    "openai/gpt-5.4-mini|iso": {
+      "free": {
+        "exact": 0.841726618705036,
+        "sev4": 19,
+        "convTags": 15,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 43,
+            "n": 45
+          },
+          "relative": {
+            "exact": 93,
+            "n": 102
+          },
+          "named": {
+            "exact": 49,
+            "n": 69
+          },
+          "custom": {
+            "exact": 31,
+            "n": 36
+          },
+          "multipart": {
+            "exact": 32,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 32,
+            "n": 42
+          },
+          "ranges": {
+            "exact": 47,
+            "n": 57
+          }
+        }
+      },
+      "steered": {
+        "exact": 0.8657074340527577,
+        "sev4": 15,
+        "convTags": 9,
+        "n": 417,
+        "bySlice": {
+          "specific": {
+            "exact": 43,
+            "n": 45
+          },
+          "relative": {
+            "exact": 97,
+            "n": 102
+          },
+          "named": {
+            "exact": 56,
+            "n": 69
+          },
+          "custom": {
+            "exact": 30,
+            "n": 36
+          },
+          "ranges": {
+            "exact": 48,
+            "n": 57
+          },
+          "multipart": {
+            "exact": 31,
+            "n": 42
+          },
+          "notime": {
+            "exact": 24,
+            "n": 24
+          },
+          "ambiguous": {
+            "exact": 32,
+            "n": 42
+          }
+        }
+      }
+    }
+  }
+}

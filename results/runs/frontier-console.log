@@ -1,0 +1,555 @@
+
+> temporal-research@0.1.0 phase1 /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/phase1.ts
+
+phase1 openai/frontier iso rep1 specific: 6 items, 0 errors
+This storage provider does not support batch creating metrics
+This storage provider does not support batch creating scores
+phase1 openai/frontier iso rep1 relative: 16 items, 0 errors
+phase1 openai/frontier iso rep1 named: 10 items, 0 errors
+phase1 openai/frontier iso rep1 custom: 5 items, 0 errors
+phase1 openai/frontier iso rep1 ranges: 14 items, 0 errors
+phase1 openai/frontier iso rep1 multipart: 11 items, 0 errors
+phase1 openai/frontier iso rep1 notime: 2 items, 0 errors
+phase1 openai/frontier iso rep1 ambiguous: 14 items, 0 errors
+phase1 openai/frontier iso rep2 specific: 6 items, 0 errors
+phase1 openai/frontier iso rep2 relative: 16 items, 0 errors
+phase1 openai/frontier iso rep2 named: 10 items, 0 errors
+phase1 openai/frontier iso rep2 custom: 5 items, 0 errors
+phase1 openai/frontier iso rep2 ranges: 14 items, 0 errors
+phase1 openai/frontier iso rep2 multipart: 11 items, 0 errors
+phase1 openai/frontier iso rep2 notime: 2 items, 0 errors
+phase1 openai/frontier iso rep2 ambiguous: 14 items, 0 errors
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.5',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: undefined,
+      tool_choice: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '37e2068a-a89b-4d38-8a75-df101c24e1c2',
+  provider: 'openai',
+  modelId: 'gpt-5.5'
+}
+phase1 openai/frontier iso rep3 specific: attempt 1 failed: Failed to run experiment: Error generating result from target
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.5',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: undefined,
+      tool_choice: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: 'e7b3e6cc-ae29-4c10-aace-aac3f5d26e35',
+  provider: 'openai',
+  modelId: 'gpt-5.5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.5',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: undefined,
+      tool_choice: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '402c111d-b906-4a3d-a97c-5445b52f93ba',
+  provider: 'openai',
+  modelId: 'gpt-5.5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.5',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: undefined,
+      tool_choice: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '5fd3a079-46f4-4e4a-b48b-44a925dfe5cc',
+  provider: 'openai',
+  modelId: 'gpt-5.5'
+}
+Upstream LLM API error {
+  error: APICallError2 [AI_APICallError]: Cannot connect to API: read ECONNRESET
+      at handleFetchError (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/handle-fetch-error.ts:51:14)
+      at postToApi2 (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/provider-utils/4.0.27/b6e7f4f0a1b25ca19a3b22da2e1501f9f7f2a796d37382378565381ea51553e6/node_modules/@ai-sdk/provider-utils/src/post-to-api.ts:164:11)
+      at async OpenAIResponsesLanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/setup-pnpm/node_modules/.bin/store/v11/links/@ai-sdk/openai/3.0.63/bc8e55446e0cc19e124a705ad3f5a64d3bc773713cf56addf1e94930d2eee80d/node_modules/@ai-sdk/openai/src/responses/openai-responses-language-model.ts:485:9)
+      at async AISDKV6LanguageModel.doGenerate (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/src/llm/model/aisdk/v6/model.ts:69:20)
+      at async pRetry.default.retries (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19230:34)
+      at async Module.pRetry (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/p-retry@7.1.1/node_modules/p-retry/index.js:197:19)
+      at async createStream (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:19227:16)
+      at async Object.start (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:10220:26) {
+    cause: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+        at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+      errno: -54,
+      code: 'ECONNRESET',
+      syscall: 'read'
+    },
+    url: 'https://api.openai.com/v1/responses',
+    requestBodyValues: {
+      model: 'gpt-5.5',
+      input: [Array],
+      temperature: undefined,
+      top_p: undefined,
+      max_output_tokens: undefined,
+      conversation: undefined,
+      max_tool_calls: undefined,
+      metadata: undefined,
+      parallel_tool_calls: undefined,
+      previous_response_id: undefined,
+      store: undefined,
+      user: undefined,
+      instructions: undefined,
+      service_tier: undefined,
+      include: undefined,
+      prompt_cache_key: undefined,
+      prompt_cache_retention: undefined,
+      safety_identifier: undefined,
+      top_logprobs: undefined,
+      truncation: undefined,
+      reasoning: [Object],
+      tools: undefined,
+      tool_choice: undefined
+    },
+    statusCode: undefined,
+    responseHeaders: undefined,
+    responseBody: undefined,
+    isRetryable: true,
+    data: undefined,
+    [Symbol(vercel.ai.error)]: true,
+    [Symbol(vercel.ai.error.AI_APICallError)]: true
+  },
+  runId: '1952d02a-db7e-428a-96ad-053e90e0295b',
+  provider: 'openai',
+  modelId: 'gpt-5.5'
+}
+This storage provider does not support batch creating logs
+phase1 openai/frontier iso rep3 specific: 6 items, 0 errors (attempt 2)
+phase1 openai/frontier iso rep3 relative: 16 items, 0 errors
+phase1 openai/frontier iso rep3 named: 10 items, 0 errors
+phase1 openai/frontier iso rep3 custom: 5 items, 0 errors
+phase1 openai/frontier iso rep3 ranges: 14 items, 0 errors
+phase1 openai/frontier iso rep3 multipart: 11 items, 0 errors
+phase1 openai/frontier iso rep3 notime: 2 items, 0 errors
+phase1 openai/frontier iso rep3 ambiguous: 14 items, 0 errors
+phase1 anthropic/frontier iso rep1 specific: 6 items, 0 errors
+phase1 anthropic/frontier iso rep1 relative: 16 items, 0 errors
+phase1 anthropic/frontier iso rep1 named: 10 items, 0 errors
+phase1 anthropic/frontier iso rep1 custom: 5 items, 0 errors
+phase1 anthropic/frontier iso rep1 ranges: 14 items, 0 errors
+phase1 anthropic/frontier iso rep1 multipart: 11 items, 0 errors
+phase1 anthropic/frontier iso rep1 notime: 2 items, 0 errors
+phase1 anthropic/frontier iso rep1 ambiguous: 14 items, 0 errors
+phase1 anthropic/frontier iso rep2 specific: 6 items, 0 errors
+phase1 anthropic/frontier iso rep2 relative: 16 items, 0 errors
+phase1 anthropic/frontier iso rep2 named: 10 items, 0 errors
+phase1 anthropic/frontier iso rep2 custom: 5 items, 0 errors
+phase1 anthropic/frontier iso rep2 ranges: 14 items, 0 errors
+phase1 anthropic/frontier iso rep2 multipart: 11 items, 0 errors
+phase1 anthropic/frontier iso rep2 notime: 2 items, 0 errors
+phase1 anthropic/frontier iso rep2 ambiguous: 14 items, 0 errors
+phase1 anthropic/frontier iso rep3 specific: 6 items, 0 errors
+phase1 anthropic/frontier iso rep3 relative: 16 items, 0 errors
+phase1 anthropic/frontier iso rep3 named: 10 items, 0 errors
+phase1 anthropic/frontier iso rep3 custom: 5 items, 0 errors
+phase1 anthropic/frontier iso rep3 ranges: 14 items, 0 errors
+phase1 anthropic/frontier iso rep3 multipart: 11 items, 0 errors
+phase1 anthropic/frontier iso rep3 notime: 2 items, 0 errors
+phase1 anthropic/frontier iso rep3 ambiguous: 14 items, 0 errors
+
+aggregating 2788 rows from results/runs/phase1
+wrote results/phase1.json (6 cells)
+
+> temporal-research@0.1.0 preferences /Users/trh/Desktop/time-experiment
+> node --env-file=.env --import tsx src/harness/preferences.ts
+
+This storage provider does not support batch creating metrics
+grid openai rep1: 131 items, 0 errors
+grid openai rep2: 131 items, 0 errors
+grid openai rep3: 131 items, 0 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: '{"kind":"time","value":{"cardinality":"range","start":"2025-12-26T10:00:00-05:00","end":"2026-01-02T10:00:00-05:00","bounds":"[]"},"reasoning":"\\"The past week\\" denotes the seven days leading up to the current anchor moment."}'
+    }
+  },
+  runId: '4a50cde6-4f76-4bb5-8317-341a97568e06',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+This storage provider does not support batch creating logs
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - root: Invalid input: expected object, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "object",
+        "code": "invalid_type",
+        "path": [],
+        "message": "Invalid input: expected object, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: { value: 'undefined' }
+  },
+  runId: '478983ad-7b1f-4f6f-b9b4-4ae3e04c157d',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: `{"kind":"time","value":{"cardinality":"range","start":"2026-06-15","end":"2026-06-17","bounds":"[]"},"reasoning":"Next week begins Monday 2026-06-15; 'early' covers roughly Monday through Wednesday of that week."}`
+    }
+  },
+  runId: 'd8f7fd21-1a75-4dbd-9672-978361dd4d54',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+grid anthropic rep1: 131 items, 3 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: `{"kind":"time","value":{"cardinality":"range","start":"2025-12-02T10:00:00-05:00","end":"2026-01-02T10:00:00-05:00","bounds":"[]"},"reasoning":"'The past month' most naturally denotes the roughly 30-day span ending at the anchor."}`
+    }
+  },
+  runId: '0f6d1a0e-9328-41c2-ae3d-96af66c4b898',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: '{"kind":"time","value":{"cardinality":"range","start":"2026-05-09T09:00:00-04:00","end":"2026-06-08T09:00:00-04:00","bounds":"[]"},"reasoning":"\\"The last 30 days\\" spans backward 30 days from the anchor up to now."}'
+    }
+  },
+  runId: 'fc8c06c2-8509-402a-996f-be168cd833d7',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: `{"kind":"time","value":{"cardinality":"range","start":"2026-06-08T00:00:00-04:00","end":"2026-06-08T09:00:00-04:00","bounds":"[]"},"reasoning":"'So far this week' spans from the start of the current week (Monday) up to the anchor's now."}`
+    }
+  },
+  runId: '11e2c2a9-827b-4637-aee5-17c9a78f4c37',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+grid anthropic rep2: 131 items, 3 errors
+Error in agent stream {
+  error: MastraError: Structured output validation failed: - ambiguity: Invalid input: expected number, received undefined
+      at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23555:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    cause: ZodError: [
+      {
+        "expected": "number",
+        "code": "invalid_type",
+        "path": [
+          "ambiguity"
+        ],
+        "message": "Invalid input: expected number, received undefined"
+      }
+    ]
+        at new ZodError (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/core.js:40:39)
+        at Module.<anonymous> (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/core/parse.js:40:20)
+        at inst.safeParse (file:///Users/trh/Desktop/time-experiment/node_modules/.pnpm/zod@4.4.3/node_modules/zod/v4/classic/schemas.js:74:46)
+        at ObjectFormatHandler.validateValue (/Users/trh/Desktop/time-experiment/node_modules/.pnpm/@mastra+core@1.41.0_express@5.2.1_zod@4.4.3/node_modules/@mastra/core/dist/chunk-XX3R7XDX.js:23551:39)
+        at process.processTicksAndRejections (node:internal/process/task_queues:105:5),
+    id: 'STRUCTURED_OUTPUT_SCHEMA_VALIDATION_FAILED',
+    domain: 'AGENT',
+    category: 'SYSTEM',
+    details: {
+      value: `{"kind":"time","value":{"cardinality":"range","start":"2026-06-01T09:00:00-04:00","end":"2026-06-08T09:00:00-04:00","bounds":"[]"},"reasoning":"'The past week' refers to the seven-day span leading up to the current anchor moment."}`
+    }
+  },
+  runId: '1e42af54-fb0a-41ee-9310-5688ffb1594a',
+  provider: 'anthropic',
+  modelId: 'claude-opus-4-8'
+}
+grid anthropic rep3: 131 items, 1 errors
+
+aggregating 2816 grid rows
+wrote results/preferences.json + results/preferences-readout.md (524 cells)

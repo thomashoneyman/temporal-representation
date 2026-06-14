@@ -1,0 +1,68 @@
+{
+  "seededAt": "2026-06-12T14:46:07.894Z",
+  "datasets": [
+    {
+      "name": "temporal-specific",
+      "id": "9ba4bdf5-3152-4c60-826d-be867fd5dae2",
+      "version": 1,
+      "items": 15,
+      "hash": "29983eb7293c"
+    },
+    {
+      "name": "temporal-relative",
+      "id": "971ac569-a295-495c-a007-898192ced04d",
+      "version": 1,
+      "items": 34,
+      "hash": "693be731ac61"
+    },
+    {
+      "name": "temporal-named",
+      "id": "03185fa8-0aad-4994-be8c-e947942c7b14",
+      "version": 1,
+      "items": 23,
+      "hash": "8d21c0ce215b"
+    },
+    {
+      "name": "temporal-custom",
+      "id": "745cddd0-c715-4816-a5dc-3f80fefab3ba",
+      "version": 1,
+      "items": 12,
+      "hash": "e8b3cb1b0c74"
+    },
+    {
+      "name": "temporal-ranges",
+      "id": "04bed209-27bd-4cdb-ba93-869e91cea74f",
+      "version": 1,
+      "items": 19,
+      "hash": "30321b6b2a43"
+    },
+    {
+      "name": "temporal-multipart",
+      "id": "e8518d71-5fe2-4b15-82e8-f4e0b29ac904",
+      "version": 1,
+      "items": 14,
+      "hash": "d509c7fb1db0"
+    },
+    {
+      "name": "temporal-notime",
+      "id": "9d4afa66-c637-4b21-b75a-0e9262384277",
+      "version": 1,
+      "items": 8,
+      "hash": "33044185f8da"
+    },
+    {
+      "name": "temporal-ambiguous",
+      "id": "91aa6683-09ae-477c-901a-97e3ea41df2c",
+      "version": 1,
+      "items": 14,
+      "hash": "e65b7bdff18d"
+    },
+    {
+      "name": "temporal-decompositions",
+      "id": "c75e6470-0f2d-4a0b-bbee-6da5d8d54461",
+      "version": 1,
+      "items": 14,
+      "hash": "d509c7fb1db0"
+    }
+  ]
+}

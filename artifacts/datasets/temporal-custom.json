@@ -1,0 +1,785 @@
+{
+  "name": "temporal-custom",
+  "description": "Org presets defined only in the prompt: fiscal override, sprints, billing cycles (H2 generalization). (12 items, key v0.4)",
+  "keyVersion": "v0.4",
+  "items": [
+    {
+      "input": "our next maintenance window",
+      "groundTruth": {
+        "itemId": "C4-01",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "maintenance_window"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-06-13T02:00:00-04:00",
+              "end": "2026-06-13T06:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "hour",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "maintenance_window": {
+            "type": "filter",
+            "within": {
+              "type": "nth",
+              "n": 2,
+              "unit": "sat",
+              "of": {
+                "type": "preset",
+                "name": "this_month"
+              }
+            },
+            "timeOfDay": {
+              "start": "02:00",
+              "end": "06:00"
+            }
+          }
+        },
+        "notes": "2nd Saturday of June = Jun 13 (anchor Jun 9 is before it)."
+      }
+    },
+    {
+      "input": "the next maintenance window",
+      "groundTruth": {
+        "itemId": "C4-02",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "maintenance_window"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-03-14T02:00:00-04:00",
+              "end": "2026-03-14T06:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "hour",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "maintenance_window": {
+            "type": "filter",
+            "within": {
+              "type": "nth",
+              "n": 2,
+              "unit": "sat",
+              "of": {
+                "type": "preset",
+                "name": "this_month"
+              }
+            },
+            "timeOfDay": {
+              "start": "02:00",
+              "end": "06:00"
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": "this quarter",
+      "groundTruth": {
+        "itemId": "C4-03",
+        "anchor": "2026-01-15T10:00:00-05:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 2,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "preset",
+          "name": "this_quarter"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-11-01T00:00:00-04:00",
+              "end": "2026-02-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2026-01-01T00:00:00-05:00",
+                "end": "2026-04-01T00:00:00-04:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "quarter",
+        "expectedAmbiguity": 3,
+        "notes": "THE headline custom item: the org fiscal year starts Feb 1, so Jan 15 sits in fiscal Q4 (Nov–Jan). The prompt definition OVERRIDES the global calendar-quarter default; ignoring it (calendar Q1) is the tracked Sev-4 failure."
+      }
+    },
+    {
+      "input": "the current sprint",
+      "groundTruth": {
+        "itemId": "C4-04",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "current_sprint"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-06-08T00:00:00-04:00",
+              "end": "2026-06-22T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "current_sprint": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 8
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 21
+            }
+          }
+        },
+        "notes": "2-week cadence from Mon 2026-01-05; the sprint containing Jun 9 is Jun 8–22. Watch for off-by-one-sprint."
+      }
+    },
+    {
+      "input": "next sprint",
+      "groundTruth": {
+        "itemId": "C4-05",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "next_sprint"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-05T00:00:00-05:00",
+              "end": "2026-01-19T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "next_sprint": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 1,
+              "day": 5
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 1,
+              "day": 18
+            }
+          }
+        },
+        "notes": "The epoch itself is still ahead at Dec 30 — \"next sprint\" is the FIRST sprint."
+      }
+    },
+    {
+      "input": "open enrollment",
+      "groundTruth": {
+        "itemId": "C4-06",
+        "anchor": "2026-03-12T14:30:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "open_enrollment"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-11-01T00:00:00-04:00",
+              "end": "2026-11-16T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "open_enrollment": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "month": 11,
+              "day": 1,
+              "which": "next"
+            },
+            "to": {
+              "type": "date",
+              "month": 11,
+              "day": 15,
+              "which": "next"
+            }
+          }
+        },
+        "notes": "\"November 1–15 inclusive\" → half-open end Nov 16."
+      }
+    },
+    {
+      "input": "peak season",
+      "groundTruth": {
+        "itemId": "C4-07",
+        "anchor": "2025-11-26T08:30:00-05:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "peak_season"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-11-28T00:00:00-05:00",
+              "end": "2026-01-01T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "peak_season": {
+            "type": "range",
+            "from": {
+              "type": "shift",
+              "base": {
+                "type": "nth",
+                "n": 4,
+                "unit": "thu",
+                "of": {
+                  "type": "date",
+                  "month": 11
+                }
+              },
+              "by": "P1D",
+              "direction": "after"
+            },
+            "to": {
+              "type": "date",
+              "month": 12,
+              "day": 31
+            }
+          }
+        },
+        "notes": "Compositional: depends on resolving Thanksgiving (Nov 27 2025) first — day after through Dec 31 inclusive."
+      }
+    },
+    {
+      "input": "the current billing cycle",
+      "groundTruth": {
+        "itemId": "C4-08",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "current_billing_cycle"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-05-15T00:00:00-04:00",
+              "end": "2026-06-15T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "current_billing_cycle": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 5,
+              "day": 15
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 14
+            }
+          }
+        },
+        "notes": "The cycle CONTAINING Jun 9 is May 15 – Jun 14 (not Jun 15 – Jul 14)."
+      }
+    },
+    {
+      "input": "next billing cycle",
+      "groundTruth": {
+        "itemId": "C4-09",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "next_billing_cycle"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-01-15T00:00:00-05:00",
+              "end": "2026-02-15T00:00:00-05:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "next_billing_cycle": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 1,
+              "day": 15
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 2,
+              "day": 14
+            }
+          }
+        }
+      }
+    },
+    {
+      "input": "our next all-hands",
+      "groundTruth": {
+        "itemId": "C4-10",
+        "anchor": "2025-09-15T09:00:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "all_hands"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2025-09-26T15:00:00-04:00",
+              "end": "2025-09-26T16:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "hour",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "all_hands": {
+            "type": "filter",
+            "within": {
+              "type": "nth",
+              "n": "last",
+              "unit": "fri",
+              "of": {
+                "type": "preset",
+                "name": "this_month"
+              }
+            },
+            "timeOfDay": {
+              "start": "15:00",
+              "end": "16:00"
+            }
+          }
+        },
+        "notes": "Last Friday of September 2025 = Sep 26, 15:00–16:00."
+      }
+    },
+    {
+      "input": "the sprint after next",
+      "groundTruth": {
+        "itemId": "C4-11",
+        "anchor": "2026-06-09T11:00:00-04:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "sprint_after_next"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2026-07-06T00:00:00-04:00",
+              "end": "2026-07-20T00:00:00-04:00"
+            }
+          ]
+        },
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 2,
+        "customPresets": {
+          "current_sprint": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 8
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 21
+            }
+          },
+          "next_sprint": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 6,
+              "day": 22
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 7,
+              "day": 5
+            }
+          },
+          "sprint_after_next": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2026,
+              "month": 7,
+              "day": 6
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 7,
+              "day": 19
+            }
+          }
+        },
+        "notes": "Cadence stepped TWICE from the epoch (current Jun 8 → next Jun 22 → after-next Jul 6). Off-by-one-sprint is the failure."
+      }
+    },
+    {
+      "input": "the last billing cycle of last year",
+      "groundTruth": {
+        "itemId": "C4-12",
+        "anchor": "2025-12-30T13:00:00-05:00",
+        "slice": "custom",
+        "conventions": {
+          "weekStart": "mon",
+          "weekDefinition": "mon-sun",
+          "datePolicy": "nearest",
+          "rangeBounds": "inclusive",
+          "monthAgo": "pin-day",
+          "fiscalYearStartMonth": 1,
+          "workweek": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "firstWeek": "days-1-7",
+          "nextWeekday": "coming"
+        },
+        "canonicalIR": {
+          "type": "ref",
+          "id": "last_billing_cycle_of_last_year"
+        },
+        "resolved": {
+          "cardinality": "range",
+          "intervals": [
+            {
+              "start": "2024-12-15T00:00:00-05:00",
+              "end": "2025-01-15T00:00:00-05:00"
+            }
+          ]
+        },
+        "acceptableResolved": [
+          {
+            "cardinality": "range",
+            "intervals": [
+              {
+                "start": "2024-11-15T00:00:00-05:00",
+                "end": "2024-12-15T00:00:00-05:00"
+              }
+            ]
+          }
+        ],
+        "expectClarify": false,
+        "cardinality": "range",
+        "granularity": "day",
+        "expectedAmbiguity": 3,
+        "customPresets": {
+          "current_billing_cycle": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2025,
+              "month": 12,
+              "day": 15
+            },
+            "to": {
+              "type": "date",
+              "year": 2026,
+              "month": 1,
+              "day": 14
+            }
+          },
+          "last_billing_cycle_of_last_year": {
+            "type": "range",
+            "from": {
+              "type": "date",
+              "year": 2024,
+              "month": 12,
+              "day": 15
+            },
+            "to": {
+              "type": "date",
+              "year": 2025,
+              "month": 1,
+              "day": 14
+            }
+          }
+        },
+        "notes": "RE-KEYED (v0.4, consensus audit): at anchor Dec 30 2025, \"last year\" = 2024 — the original key used the 2025 cycle (an authoring conflation of this/last year; 18/24 model answers across all four models read it correctly). Key = last cycle starting in 2024 (Dec 15 2024 → Jan 14 2025); the last cycle fully within 2024 is the Sev-4 alternative."
+      }
+    }
+  ]
+}
