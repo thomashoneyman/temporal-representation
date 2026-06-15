@@ -46,6 +46,11 @@ is the finding.
 
 ## Files
 
+The `*-viz.html` pages below are **generated from the committed JSON, not stored in git**
+(only the data is). Read them on the live site —
+**https://thomashoneyman.github.io/temporal-representation/** — or rebuild them locally
+with `pnpm site` (all pages) or `pnpm <task>:viz` (one page).
+
 | File | What it is | Start here? |
 |---|---|---|
 | `phase1-viz.html` | **Interactive report** of Phase 1: how consistently each model answers, whether it invents times for questions that have none, and which reading it picks on deliberately ambiguous questions. Open in any browser; hover the bars. | ✅ |

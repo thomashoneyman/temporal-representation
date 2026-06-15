@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+
+# Rebuilds the whole site from the committed data (results/*.json) on every push, then
+# deploys it. Generated HTML is never committed, so the published site can't go stale:
+# `npm run site` regenerates every report page and the talk from data before publishing.
+# CI uses npm (not pnpm) — the build just installs deps and runs node scripts, and npm
+# avoids pnpm's build-script approval gate.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# One deployment at a time; let an in-progress run finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - name: Build site from data
+        run: npm run site # regenerates every page, assembles ./site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

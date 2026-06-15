@@ -5,4 +5,10 @@ node_modules/
 mastra.db*
 dist/
 site/dist/
+site/
 .DS_Store
+
+# Generated report pages + talk deck — rebuilt from data by `pnpm site` and
+# published to GitHub Pages. Never committed, so they can't go stale in git.
+results/*.html
+talk/index.html

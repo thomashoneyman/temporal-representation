@@ -1,7 +1,10 @@
 # talk/
 
 The presentation deck. `index.html` is a self-contained, keyboard-navigable slide deck
-(no CDN, no build step) — open it in any browser and present.
+(no CDN, no build step) — present it on the live site
+(**https://thomashoneyman.github.io/temporal-representation/talk/**) or open it in any
+browser after generating it. It is **generated, not committed** (see below): run
+`pnpm talk` (or `pnpm site`) to produce `talk/index.html`.
 
 - **→ / Space / click-right**: next · **← / click-left**: previous · **Home/End**: jump
 - **N**: toggle speaker notes (per-slide, drawn from `artifacts/talk.md`)

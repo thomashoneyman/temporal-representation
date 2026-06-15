@@ -57,6 +57,7 @@ Offline (no API keys):
 | `pnpm analyze` | `results/summary.json` (all metrics, CIs, determinism, cost) → `results/report.md` (the narrative) → `results/summary-viz.html` (the leaderboard). |
 | `pnpm audit:consensus` | Standing answer-key check: flags wrong answers that multiple models agree on (our best key-defect detector). |
 | `pnpm <task>:viz` | Regenerate any results page from stored runs: `phase1:viz`, `preferences:viz`, `phase2:viz`, `task7:viz`, `task7b:viz`, `task8:viz`. |
+| `pnpm site` | Regenerate every report page + the talk from stored data and assemble the publishable site into `site/`. This is what CI deploys to GitHub Pages. |
 | `pnpm show-prompt` | Print the exact prompts and injected schemas each arm receives. |
 
 Live model runs (need keys in `.env`; all are resumable — re-running skips completed rows):
@@ -82,7 +83,15 @@ buying any model calls — scoring changes propagate this way).
 
 ## Reading the results
 
-Start with `results/summary-viz.html` (the leaderboard + the filled decision table), then
+The interactive reports and the talk are published to **GitHub Pages**:
+**https://thomashoneyman.github.io/temporal-representation/**. The site is rebuilt from
+the committed data on every push, so it never goes stale.
+
+The HTML pages are **generated, not committed** — only the JSON they're built from lives
+in git. To read them from a clone, run `pnpm site` (regenerates everything into `site/`)
+or a single `pnpm <task>:viz`, then open the file.
+
+Start with `summary-viz.html` (the leaderboard + the filled decision table), then
 `results/report.md` (the narrative answering each research question). Every per-task page
 (`phase2-viz.html`, `task7-viz.html`, `task7b-viz.html`, `preferences-viz.html`) is
 self-contained — send the single file to anyone — and every error bar is clickable down to

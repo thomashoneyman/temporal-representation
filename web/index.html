@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Temporal Representation in Agent Systems</title>
+        <meta
+            name="description"
+            content="How well do LLMs turn a user's time expression into the concrete dates an agent must pass to downstream tools? A runnable experiment, its results, and the talk."
+        />
+        <style>
+            :root {
+                --ink: #1a1a1a;
+                --muted: #5f6368;
+                --accent: #2e7d32;
+                --bg: #fbfbf9;
+                --line: #e2e2da;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                margin: 0;
+                background: var(--bg);
+                color: var(--ink);
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    sans-serif;
+                line-height: 1.5;
+            }
+            a {
+                color: var(--accent);
+            }
+            .wrap {
+                max-width: 1040px;
+                margin: 0 auto;
+                padding: 0 24px;
+            }
+
+            header {
+                background: #13301c;
+                color: #eaf3ea;
+                padding: 64px 0 56px;
+            }
+            header .kicker {
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                font-size: 0.78rem;
+                font-weight: 700;
+                color: #9fd3a8;
+                margin: 0 0 14px;
+            }
+            header h1 {
+                font-size: 2.6rem;
+                line-height: 1.12;
+                margin: 0 0 18px;
+                color: #fff;
+            }
+            header p {
+                font-size: 1.18rem;
+                max-width: 760px;
+                margin: 0;
+                color: #cfe3d2;
+            }
+            header .by {
+                margin-top: 22px;
+                font-size: 0.92rem;
+                color: #9fb6a3;
+            }
+
+            section {
+                padding: 48px 0;
+                border-bottom: 1px solid var(--line);
+            }
+            section:last-of-type {
+                border-bottom: none;
+            }
+            h2 {
+                font-size: 0.82rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: var(--muted);
+                font-weight: 700;
+                margin: 0 0 22px;
+            }
+
+            /* feature row: talk + leaderboard */
+            .features {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .feature {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                background: #fff;
+                border: 1px solid var(--line);
+                border-left: 4px solid var(--accent);
+                border-radius: 10px;
+                padding: 24px 26px;
+                transition:
+                    box-shadow 0.15s,
+                    transform 0.15s;
+            }
+            .feature:hover {
+                box-shadow: 0 6px 22px rgba(19, 48, 28, 0.1);
+                transform: translateY(-2px);
+            }
+            .feature .tag {
+                font-size: 0.72rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                font-weight: 700;
+                color: var(--accent);
+            }
+            .feature h3 {
+                font-size: 1.4rem;
+                margin: 8px 0 8px;
+                color: var(--ink);
+            }
+            .feature p {
+                margin: 0;
+                color: var(--muted);
+                font-size: 1rem;
+            }
+
+            /* per-page grid */
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            .card {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                background: #fff;
+                border: 1px solid var(--line);
+                border-radius: 10px;
+                padding: 18px 20px;
+                transition:
+                    box-shadow 0.15s,
+                    border-color 0.15s;
+            }
+            .card:hover {
+                box-shadow: 0 4px 16px rgba(19, 48, 28, 0.08);
+                border-color: #bcd3bf;
+            }
+            .card h3 {
+                font-size: 1.08rem;
+                margin: 0 0 6px;
+                color: var(--ink);
+            }
+            .card h3 .fn {
+                font-family: "SF Mono", Menlo, monospace;
+                font-size: 0.82rem;
+                color: var(--muted);
+                font-weight: 400;
+            }
+            .card p {
+                margin: 0;
+                color: var(--muted);
+                font-size: 0.94rem;
+            }
+
+            .docs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .doc {
+                text-decoration: none;
+                font-size: 0.95rem;
+                background: #eef6ee;
+                color: var(--accent);
+                border: 1px solid #d4e7d6;
+                border-radius: 20px;
+                padding: 7px 16px;
+                font-weight: 600;
+            }
+            .doc:hover {
+                background: #e2f0e3;
+            }
+
+            footer {
+                padding: 36px 0 64px;
+                color: var(--muted);
+                font-size: 0.9rem;
+            }
+
+            @media (max-width: 760px) {
+                header h1 {
+                    font-size: 2rem;
+                }
+                .features,
+                .grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <p class="kicker">
+                    Research experiment · time in agent systems
+                </p>
+                <h1>Temporal Representation in Agent Systems</h1>
+                <p>
+                    How well do LLMs turn a user's time expression — “last
+                    week”, “a month ago”, “weekends in March” — into the
+                    concrete dates an agent must pass to downstream tools? An
+                    experiment and resulting recommendations.
+                </p>
+            </div>
+        </header>
+
+        <div class="wrap">
+            <section>
+                <h2>Start here</h2>
+                <div class="features">
+                    <a class="feature" href="results/summary-viz.html">
+                        <span class="tag">The leaderboard</span>
+                        <h3>Results summary &amp; decision table</h3>
+                        <p>
+                            The experiment on one page: summarized results, a
+                            proposed architecture for workflows or free-form
+                            agents, per-task tables, determinism and cost.
+                        </p>
+                    </a>
+                    <a class="feature" href="talk/index.html">
+                        <span class="tag">The talk</span>
+                        <h3>Time in data-analysis agents</h3>
+                        <p>
+                            Keyboard-navigable slide deck (→ / ← / Space,
+                            <code>N</code> for notes).
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h2>The interactive reports</h2>
+                <div class="grid">
+                    <a class="card" href="results/phase2-viz.html">
+                        <h3>
+                            Graded evaluation <span class="fn">phase2-viz</span>
+                        </h3>
+                        <p>
+                            The 100+ question dataset with every answer scored
+                            against the key, with errors weighted by severity
+                            (off-by-one vs. totally wrong). Grouped by answering
+                            method per question category.
+                        </p>
+                    </a>
+                    <a class="card" href="results/preferences-viz.html">
+                        <h3>
+                            Preference grid
+                            <span class="fn">preferences-viz</span>
+                        </h3>
+                        <p>
+                            ~29 business time phrases asked at 7 different
+                            anchor dates to elicit what concrete dates each
+                            model chooses in that scenario. A rough measure of
+                            model preferences.
+                        </p>
+                    </a>
+                    <a class="card" href="results/phase1-viz.html">
+                        <h3>
+                            Measuring determinism
+                            <span class="fn">phase1-viz</span>
+                        </h3>
+                        <p>
+                            How consistently each model answers questions,
+                            whether it invents times for no-time questions, and
+                            which reading it picks on ambiguous ones.
+                        </p>
+                    </a>
+                    <a class="card" href="results/task7-viz.html">
+                        <h3>
+                            Multi-step threading
+                            <span class="fn">task7-viz</span>
+                        </h3>
+                        <p>
+                            Measuring whether models can keep times accurate
+                            across a multi-turn conversation using the IR or ISO
+                            representations, plus an evaluation if tools should
+                            accept the IR or ISO forms as arguments.
+                        </p>
+                    </a>
+                    <a class="card" href="results/task7b-viz.html">
+                        <h3>
+                            Compound decomposition
+                            <span class="fn">task7b-viz</span>
+                        </h3>
+                        <p>
+                            Measurements of how well multi-part or filtered time
+                            questions can be translated by models into concrete
+                            dates and passed to tool calls.
+                        </p>
+                    </a>
+                    <a class="card" href="results/task8-viz.html">
+                        <h3>
+                            Routing discrimination
+                            <span class="fn">task8-viz</span>
+                        </h3>
+                        <p>
+                            Our measurements recommended an architecture: ISO
+                            for easy times, SCATE-lite for hard ones. How well
+                            can agents be taught when to use ISO and when to
+                            delegate to the resolver?
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Reusable artifacts (lift them into your project)</h2>
+                <div class="grid">
+                    <a
+                        class="card"
+                        href="https://github.com/thomashoneyman/temporal-representation/tree/main/src/datasets"
+                    >
+                        <h3>
+                            The temporal dataset
+                            <span class="fn">src/datasets/</span>
+                        </h3>
+                        <p>
+                            139 graded items across 8 query slices — anchors, the
+                            hand-verified answer key, custom-preset definitions,
+                            and crib sheets. Framework-agnostic JSON export; bring
+                            your own model.
+                        </p>
+                    </a>
+                    <a
+                        class="card"
+                        href="https://github.com/thomashoneyman/temporal-representation/tree/main/src/scate-lite"
+                    >
+                        <h3>
+                            ScateLite IR + resolver
+                            <span class="fn">src/scate-lite/</span>
+                        </h3>
+                        <p>
+                            The compact time-expression grammar, the deterministic
+                            IR→ISO resolver, the locked conventions, and the
+                            interval/calendar math. Zero framework dependencies —
+                            drop into any TypeScript project.
+                        </p>
+                    </a>
+                    <a
+                        class="card"
+                        href="https://github.com/thomashoneyman/temporal-representation/tree/main/src/scorers"
+                    >
+                        <h3>
+                            Mastra time scorers
+                            <span class="fn">src/scorers/</span>
+                        </h3>
+                        <p>
+                            Drop-in <code>createScorer</code> wrappers — exact /
+                            distance / IoU / set-F1, the error-severity ladder, and
+                            the production guardrail scorer for catching malformed
+                            time args at runtime.
+                        </p>
+                    </a>
+                    <a
+                        class="card"
+                        href="https://github.com/thomashoneyman/temporal-representation/tree/main/src/scoring"
+                    >
+                        <h3>
+                            Pure scoring functions
+                            <span class="fn">src/scoring/</span>
+                        </h3>
+                        <p>
+                            The same scoring logic with no framework imports — if
+                            you are not on Mastra, grade against the key with these
+                            directly.
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Written docs &amp; data (on GitHub)</h2>
+                <div class="docs">
+                    <a
+                        class="doc"
+                        href="https://github.com/thomashoneyman/temporal-representation/blob/main/results/report.md"
+                        >report.md -- overall result synthesis</a
+                    >
+                    <a
+                        class="doc"
+                        href="https://github.com/thomashoneyman/temporal-representation/blob/main/artifacts/architecture.md"
+                        >architecture.md -- recommended architecture for
+                        workflows or agents
+                    </a>
+                    <a
+                        class="doc"
+                        href="https://github.com/thomashoneyman/temporal-representation/blob/main/results/README.md"
+                        >results doc -- tour of the various results docs
+                    </a>
+                    <a
+                        class="doc"
+                        href="https://github.com/thomashoneyman/temporal-representation#readme"
+                        >README -- overall tour of the repository</a
+                    >
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="wrap">
+                Produced in conjunction with Claude in a research session; there
+                may be errors, use at your own risk.
+            </div>
+        </footer>
+    </body>
+</html>
