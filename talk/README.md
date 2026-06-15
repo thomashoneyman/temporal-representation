@@ -12,7 +12,7 @@ browser after generating it. It is **generated, not committed** (see below): run
 
 It is **generated** by `npm run talk` (`src/harness/talk-viz.ts`): the slide narrative is
 authored in that script, and the headline numbers (the IR-vs-ISO table, the routing
-policies) are pulled live from `results/summary.json` and `results/task8.json`, so the
+policies) are pulled live from `results/overview.json` and `results/4-routing/routing.json`, so the
 slides can't drift from the data. Re-run `npm run talk` after any re-analysis.
 
 Companion docs in `artifacts/`: `talk.md` (the full speaker script, including the Mastra

@@ -63,11 +63,11 @@ users actually send (mine your logs). Keep two rules we learned the hard way:
 Our hard categories (holidays, business-day math, named periods, ranges, DST) are a strong
 prior, but hardness is model- and domain-specific. Measure it:
 1. Set `MODEL_*` in `.env` to your model.
-2. `npm run phase2` then `npm run analyze` — graded accuracy per category, ISO vs IR, for your model.
-3. Read `results/summary-viz.html`. The categories where ISO trails IR are *your* hard set.
+2. `npm run accuracy` then `npm run analyze` — graded accuracy per category, ISO vs IR, for your model.
+3. Read `results/overview-viz.html`. The categories where ISO trails IR are *your* hard set.
 
 For the free-form agent, also derive the routing hard-set empirically: run the Task-8
-bookends (`TASK8_CONDITIONS=iso,resolve npm run task8`) — the runner reports the items where
+bookends (`TASK8_CONDITIONS=iso,resolve npm run routing`) — the runner reports the items where
 your model's direct ISO fails and the resolver fixes them. Those are the cases routing must
 catch.
 
@@ -88,7 +88,7 @@ GPT-family models). System prompt carries the anchor, grain sentence, convention
 business-day/fiscal math, named periods, ranges"). Use held-out examples, not your eval
 items.
 
-Reference implementations: `src/mastra/tools.ts` (the tools), `src/harness/task8.ts` (the
+Reference implementations: `src/mastra/tools.ts` (the tools), `src/harness/routing.ts` (the
 routing prompts that worked, including the contamination guard).
 
 ## 6. Add the guardrail
@@ -102,9 +102,9 @@ is what prevents the latter.
 
 ## 7. Eval, and keep evaling
 
-- Commit smoke fixtures + a replay check (`npm run fixtures:record` / `npm run phase2:replay`) so a
+- Commit smoke fixtures + a replay check (`npm run fixtures:record` / `npm run accuracy:replay`) so a
   future scoring or key change fails CI instead of silently shifting your numbers.
-- Re-run `npm run phase2 && npm run analyze` whenever you consider a new model — that's your
+- Re-run `npm run accuracy && npm run analyze` whenever you consider a new model — that's your
   model-swap decision, with data.
 - Keep the consensus-against-key audit pattern (`npm run audit:consensus`): if several models
   agree on an answer your key calls wrong, your key is probably wrong — adjudicate before

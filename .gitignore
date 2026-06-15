@@ -10,7 +10,7 @@ site/
 
 # Generated report pages + talk deck — rebuilt from data by `npm run site` and
 # published to GitHub Pages. Never committed, so they can't go stale in git.
-results/*.html
+results/**/*.html
 talk/index.html
 
 # Raw console captures from harness runs — scratch output, not provenance

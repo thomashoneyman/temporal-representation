@@ -6,7 +6,7 @@ the reference — the what and the why.*
 
 *The synthesis of this repository's experiment, written as a design doc you can build
 from. Every recommendation cites the measurement that decided it; the numbers come from
-`results/summary.json` and the per-task pages (`results/*-viz.html`), where you can click
+`results/overview.json` and the per-task pages (`results/*-viz.html`), where you can click
 through to the underlying answers. Models measured: claude-haiku-4-5 and gpt-5.4-mini
 (small, 3 repeats), claude-opus-4-8 and gpt-5.5 (frontier, 1 repeat).*
 
@@ -149,7 +149,7 @@ prompt listed eval queries verbatim and inflated the numbers; the honest prompt 
 held-out examples behind a contamination guard. Practical rule: **a tuned category-routing
 prompt works and is a valid alternative to always-resolve; if you want guaranteed accuracy
 with no prompt-tuning risk, resolve by default, or make the routing deterministic in the
-scaffold.** (`results/task8-viz.html`, `results/task8-readout.md`; drop-in eval at
+scaffold.** (`results/routing-viz.html`, `results/routing-readout.md`; drop-in eval at
 `artifacts/routing-eval.json`.)
 
 ```
@@ -243,7 +243,7 @@ Everything in this repo that is liftable, and the sharp edges we hit wiring it.
 register `temporalSanityScorer` on your Mastra instance for log-only observability, or
 call `checkTimeArgs` in tool middleware to gate/retry (both usages shown in
 `src/scorers/README.md`). `src/datasets/` + `src/scorers/translation-scorers.ts` are
-the model-swap eval: point `MODEL_*` env at a candidate model, `npm run phase2 && npm run
+the model-swap eval: point `MODEL_*` env at a candidate model, `npm run accuracy && npm run
 analyze`, and read the same leaderboard before switching.
 
 **Structured output.** Use one mechanism for every model — we used

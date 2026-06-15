@@ -18,7 +18,7 @@ import { toEnvelope } from '../representation/translation-schema.js';
 import { scoreTranslation } from '../scoring/translation.js';
 import { DEFAULT_CONVENTIONS } from '../scate-lite/conventions.js';
 
-const RUN_DIR = process.env.RUN_DIR ?? 'results/runs/phase2';
+const RUN_DIR = process.env.RUN_DIR ?? 'results/runs/2-accuracy/accuracy';
 
 /** Clusters already adjudicated by the staff engineer — suppressed from the gate.
  *  Each entry records the VERDICT so the history is auditable. */

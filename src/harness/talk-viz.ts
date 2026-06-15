@@ -3,19 +3,19 @@
  * Self-contained, keyboard-navigable HTML deck (no CDN, no build). Narrative arc:
  * measurements → the existing ISO research → the ScateLite hypothesis → results →
  * proposed architectures, with concrete real Q&A pairs embedded along the way. Headline
- * numbers are pulled from results/summary.json + results/task8.json so they can't drift;
+ * numbers are pulled from results/overview.json + results/4-routing/routing.json so they can't drift;
  * the embedded Q&A examples are real cases lifted from the runs (cited in talk.md).
  * Speaker notes ride on each slide (toggle with N).
  */
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 
 interface Cell { task: string; model: string; arm: string; slice: string; metric: string; value: number }
-const s = JSON.parse(readFileSync('results/summary.json', 'utf8')) as { cells: Cell[] };
-const t8 = JSON.parse(readFileSync('results/task8.json', 'utf8')) as {
+const s = JSON.parse(readFileSync('results/overview.json', 'utf8')) as { cells: Cell[] };
+const t8 = JSON.parse(readFileSync('results/4-routing/routing.json', 'utf8')) as {
   bookends: { isoAccuracy: number; resolveAccuracy: number };
   conditions: Array<{ id: string; isRoute: boolean; answerAccuracy: number; resolveRate: number; recallNeedsResolve: number | null }>;
 };
-const t7 = JSON.parse(readFileSync('results/task7.json', 'utf8')) as { cells: Record<string, { accuracy: number }> };
+const t7 = JSON.parse(readFileSync('results/3-tooling/threading.json', 'utf8')) as { cells: Record<string, { accuracy: number }> };
 const MODELS = ['anthropic/claude-haiku-4-5', 'openai/gpt-5.4-mini', 'anthropic/claude-opus-4-8', 'openai/gpt-5.5'];
 const irAcc = MODELS.map((m) => t7.cells[`${m}|ir`]?.accuracy).filter((x): x is number => x != null).map((x) => Math.round(x * 100));
 const irLo = Math.min(...irAcc), irHi = Math.max(...irAcc);
@@ -242,7 +242,7 @@ ${qa('in 3 business days', 'Dec 1 2025', 'Dec 2 2025 (Thanksgiving skipped)', 'a
 <li><b>Preset crib</b> — precompute the few high-frequency periods ("last week", "this quarter", YTD) against the anchor and drop them in the prompt; cheap insurance for latency-sensitive easy traffic.</li>
 <li><b>Model-free guardrail</b> — a deterministic check on every tool call (end&lt;start, zero-length, DST offset, implausible window); log it first, then have it trigger a retry on a hard failure.</li>
 </ul>`,
-    notes: 'Two shapes, one principle. The two add-ons sit on top of either shape. The preset crib is the "give it precomputed anchors" idea — small lift, near-zero cost. The guardrail catches malformed/implausible time args cheaply (it cannot catch wrong-but-plausible — that is what the resolver is for). Full decision table, every row cited to a measurement, in summary-viz.html and architecture.md.',
+    notes: 'Two shapes, one principle. The two add-ons sit on top of either shape. The preset crib is the "give it precomputed anchors" idea — small lift, near-zero cost. The guardrail catches malformed/implausible time args cheaply (it cannot catch wrong-but-plausible — that is what the resolver is for). Full decision table, every row cited to a measurement, in overview-viz.html and architecture.md.',
   },
   {
     kicker: 'recommendation · payoff',
@@ -259,10 +259,10 @@ ${qa('in 3 business days', 'Dec 1 2025', 'Dec 2 2025 (Thanksgiving skipped)', 'a
     title: 'Build it',
     body: `<ul>
 <li><b>Lift</b> <code>src/scate-lite/</code> (grammar + resolver + conventions) + the guardrail.</li>
-<li><b>Eval</b> before trusting a model: <code>npm run phase2 &amp;&amp; npm run analyze</code>.</li>
+<li><b>Eval</b> before trusting a model: <code>npm run accuracy &amp;&amp; npm run analyze</code>.</li>
 <li><b>Guardrail</b> live: model-free <code>checkTimeArgs</code>, log-only → retry-on-block.</li>
 </ul>
-<p class="sub">Reference: <code>architecture.md</code> · Handoff: <code>guide.md</code> · One-page leaderboard: <code>results/summary-viz.html</code></p>`,
+<p class="sub">Reference: <code>architecture.md</code> · Handoff: <code>guide.md</code> · One-page leaderboard: <code>results/overview-viz.html</code></p>`,
     notes: 'guide.md is the step-by-step handoff: customize conventions to your calendar, build a dataset from your logs, measure your model\'s hard set, wire it, guardrail it.',
   },
 ];

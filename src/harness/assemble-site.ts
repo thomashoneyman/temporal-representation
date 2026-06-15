@@ -11,7 +11,7 @@
  * (the no-Actions, serve-from-branch option).
  */
 import { copyFileSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 
 const OUT = process.env.SITE_DIR ?? 'site';
 
@@ -23,9 +23,22 @@ mkdirSync(join(OUT, 'talk'), { recursive: true });
 // Landing page.
 copyFileSync('web/index.html', join(OUT, 'index.html'));
 
-// Every self-contained report page.
-const reports = readdirSync('results').filter((f) => f.endsWith('.html'));
-for (const f of reports) copyFileSync(join('results', f), join(OUT, 'results', f));
+// Every self-contained report page, recursing into the act subdirs
+// (e.g. results/1-measurement/consistency-viz.html). Paths are preserved.
+const reports: string[] = [];
+const walk = (rel: string): void => {
+  for (const e of readdirSync(join('results', rel), { withFileTypes: true })) {
+    if (e.name === 'runs') continue; // raw rows, not pages
+    const r = rel ? `${rel}/${e.name}` : e.name;
+    if (e.isDirectory()) walk(r);
+    else if (e.name.endsWith('.html')) reports.push(r);
+  }
+};
+walk('');
+for (const r of reports) {
+  mkdirSync(dirname(join(OUT, 'results', r)), { recursive: true });
+  copyFileSync(join('results', r), join(OUT, 'results', r));
+}
 
 // The talk deck.
 copyFileSync('talk/index.html', join(OUT, 'talk', 'index.html'));

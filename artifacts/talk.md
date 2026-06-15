@@ -194,7 +194,7 @@ call (end<start, zero-length, DST-offset, implausible window); **skip** the arit
 - Conventions pinned in code, not re-litigated each call.
 - Model-swap becomes a measurement: re-run the eval, read the leaderboard.
 
-> Full decision table — adopt / skip / when — in `results/summary-viz.html` and
+> Full decision table — adopt / skip / when — in `results/overview-viz.html` and
 > `artifacts/architecture.md`, every row cited to a measurement.
 
 ---
@@ -208,8 +208,8 @@ the full handoff.*
 the spine. `src/scorers/production.ts` is the model-free guardrail. `src/datasets/` +
 `src/scorers/translation-scorers.ts` are the model-swap eval.
 
-**Eval before you trust a model.** Point `MODEL_*` env at a candidate, `npm run phase2`,
-`npm run analyze`, read the leaderboard. `npm run task8` answers "will it route its own time
+**Eval before you trust a model.** Point `MODEL_*` env at a candidate, `npm run accuracy`,
+`npm run analyze`, read the leaderboard. `npm run routing` answers "will it route its own time
 questions" for the free-form-agent shape.
 
 **Two scorer kinds, two jobs.** Eval graders (`exactISO`/`exactIR`) need ground truth —

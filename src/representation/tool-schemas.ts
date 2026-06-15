@@ -44,7 +44,7 @@ import { TimeExprThreadingSchema } from '../scate-lite/ir.js';
 // but it DOES change the advertised JSON schema, and that change moved three of four
 // models' scores (gpt-5.5 −23, haiku −8, opus +6): provider-side constrained decoding
 // against recursive function-call schemas is sensitive to wrapper minutiae. Both
-// variants' rows are kept (results/runs/task7/ vs task7-hybrid-v4-nullable/); the
+// variants' rows are kept (results/runs/3-tooling/threading/ vs threading-hybrid-v4-nullable/); the
 // brittleness itself is the finding.
 export const HybridQueryArgs = z.object({
   start: z.string().optional().describe('ISO 8601 inclusive start — use with `end` when you already have concrete dates'),

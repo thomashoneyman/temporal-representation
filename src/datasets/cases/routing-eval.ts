@@ -11,7 +11,7 @@
  * time (3/3). The eval then asserts, per item, BOTH the routing decision (did it
  * delegate the hard ones / self-compute the easy ones?) and the resulting time window.
  *
- * Labels were frozen from a 2026-06 Haiku measurement (see results/runs/phase2). They
+ * Labels were frozen from a 2026-06 Haiku measurement (see results/runs/2-accuracy/accuracy). They
  * are model-specific by design — re-derive for another model with the ranking snippet in
  * the Task 8 readout. Items reference the shared dataset so the answer key and resolver
  * stay the single source of truth; `buildRoutingEval()` materializes them, and the Task 8

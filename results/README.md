@@ -26,7 +26,7 @@ The experiment deliberately runs in two passes:
   interpretation for every ambiguous case ("last week means the previous Monday–Sunday")
   into an answer key, then score each model and answer format against it: exact-match
   accuracy, how *far off* wrong answers are, and which kinds of mistakes each format
-  makes. See `phase2-viz.html`.
+  makes. See `accuracy-viz.html`.
 
 The split matters because grading first would bake our own assumptions into the answer
 key. Measuring first means the conventions we lock are informed by what models (and
@@ -49,28 +49,32 @@ is the finding.
 The `*-viz.html` pages below are **generated from the committed JSON, not stored in git**
 (only the data is). Read them on the live site —
 **https://thomashoneyman.github.io/temporal-representation/** — or rebuild them locally
-with `npm run site` (all pages) or `npm run <task>:viz` (one page).
+with `npm run site` (all pages) or `npm run <name>:viz` (one page).
+
+Files live under their **act** subdirectory — `1-measurement/`, `2-accuracy/`,
+`3-tooling/`, `4-routing/` — except `overview-viz.html` / `report.md`, which sit at the
+`results/` root. Filenames below are listed without that prefix.
 
 | File | What it is | Start here? |
 |---|---|---|
-| `phase1-viz.html` | **Interactive report** of Phase 1: how consistently each model answers, whether it invents times for questions that have none, and which reading it picks on deliberately ambiguous questions. Open in any browser; hover the bars. | ✅ |
+| `consistency-viz.html` | **Interactive report** of Phase 1: how consistently each model answers, whether it invents times for questions that have none, and which reading it picks on deliberately ambiguous questions. Open in any browser; hover the bars. | ✅ |
 | `preferences-viz.html` | **Interactive report** of the preference grid: ~29 common business time phrases ("the past month", "year to date", "early next week"), each asked at 7 different calendar positions, showing which concrete dates each model chose and how that shifts with the asking date. | ✅ |
-| `phase1-readout.md` | The written analysis of Phase 1 — findings with counts, caveats about what each measurement can and cannot claim, and the convention decisions the data feeds into. | for detail |
-| `phase2-viz.html` | **Interactive report** of the graded evaluation: every answer scored against the answer key on a best-to-worst severity ladder, grouped by answering method, per question category. | ✅ |
+| `consistency-readout.md` | The written analysis of Phase 1 — findings with counts, caveats about what each measurement can and cannot claim, and the convention decisions the data feeds into. | for detail |
+| `accuracy-viz.html` | **Interactive report** of the graded evaluation: every answer scored against the answer key on a best-to-worst severity ladder, grouped by answering method, per question category. | ✅ |
 | `preferences-readout.md` | The preference grid as plain tables (the same data as the HTML, less digestible). | reference |
-| `summary-viz.html` | **The leaderboard** — the whole experiment on one page: the short answer, the proposed architecture, the "what should a tool accept" verdict, per-task tables, determinism/cost, and the filled decision table. Start here. | ✅ |
+| `overview-viz.html` | **The leaderboard** — the whole experiment on one page: the short answer, the proposed architecture, the "what should a tool accept" verdict, per-task tables, determinism/cost, and the filled decision table. Start here. | ✅ |
 | `report.md` | The written synthesis: each objective + hypothesis answered with numbers, the decision table, and the "we predicted X, found Y" close. | ✅ |
-| `task7-viz.html` / `task7-readout.md` | **Multi-step threading**: keeping time references straight across a conversation, plus the tool-contract law (how a tool should accept time). | for detail |
-| `task7b-viz.html` / `task7b-readout.md` | **Compound-query decomposition**: one filtered request → multiple range calls. | for detail |
-| `task8-viz.html` / `task8-readout.md` | **Routing discrimination**: can the agent be prompted to answer easy times in ISO and delegate only the hard ones to the resolver? (the free-form-agent question) | for detail |
-| `phase1.json` / `phase2.json` / `preferences.json` / `task5.json` / `task7.json` / `task7b.json` / `task8.json` / `summary.json` | The aggregated numbers behind the reports, machine-readable. The HTML pages are generated from these. | tooling |
+| `threading-viz.html` / `threading-readout.md` | **Multi-step threading**: keeping time references straight across a conversation, plus the tool-contract law (how a tool should accept time). | for detail |
+| `decomposition-viz.html` / `decomposition-readout.md` | **Compound-query decomposition**: one filtered request → multiple range calls. | for detail |
+| `routing-viz.html` / `routing-readout.md` | **Routing discrimination**: can the agent be prompted to answer easy times in ISO and delegate only the hard ones to the resolver? (the free-form-agent question) | for detail |
+| `consistency.json` / `accuracy.json` / `preferences.json` / `steering.json` / `threading.json` / `decomposition.json` / `routing.json` / `overview.json` | The aggregated numbers behind the reports, machine-readable. The HTML pages are generated from these. | tooling |
 | `runs/` | Raw per-call records (one JSON line per model call: the question, the model's full answer, token usage). Everything above is recomputed from these; nothing is hand-edited. | provenance |
 
 ## How to trust these numbers
 
 - Every model call is recorded raw in `runs/` before any interpretation; the reports are
   derived from those records by deterministic code and can be regenerated (`npm run
-  phase1:viz`, `npm run preferences:viz`).
+  consistency:viz`, `npm run preferences:viz`).
 - Each record carries a fingerprint of the exact prompt that produced it, so numbers are
   never silently compared across prompt changes.
 - Repeated questions (5×) separate "the model believes X" from "the model flips coins".
