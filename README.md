@@ -1,11 +1,12 @@
 # Temporal Representation in Agent Systems
 
-How well do LLMs turn a user's time expression — "last week", "a month ago", "weekends in
-March" — into the concrete dates an agent must pass to downstream tools? This repository is
-a runnable experiment that measures exactly that, and packages everything it produces so
-other teams can reuse the pieces.
+Agents often need to understand a user's time expression ("last week", "next maintenance window") and translate to concrete data structures to pass to downstream tools. This repository is an experiment to understand what preferences LLMs have, how easily they can be prompted to change preferences, how accurate they are at translating to ISO8601 points/ranges/sets vs. a custom time grammar, and more. The results inform how you might design a free-form agent which may be hit with a time question at any time, or a data analysis workflow where you can explicitly have an LLM resolve times.
 
-## The experiment in one paragraph
+Tests were performed with Anthropic's Haiku and OpenAI's GPT 5.4-mini for the "mini" models, and Opus 4.8 / GPT 5.5 for the "frontier" models.
+
+This repository also contains reusable datasets, scoring functions, and so on which can be dropped in to other applications. The interactive reports are published to **https://thomashoneyman.github.io/temporal-representation/**. The HTML pages are generated, and the JSON data with experiment results are kept here in the repository. 
+
+## The basic experiment
 
 Models are given an anchor datetime ("right now it is …") and a user query, and asked to
 translate the query's time into one of two representations: **direct ISO 8601** (the model
@@ -94,26 +95,3 @@ buying any model calls — scoring changes propagate this way).
 1. Set `MODEL_OPENAI` / `MODEL_ANTHROPIC` / `MODEL_GOOGLE` (or the `*_MINI` variants) in `.env`, or edit `experiment.config.ts`.
 2. `npm run accuracy` (and any of `steering`/`threading`/`decomposition` you care about) — new rows land next to the old ones, keyed by model id.
 3. `ANALYZE=1 npm run accuracy && npm run analyze && npm run accuracy:viz` — the new model appears in the reports and leaderboard.
-
-## Reading the results
-
-The interactive reports and the talk are published to **GitHub Pages**:
-**https://thomashoneyman.github.io/temporal-representation/**. The site is rebuilt from
-the committed data on every push, so it never goes stale.
-
-The HTML pages are **generated, not committed** — only the JSON they're built from lives
-in git. To read them from a clone, run `npm run site` (regenerates everything into `site/`)
-or a single `npm run <task>:viz`, then open the file.
-
-Start with `overview-viz.html` (the leaderboard + the filled decision table), then
-`results/report.md` (the narrative answering each research question). Every per-task page
-(`accuracy-viz.html`, `threading-viz.html`, `decomposition-viz.html`, `preferences-viz.html`) is
-self-contained — send the single file to anyone — and every error bar is clickable down to
-the actual question, the model's actual answer, and what the key expects, so you can judge
-the grading yourself. `results/README.md` explains the phases for readers with no context.
-
-## Status
-
-Complete through synthesis: all research tasks run (two small models at 3 repeats, two
-frontier models at 1 repeat as a scale check), results aggregated, decision table filled.
-The git history carries the full build story.
