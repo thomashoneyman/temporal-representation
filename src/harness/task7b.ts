@@ -1,5 +1,5 @@
 /**
- * Task 7b — decomposition. `pnpm task7b` (ANALYZE=1 to re-aggregate only).
+ * Task 7b — decomposition. `npm run task7b` (ANALYZE=1 to re-aggregate only).
  * A compound query ("Tue–Thu 8am–12pm over the past month") meets a downstream tool
  * that accepts ONE contiguous range per call. Correct behavior: one query_range call
  * per sub-window. The arms change who enumerates:

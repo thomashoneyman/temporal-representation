@@ -1,5 +1,5 @@
 /**
- * Preference-grid visualization — `pnpm preferences:viz` → results/preferences-viz.html.
+ * Preference-grid visualization — `npm run preferences:viz` → results/preferences-viz.html.
  * One section per phrase; per model, a stacked bar per anchor position showing the share
  * of reps that chose each reading. Interactive (Alpine, vendored): hover/click-pin
  * tooltips with the concrete dates, legend highlighting, section filter.

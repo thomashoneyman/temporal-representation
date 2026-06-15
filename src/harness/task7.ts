@@ -1,5 +1,5 @@
 /**
- * Task 7 — multi-hop threading & drift. `pnpm task7`
+ * Task 7 — multi-hop threading & drift. `npm run task7`
  *
  * Drives each chain as ONE conversation: per hop, the model gets the next instruction
  * and must call query_range with the right time argument. Three arms:

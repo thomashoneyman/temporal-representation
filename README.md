@@ -40,9 +40,9 @@ marked, liftable) on its own. The four numbered artifacts are the experiment's d
 ## Setup
 
 ```sh
-pnpm install
+npm install
 cp .env.example .env   # add API keys (only needed for live model runs, not tests)
-pnpm test              # the deterministic core — no network, no keys
+npm test              # the deterministic core — no network, no keys
 ```
 
 ## Commands
@@ -51,25 +51,25 @@ Offline (no API keys):
 
 | Command | What it does |
 |---|---|
-| `pnpm test` | 324 tests: resolver + scoring units, the grammar smoke oracle, the answer-key fixture, the hand-label sample, the guardrail scorer. |
-| `pnpm seed` | Build + version the datasets; export JSON to `artifacts/` (content-hash idempotent). |
-| `pnpm phase2:replay` | Re-grade the committed smoke fixtures with the current scorer and assert the scores match — the reproducibility check. |
-| `pnpm analyze` | `results/summary.json` (all metrics, CIs, determinism, cost) → `results/report.md` (the narrative) → `results/summary-viz.html` (the leaderboard). |
-| `pnpm audit:consensus` | Standing answer-key check: flags wrong answers that multiple models agree on (our best key-defect detector). |
-| `pnpm <task>:viz` | Regenerate any results page from stored runs: `phase1:viz`, `preferences:viz`, `phase2:viz`, `task7:viz`, `task7b:viz`, `task8:viz`. |
-| `pnpm site` | Regenerate every report page + the talk from stored data and assemble the publishable site into `site/`. This is what CI deploys to GitHub Pages. |
-| `pnpm show-prompt` | Print the exact prompts and injected schemas each arm receives. |
+| `npm test` | 324 tests: resolver + scoring units, the grammar smoke oracle, the answer-key fixture, the hand-label sample, the guardrail scorer. |
+| `npm run seed` | Build + version the datasets; export JSON to `artifacts/` (content-hash idempotent). |
+| `npm run phase2:replay` | Re-grade the committed smoke fixtures with the current scorer and assert the scores match — the reproducibility check. |
+| `npm run analyze` | `results/summary.json` (all metrics, CIs, determinism, cost) → `results/report.md` (the narrative) → `results/summary-viz.html` (the leaderboard). |
+| `npm run audit:consensus` | Standing answer-key check: flags wrong answers that multiple models agree on (our best key-defect detector). |
+| `npm run <task>:viz` | Regenerate any results page from stored runs: `phase1:viz`, `preferences:viz`, `phase2:viz`, `task7:viz`, `task7b:viz`, `task8:viz`. |
+| `npm run site` | Regenerate every report page + the talk from stored data and assemble the publishable site into `site/`. This is what CI deploys to GitHub Pages. |
+| `npm run show-prompt` | Print the exact prompts and injected schemas each arm receives. |
 
 Live model runs (need keys in `.env`; all are resumable — re-running skips completed rows):
 
 | Command | What it does |
 |---|---|
-| `pnpm phase1` / `pnpm preferences` | Ungraded measurement: what do models *prefer* "last week" to mean? |
-| `pnpm phase2` | The main graded evaluation (Tasks 4 + 6): every question × 3 answer formats × models × repeats. |
-| `pnpm task5` | Steering: does documenting our conventions in the prompt pin the answers? |
-| `pnpm task7` / `pnpm task7b` | Multi-step threading and compound-query decomposition against a range-only tool. |
-| `pnpm task8` | Routing discrimination: can the agent answer easy times in ISO and delegate only the hard ones? (Haiku) |
-| `pnpm fixtures:record` | Refresh the committed smoke fixtures + grade snapshot after an intentional scoring change. |
+| `npm run phase1` / `npm run preferences` | Ungraded measurement: what do models *prefer* "last week" to mean? |
+| `npm run phase2` | The main graded evaluation (Tasks 4 + 6): every question × 3 answer formats × models × repeats. |
+| `npm run task5` | Steering: does documenting our conventions in the prompt pin the answers? |
+| `npm run task7` / `npm run task7b` | Multi-step threading and compound-query decomposition against a range-only tool. |
+| `npm run task8` | Routing discrimination: can the agent answer easy times in ISO and delegate only the hard ones? (Haiku) |
+| `npm run fixtures:record` | Refresh the committed smoke fixtures + grade snapshot after an intentional scoring change. |
 
 Useful knobs (env): `TIER=mini|frontier`, `REPS=3`, `CONCURRENCY=8`, `ARMS=iso,ir`,
 `PROVIDERS=openai,anthropic`, `ANALYZE=1` (re-aggregate from stored rows without
@@ -78,8 +78,8 @@ buying any model calls — scoring changes propagate this way).
 ## Plugging in a new model
 
 1. Set `MODEL_OPENAI` / `MODEL_ANTHROPIC` / `MODEL_GOOGLE` (or the `*_MINI` variants) in `.env`, or edit `experiment.config.ts`.
-2. `pnpm phase2` (and any of `task5`/`task7`/`task7b` you care about) — new rows land next to the old ones, keyed by model id.
-3. `ANALYZE=1 pnpm phase2 && pnpm analyze && pnpm phase2:viz` — the new model appears in the reports and leaderboard.
+2. `npm run phase2` (and any of `task5`/`task7`/`task7b` you care about) — new rows land next to the old ones, keyed by model id.
+3. `ANALYZE=1 npm run phase2 && npm run analyze && npm run phase2:viz` — the new model appears in the reports and leaderboard.
 
 ## Reading the results
 
@@ -88,8 +88,8 @@ The interactive reports and the talk are published to **GitHub Pages**:
 the committed data on every push, so it never goes stale.
 
 The HTML pages are **generated, not committed** — only the JSON they're built from lives
-in git. To read them from a clone, run `pnpm site` (regenerates everything into `site/`)
-or a single `pnpm <task>:viz`, then open the file.
+in git. To read them from a clone, run `npm run site` (regenerates everything into `site/`)
+or a single `npm run <task>:viz`, then open the file.
 
 Start with `summary-viz.html` (the leaderboard + the filled decision table), then
 `results/report.md` (the narrative answering each research question). Every per-task page

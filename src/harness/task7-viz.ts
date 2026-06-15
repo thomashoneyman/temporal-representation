@@ -1,5 +1,5 @@
 /**
- * Task-7 threading visualization — `pnpm task7:viz` → results/task7-viz.html.
+ * Task-7 threading visualization — `npm run task7:viz` → results/task7-viz.html.
  * One section per FINDING (not per data dimension), pooled across models where pooling
  * sharpens the story, with click-to-inspect detail tables on every interesting bar.
  */

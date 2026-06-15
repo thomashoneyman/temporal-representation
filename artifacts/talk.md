@@ -1,6 +1,6 @@
 # Talk: Giving data-analysis agents a reliable sense of time
 
-*The showable slide deck generated from this script is `talk/index.html` (run `pnpm talk`;
+*The showable slide deck generated from this script is `talk/index.html` (run `npm run talk`;
 arrow keys to present, **N** for speaker notes). This file is the long-form script behind it —
 same arc, with the concrete Q&A examples and the Mastra appendix spelled out.*
 
@@ -208,8 +208,8 @@ the full handoff.*
 the spine. `src/scorers/production.ts` is the model-free guardrail. `src/datasets/` +
 `src/scorers/translation-scorers.ts` are the model-swap eval.
 
-**Eval before you trust a model.** Point `MODEL_*` env at a candidate, `pnpm phase2`,
-`pnpm analyze`, read the leaderboard. `pnpm task8` answers "will it route its own time
+**Eval before you trust a model.** Point `MODEL_*` env at a candidate, `npm run phase2`,
+`npm run analyze`, read the leaderboard. `npm run task8` answers "will it route its own time
 questions" for the free-form-agent shape.
 
 **Two scorer kinds, two jobs.** Eval graders (`exactISO`/`exactIR`) need ground truth —

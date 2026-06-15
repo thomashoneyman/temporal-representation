@@ -1,5 +1,5 @@
 /**
- * `pnpm analyze` (third step) — results/summary-viz.html: the experiment's leaderboard,
+ * `npm run analyze` (third step) — results/summary-viz.html: the experiment's leaderboard,
  * rendered from results/summary.json only (the same interchange any other explorer would
  * read). Self-contained and shareable, like every other results page in this repo.
  */

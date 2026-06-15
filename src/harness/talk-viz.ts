@@ -1,5 +1,5 @@
 /**
- * Slide deck generator — `pnpm talk` → talk/index.html.
+ * Slide deck generator — `npm run talk` → talk/index.html.
  * Self-contained, keyboard-navigable HTML deck (no CDN, no build). Narrative arc:
  * measurements → the existing ISO research → the ScateLite hypothesis → results →
  * proposed architectures, with concrete real Q&A pairs embedded along the way. Headline
@@ -259,7 +259,7 @@ ${qa('in 3 business days', 'Dec 1 2025', 'Dec 2 2025 (Thanksgiving skipped)', 'a
     title: 'Build it',
     body: `<ul>
 <li><b>Lift</b> <code>src/scate-lite/</code> (grammar + resolver + conventions) + the guardrail.</li>
-<li><b>Eval</b> before trusting a model: <code>pnpm phase2 &amp;&amp; pnpm analyze</code>.</li>
+<li><b>Eval</b> before trusting a model: <code>npm run phase2 &amp;&amp; npm run analyze</code>.</li>
 <li><b>Guardrail</b> live: model-free <code>checkTimeArgs</code>, log-only → retry-on-block.</li>
 </ul>
 <p class="sub">Reference: <code>architecture.md</code> · Handoff: <code>guide.md</code> · One-page leaderboard: <code>results/summary-viz.html</code></p>`,

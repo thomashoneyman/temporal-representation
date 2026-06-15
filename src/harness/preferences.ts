@@ -1,5 +1,5 @@
 /**
- * Preference-grid runner — `pnpm preferences`.
+ * Preference-grid runner — `npm run preferences`.
  * ISO arm ONLY (presets in the IR arm resolve under OUR conventions and reveal nothing
  * about the model's reading). Runs phrase × anchor-position × provider × REPS, resumable
  * at item level; classifies each answer against the grid's code-generated candidate

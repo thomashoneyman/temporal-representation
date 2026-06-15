@@ -1,5 +1,5 @@
 /**
- * Task-4 graded results — `pnpm phase2:viz` → results/phase2-viz.html.
+ * Task-4 graded results — `npm run phase2:viz` → results/phase2-viz.html.
  * One section per question category; one bar per (model × answer format) showing how
  * answers distribute across the error-severity ladder. Self-contained, lay-audience.
  */

@@ -1,6 +1,6 @@
 /**
  * Phase 1 — Task 2: UNGRADED measurement of interpretation preferences.
- * `pnpm phase1` runs provider × arm (iso, ir) × REPS over all 8 translation slices
+ * `npm run phase1` runs provider × arm (iso, ir) × REPS over all 8 translation slices
  * and writes raw rows to results/runs/phase1/; then aggregates distributions into
  * results/phase1.json: probe tallies (pinned vs calendar-30, week start, occurrence…),
  * none/unresolvable rates, week-start evidence, and per-item determinism across reps.
@@ -59,7 +59,7 @@ if (!process.env.ANALYZE) {
               break;
             } catch (err) {
               console.log(`phase1 ${provider}/${CONFIG.tier} ${arm} rep${rep} ${slice}: attempt ${attempt} failed: ${(err as Error).message.slice(0, 160)}`);
-              if (attempt === 3) console.log('  giving up on this cell (resume by re-running pnpm phase1)');
+              if (attempt === 3) console.log('  giving up on this cell (resume by re-running npm run phase1)');
               else await new Promise((r) => setTimeout(r, 5000 * attempt));
             }
           }

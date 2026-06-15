@@ -1,7 +1,7 @@
 /**
  * The hand-label validation sample: a cross-slice sample whose expected ISO values —
  * including exact UTC offsets — were written BY HAND from first principles, never by
- * running the resolver. `pnpm test` asserts the resolver matches every row with 0
+ * running the resolver. `npm test` asserts the resolver matches every row with 0
  * disagreements; this is what makes the answer key trustworthy independently of the
  * resolver's own bugs (and of any model).
  *

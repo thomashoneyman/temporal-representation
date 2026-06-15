@@ -1,9 +1,9 @@
 /**
  * Record/replay fixtures — reproducibility without API keys.
  *
- *   pnpm fixtures:record   select a smoke subset of the committed raw runs and write
+ *   npm run fixtures:record   select a smoke subset of the committed raw runs and write
  *                          it to fixtures/phase2-smoke.jsonl (the model RESPONSES)
- *   pnpm phase2:replay     re-grade those fixtures offline with the CURRENT scorer and
+ *   npm run phase2:replay     re-grade those fixtures offline with the CURRENT scorer and
  *                          compare against results/smoke/phase2-smoke.json; exits 1 on
  *                          any difference (no network, no keys)
  *
@@ -66,7 +66,7 @@ if (mode === 'record') {
 } else {
   // replay (default): offline re-grade + assert
   if (!existsSync(FIXTURE_FILE)) {
-    console.error(`no fixtures at ${FIXTURE_FILE} — run \`pnpm fixtures:record\` first`);
+    console.error(`no fixtures at ${FIXTURE_FILE} — run \`npm run fixtures:record\` first`);
     process.exit(1);
   }
   const rows = readFileSync(FIXTURE_FILE, 'utf8').trim().split('\n').map((l) => JSON.parse(l) as RunRow);
@@ -85,7 +85,7 @@ if (mode === 'record') {
     diffs++;
   }
   if (diffs) {
-    console.error(`replay FAILED: ${diffs} difference(s). If a scoring/key change was intentional, re-run \`pnpm fixtures:record\` and commit the diff.`);
+    console.error(`replay FAILED: ${diffs} difference(s). If a scoring/key change was intentional, re-run \`npm run fixtures:record\` and commit the diff.`);
     process.exit(1);
   }
   console.log(`replay OK: ${snapshot.n} fixture rows re-graded offline, all scores match the committed snapshot.`);

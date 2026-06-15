@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@11.1.3",
   "engines": {
     "node": ">=20"
   },
@@ -35,7 +34,7 @@
     "task8:viz": "node --import tsx src/harness/task8-viz.ts",
     "talk": "node --import tsx src/harness/talk-viz.ts",
     "site:assemble": "node --import tsx src/harness/assemble-site.ts",
-    "site": "node --import tsx src/analysis/summary.ts && node --import tsx src/analysis/report.ts && node --import tsx src/analysis/summary-viz.ts && node --import tsx src/harness/phase1-viz.ts && node --import tsx src/harness/preferences-viz.ts && node --import tsx src/harness/phase2-viz.ts && node --import tsx src/harness/task7-viz.ts && node --import tsx src/harness/task7b-viz.ts && node --import tsx src/harness/task8-viz.ts && node --import tsx src/harness/talk-viz.ts && node --import tsx src/harness/assemble-site.ts"
+    "site": "npm run analyze && npm run phase1:viz && npm run preferences:viz && npm run phase2:viz && npm run task7:viz && npm run task7b:viz && npm run task8:viz && npm run talk && npm run site:assemble"
   },
   "dependencies": {
     "@mastra/core": "^1.41.0",
@@ -43,7 +42,6 @@
     "@mastra/libsql": "^1.12.1",
     "@mastra/observability": "^1.14.1",
     "chrono-node": "^2.9.1",
-    "date-holidays": "^3.30.2",
     "luxon": "^3.7.2",
     "zod": "^4.4.3"
   },

@@ -1,6 +1,6 @@
 /**
  * Task 5 — steerability: the same items and arms as Task 4, but the prompt now carries
- * the DOCUMENTED CONVENTIONS block (renderConventions — Artifact #3). `pnpm task5`
+ * the DOCUMENTED CONVENTIONS block (renderConventions — Artifact #3). `npm run task5`
  * Measures, against the free (Task-4) runs: exact lift per arm/slice, conversion of
  * convention-divergence answers (Sev 4 / include-today / wrong-period) to exact, and
  * the determinism change. ANALYZE=1 re-aggregates offline.

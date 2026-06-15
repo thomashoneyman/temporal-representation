@@ -1,5 +1,5 @@
 /**
- * Task-8 routing-discrimination visualization — `pnpm task8:viz` → results/task8-viz.html.
+ * Task-8 routing-discrimination visualization — `npm run task8:viz` → results/task8-viz.html.
  * Can a free-form agent be PROMPTED to answer easy times in ISO and delegate only the
  * hard ones to the resolver? Shows the policy comparison, the prompt-iteration that got
  * routing working, and the per-item picture (which items actually need the resolver).

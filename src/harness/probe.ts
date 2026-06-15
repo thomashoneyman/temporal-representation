@@ -1,5 +1,5 @@
 /**
- * One-off live probe — run with: pnpm probe
+ * One-off live probe — run with: npm run probe
  *
  * Settles the two open questions before any real run:
  *  1. Does a LIVE provider fill the recursive z.lazy TimeExpr union as structured

@@ -4,7 +4,7 @@
  * Mastra's injected JSON-schema block (jsonPromptInjection), and the user message.
  * Writes the full text to artifacts/prompt-previews/ and prints it.
  *
- * Run: pnpm show-prompt
+ * Run: npm run show-prompt
  */
 import { Agent } from '@mastra/core/agent';
 import { mkdirSync, writeFileSync } from 'node:fs';

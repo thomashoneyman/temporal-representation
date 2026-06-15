@@ -1,5 +1,5 @@
 /**
- * Key-completeness audit — `pnpm audit:consensus`. Run before any report.
+ * Key-completeness audit — `npm run audit:consensus`. Run before any report.
  *
  * Detector: for every graded item, find specific non-accepted answers that MULTIPLE
  * models converge on (≥2 models, ≥30% of all answers). Such consensus-against-the-key

@@ -1,5 +1,5 @@
 /**
- * Phase-1 visualization — `pnpm phase1:viz` → results/phase1-viz.html.
+ * Phase-1 visualization — `npm run phase1:viz` → results/phase1-viz.html.
  * Interactive (shared lib/viz.ts toolkit): hover/click-pin tooltips, legend
  * highlighting, section filter.
  *

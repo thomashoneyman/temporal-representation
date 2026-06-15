@@ -243,7 +243,7 @@ Everything in this repo that is liftable, and the sharp edges we hit wiring it.
 register `temporalSanityScorer` on your Mastra instance for log-only observability, or
 call `checkTimeArgs` in tool middleware to gate/retry (both usages shown in
 `src/scorers/README.md`). `src/datasets/` + `src/scorers/translation-scorers.ts` are
-the model-swap eval: point `MODEL_*` env at a candidate model, `pnpm phase2 && pnpm
+the model-swap eval: point `MODEL_*` env at a candidate model, `npm run phase2 && npm run
 analyze`, and read the same leaderboard before switching.
 
 **Structured output.** Use one mechanism for every model — we used

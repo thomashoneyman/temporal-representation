@@ -6,12 +6,12 @@ here calls a model — it is all offline and re-runnable.
 
 | script | command | produces |
 |---|---|---|
-| `summary.ts` | `pnpm analyze:summary` | `results/summary.json` — every task's metrics flattened into one cell schema (task × model × arm × slice × metric) with Wilson 95% CIs, plus determinism (unprompted vs with-conventions, recomputed from raw repeats), cost (recorded tokens × list pricing), and the filled production decision table |
-| `report.ts` | (part of `pnpm analyze`) | `results/report.md` — the narrative: each research objective and hypothesis answered with numbers pulled from `summary.json` at render time, so prose can't drift from data |
-| `summary-viz.ts` | (part of `pnpm analyze`) | `results/summary-viz.html` — the one-page leaderboard, rendered from `summary.json` only; self-contained and shareable |
-| `consensus-audit.ts` | `pnpm audit:consensus` | a standing answer-key check: flags any wrong answer that ≥2 different models agree on with ≥30% share — historically our best detector of key defects. Human adjudicates each flag; adjudicated clusters are suppressed in-file with their verdicts. Exits 1 when an unadjudicated flag exists. |
+| `summary.ts` | `npm run analyze:summary` | `results/summary.json` — every task's metrics flattened into one cell schema (task × model × arm × slice × metric) with Wilson 95% CIs, plus determinism (unprompted vs with-conventions, recomputed from raw repeats), cost (recorded tokens × list pricing), and the filled production decision table |
+| `report.ts` | (part of `npm run analyze`) | `results/report.md` — the narrative: each research objective and hypothesis answered with numbers pulled from `summary.json` at render time, so prose can't drift from data |
+| `summary-viz.ts` | (part of `npm run analyze`) | `results/summary-viz.html` — the one-page leaderboard, rendered from `summary.json` only; self-contained and shareable |
+| `consensus-audit.ts` | `npm run audit:consensus` | a standing answer-key check: flags any wrong answer that ≥2 different models agree on with ≥30% share — historically our best detector of key defects. Human adjudicates each flag; adjudicated clusters are suppressed in-file with their verdicts. Exits 1 when an unadjudicated flag exists. |
 
-`pnpm analyze` runs summary → report → leaderboard in order.
+`npm run analyze` runs summary → report → leaderboard in order.
 
 Methodology notes reviewers usually ask about:
 

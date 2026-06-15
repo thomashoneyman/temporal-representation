@@ -1,5 +1,5 @@
 /**
- * Dataset seeding — `pnpm seed`.
+ * Dataset seeding — `npm run seed`.
  *
  * Builds 9 Mastra Datasets (the 8 slices + `decompositions`, which reuses the slice-6
  * multipart items: their answer-key sets ARE the expected query_range calls). For each:

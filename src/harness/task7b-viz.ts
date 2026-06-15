@@ -1,5 +1,5 @@
 /**
- * Task-7b decomposition visualization — `pnpm task7b:viz` → results/task7b-viz.html.
+ * Task-7b decomposition visualization — `npm run task7b:viz` → results/task7b-viz.html.
  * The story: a compound request meets a tool that takes one contiguous range per call —
  * who should enumerate the windows, the model or code? Finding-oriented sections with
  * click-to-inspect tables showing the actual calls each model made.

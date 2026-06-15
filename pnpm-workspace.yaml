@@ -1,9 +1,0 @@
-# esbuild (pulled in by tsx) ships a postinstall that fetches its platform binary.
-# Approve it so installs are complete; otherwise pnpm flags deps as out-of-date and
-# tries to reinstall before every `pnpm run`.
-onlyBuiltDependencies:
-  - esbuild
-
-# Our run-scripts are pure generators (e.g. `pnpm site`); don't auto-purge/reinstall
-# node_modules before running them — fix drift with an explicit `pnpm install`.
-verifyDepsBeforeRun: false

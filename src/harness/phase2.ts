@@ -1,5 +1,5 @@
 /**
- * Phase 2 — Task 4: GRADED translation accuracy. `pnpm phase2`
+ * Phase 2 — Task 4: GRADED translation accuracy. `npm run phase2`
  * Arms: iso · iso-preset (ISO + pre-resolved crib) · ir, × provider × REPS over all 8
  * slices, against the v0.2 answer key; plus the chrono-node baseline computed locally
  * (no LLM). Raw rows → results/runs/phase2/; ANALYZE=1 re-aggregates offline into

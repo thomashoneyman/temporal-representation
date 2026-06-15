@@ -1,8 +1,8 @@
 /**
- * Assemble the publishable site — `pnpm site:assemble` (the final step of `pnpm site`).
+ * Assemble the publishable site — `npm run site:assemble` (the final step of `npm run site`).
  *
  * This copies the freshly-generated, self-contained pages into one directory ready for
- * GitHub Pages. It does NOT generate anything itself: `pnpm site` runs every viz/talk
+ * GitHub Pages. It does NOT generate anything itself: `npm run site` runs every viz/talk
  * generator first, so by the time we get here `results/*.html` and `talk/index.html`
  * already reflect the current `results/*.json`. Nothing here is hand-edited, and the
  * output dir is gitignored — the site is always rebuilt from data, never served stale.

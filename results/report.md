@@ -1,7 +1,7 @@
 # Report — Temporal Representation in Agent Systems
 
 *Rendered from `results/summary.json` (answer key v0.3, prompts 30b61a223a79). Every
-number here is recomputable offline from the committed raw runs; `pnpm phase2:replay` verifies the
+number here is recomputable offline from the committed raw runs; `npm run phase2:replay` verifies the
 scoring pipeline against committed fixtures. Small models (haiku 4.5, gpt-5.4-mini) ran 3 repeats;
 frontier models (opus 4.8, gpt-5.5) ran 1 repeat as a scale check — their numbers are noisier. The
 self-contained visualizations (`results/*-viz.html`) carry the click-to-inspect detail behind every

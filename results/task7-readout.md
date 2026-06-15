@@ -110,7 +110,7 @@ frontier barely at all (opus IR 100→100, gpt-5.5 IR 96→95).
   the key (window's last covered day, holiday-aware) and the documented alternative
   (the exclusive-end day, also holiday-aware) are both accepted; answers that forgot
   the holiday rule the prompt states remain strict misses. Cross-model consensus was
-  checked (`pnpm audit:consensus` pattern) before keeping the key.
+  checked (`npm run audit:consensus` pattern) before keeping the key.
 - The resolve tool returned an unactionable "Invalid input" on malformed expressions —
   only OpenAI models ever sent one (23×), so only their IR cells were re-run after the
   fix (old rows archived in `results/runs/task7-pre-errfix/`).

@@ -1,5 +1,5 @@
 /**
- * Step-12 synthesis — `pnpm analyze` → results/summary.json + results/report.md.
+ * Step-12 synthesis — `npm run analyze` → results/summary.json + results/report.md.
  *
  * Loads every task's results file (and Task 5's raw rows, for prompted determinism),
  * flattens them into one stable cell schema, computes Wilson 95% CIs for every

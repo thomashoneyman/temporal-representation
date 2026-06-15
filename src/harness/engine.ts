@@ -63,7 +63,7 @@ function buildRC(gt: GroundTruth, opts: CellOpts): RequestContext {
 export async function runCell(opts: CellOpts): Promise<{ items: number; errors: number }> {
   const list = await mastra.datasets.list({ perPage: 100 });
   const rec = list.datasets?.find((d: { name: string }) => d.name === opts.dataset);
-  if (!rec) throw new Error(`dataset not seeded: ${opts.dataset} (run pnpm seed)`);
+  if (!rec) throw new Error(`dataset not seeded: ${opts.dataset} (run npm run seed)`);
   const dataset = await mastra.datasets.get({ id: rec.id });
   const res = await dataset.listItems({ perPage: 1000 });
   const items = (Array.isArray(res) ? res : res.items) as Array<{ input: unknown; groundTruth: GroundTruth }>;

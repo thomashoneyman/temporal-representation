@@ -1,5 +1,5 @@
 /**
- * Task 8 — routing discrimination. `pnpm task8` (ANALYZE=1 to re-aggregate / re-export).
+ * Task 8 — routing discrimination. `npm run task8` (ANALYZE=1 to re-aggregate / re-export).
  *
  * Setup: a single-turn agent with TWO tools — query_range (takes concrete ISO, the
  * default path) and resolve_range (takes a ScateLite expression, returns ISO, for the

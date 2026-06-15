@@ -8,7 +8,7 @@ agents.
 
 ## How the answer key stays trustworthy
 
-Three independent layers, all enforced by `pnpm test`:
+Three independent layers, all enforced by `npm test`:
 
 1. **Derivation** — every gradeable item's expected intervals are reproduced by running
    the deterministic resolver on the item's canonical IR (`tests/answer-key.test.ts`).

@@ -26,7 +26,7 @@ The experiment deliberately runs in two passes:
   interpretation for every ambiguous case ("last week means the previous Monday–Sunday")
   into an answer key, then score each model and answer format against it: exact-match
   accuracy, how *far off* wrong answers are, and which kinds of mistakes each format
-  makes. Underway — see `phase2-viz.html`.
+  makes. See `phase2-viz.html`.
 
 The split matters because grading first would bake our own assumptions into the answer
 key. Measuring first means the conventions we lock are informed by what models (and
@@ -49,7 +49,7 @@ is the finding.
 The `*-viz.html` pages below are **generated from the committed JSON, not stored in git**
 (only the data is). Read them on the live site —
 **https://thomashoneyman.github.io/temporal-representation/** — or rebuild them locally
-with `pnpm site` (all pages) or `pnpm <task>:viz` (one page).
+with `npm run site` (all pages) or `npm run <task>:viz` (one page).
 
 | File | What it is | Start here? |
 |---|---|---|
@@ -69,8 +69,8 @@ with `pnpm site` (all pages) or `pnpm <task>:viz` (one page).
 ## How to trust these numbers
 
 - Every model call is recorded raw in `runs/` before any interpretation; the reports are
-  derived from those records by deterministic code and can be regenerated (`pnpm
-  phase1:viz`, `pnpm preferences:viz`).
+  derived from those records by deterministic code and can be regenerated (`npm run
+  phase1:viz`, `npm run preferences:viz`).
 - Each record carries a fingerprint of the exact prompt that produced it, so numbers are
   never silently compared across prompt changes.
 - Repeated questions (5×) separate "the model believes X" from "the model flips coins".

@@ -8,7 +8,11 @@ site/dist/
 site/
 .DS_Store
 
-# Generated report pages + talk deck — rebuilt from data by `pnpm site` and
+# Generated report pages + talk deck — rebuilt from data by `npm run site` and
 # published to GitHub Pages. Never committed, so they can't go stale in git.
 results/*.html
 talk/index.html
+
+# Raw console captures from harness runs — scratch output, not provenance
+# (the per-call records in results/runs/*.json are the reproducibility source).
+results/runs/*.log
